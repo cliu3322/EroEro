@@ -15,6 +15,24 @@ const routes = [
     path: 'authCheck',
     component: asyncComponent(() => import('../AuthCheck')),
   },
+  {
+    path: 'card',
+    component: asyncComponent(() => import('../Ecommerce/card')),
+  },
+  {
+    path: 'cart',
+    component: asyncComponent(() => import('../Ecommerce/cart')),
+  },
+  {
+    path: 'checkout',
+    component: asyncComponent(() => import('../Ecommerce/checkout')),
+  },
+  {
+    path: 'shop',
+    component: asyncComponent(() =>
+      import('../Ecommerce/algolia/instantSearch')
+    ),
+  },
 ];
 
 class AppRouter extends Component {

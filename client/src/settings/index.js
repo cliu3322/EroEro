@@ -20,4 +20,9 @@ const jwtConfig = {
   secretKey: 'secretKey',
 };
 
-export { siteConfig, language, themeConfig, jwtConfig };
+const AlgoliaSearchConfig = {
+  appId: '',
+  apiKey: ''
+};
+
+export { siteConfig, language, themeConfig, jwtConfig, AlgoliaSearchConfig};
