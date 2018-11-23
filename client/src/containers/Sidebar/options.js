@@ -1,5 +1,16 @@
 const options = [
   {
+    key: 'uielements',
+    label: 'sidebar.uiElements',
+    leftIcon: 'ion-leaf',
+    children: [
+      {
+        key: 'op_collapse',
+        label: 'sidebar.collapse',
+      },
+    ],
+  },
+  {
     key: 'ecommerce',
     label: 'sidebar.ecommerce',
     leftIcon: 'ion-bag',

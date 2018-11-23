@@ -33,6 +33,10 @@ const routes = [
       import('../Ecommerce/algolia/instantSearch')
     ),
   },
+  {
+    path: 'op_collapse',
+    component: asyncComponent(() => import('../Uielements/Collapse')),
+  },
 ];
 
 class AppRouter extends Component {
