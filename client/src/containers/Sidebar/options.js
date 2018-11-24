@@ -1,5 +1,10 @@
 const options = [
   {
+    key: 'recordPage',
+    label: 'sidebar.recordPage',
+    leftIcon: 'ion-document',
+  },
+  {
     key: 'uielements',
     label: 'sidebar.uiElements',
     leftIcon: 'ion-leaf',

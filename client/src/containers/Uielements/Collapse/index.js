@@ -9,7 +9,7 @@ import basicStyle from '../../../settings/basicStyle';
 import IntlMessages from '../../../components/utility/intlMessages';
 import CollapseWrapper from './collapse.style';
 
-const text = <IntlMessages id="uiElements.collapse.text" />;
+
 const Panel = Collapses.Panel;
 const Collapse = props => (
   <CollapseWrapper>
@@ -18,160 +18,46 @@ const Collapse = props => (
 );
 
 export default class extends Component {
+  renderGeos(colStyle) {
+    var country = [{name:"asdff",states:[{statename:"state1", cities:["asdf","adsffd"]},{statename:"state2",cities:["asdf","adsffd"]}]},
+    {name:"sdfffff",states:[{statename:"state3",cities:["asdf","adsffd"]},{statename:"state4",cities:["asdf","adsffd"]}]}];
+    return country.map((country,i) => {
+      return(
+        <Col md={12} sm={12} xs={24} style={colStyle} key={i}>
+          <Box
+            title={country.name}
+            subtitle={
+              <IntlMessages id="uiElements.collapse.nestedExampleSubTitle" />
+            }
+          >
+            <ContentHolder>
+            {country.states.map((state,j) =>(
+              <Collapse key={j}>
+                <Panel header={state.statename}>
+                  {state.cities.map((city,k) =>(
+                    <a href={city} key={k}>{city} </a>
+                  ))}
+                </Panel>
+              </Collapse>
+            ))}
+            </ContentHolder>
+
+          </Box>
+        </Col>
+      );
+      })
+  }
   callback = key => {};
   render() {
     const { rowStyle, colStyle, gutter } = basicStyle;
     return (
       <LayoutWrapper>
         <PageHeader>
-          {<IntlMessages id="uiElements.collapse.collapse" />}
+          {<IntlMessages id="uiElements.collapse.ChooseYourCity" />}
         </PageHeader>
         <Row style={rowStyle} gutter={gutter} justify="start">
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={<IntlMessages id="uiElements.collapse.collapse" />}
-              subtitle={
-                <IntlMessages id="uiElements.collapse.collapseSubTitle" />
-              }
-            >
-              <ContentHolder>
-                <Collapse accordion>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerOne" />}
-                    key="1"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerTwo" />}
-                    key="2"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={
-                      <IntlMessages id="uiElements.collapse.headerThree" />
-                    }
-                    key="3"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                </Collapse>
-              </ContentHolder>
-            </Box>
-          </Col>
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={<IntlMessages id="uiElements.collapse.nestedExample" />}
-              subtitle={
-                <IntlMessages id="uiElements.collapse.nestedExampleSubTitle" />
-              }
-            >
-              <ContentHolder>
-                <Collapse onChange={this.callback}>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerOne" />}
-                    key="1"
-                  >
-                    <Collapse defaultActiveKey="1">
-                      <Panel
-                        header={
-                          <IntlMessages id="uiElements.collapse.headerNested" />
-                        }
-                        key="1"
-                      >
-                        <p>{text}</p>
-                      </Panel>
-                    </Collapse>
-                  </Panel>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerTwo" />}
-                    key="2"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={
-                      <IntlMessages id="uiElements.collapse.headerThree" />
-                    }
-                    key="3"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                </Collapse>
-              </ContentHolder>
-            </Box>
-          </Col>
-        </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={
-                <IntlMessages id="uiElements.collapse.borderlessExample" />
-              }
-              subtitle={
-                <IntlMessages id="uiElements.collapse.borderlessExampleSubTitle" />
-              }
-            >
-              <ContentHolder>
-                <Collapse bordered={false} defaultActiveKey={['1']}>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerOne" />}
-                    key="1"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerTwo" />}
-                    key="2"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={
-                      <IntlMessages id="uiElements.collapse.headerThree" />
-                    }
-                    key="3"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                </Collapse>
-              </ContentHolder>
-            </Box>
-          </Col>
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={<IntlMessages id="uiElements.collapse.accordion" />}
-              subtitle={
-                <IntlMessages id="uiElements.collapse.accordionSubTitle" />
-              }
-            >
-              <ContentHolder>
-                <Collapse accordion>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerOne" />}
-                    key="1"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={<IntlMessages id="uiElements.collapse.headerTwo" />}
-                    key="2"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                  <Panel
-                    header={
-                      <IntlMessages id="uiElements.collapse.headerThree" />
-                    }
-                    key="3"
-                  >
-                    <p>{text}</p>
-                  </Panel>
-                </Collapse>
-              </ContentHolder>
-            </Box>
-          </Col>
+
+          {this.renderGeos(colStyle)}
         </Row>
       </LayoutWrapper>
     );

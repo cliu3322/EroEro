@@ -552,5 +552,7 @@
   "topbar.logout": "Logout",
   "topbar.viewAll": "View All",
   "topbar.viewCart": "View Cart",
-  "topbar.totalPrice": "Total Price"
+  "topbar.totalPrice": "Total Price",
+
+  "uiElements.collapse.ChooseYourCity": "Choose your city!"
 }
