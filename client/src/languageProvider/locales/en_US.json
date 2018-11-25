@@ -554,5 +554,9 @@
   "topbar.viewCart": "View Cart",
   "topbar.totalPrice": "Total Price",
 
-  "uiElements.collapse.ChooseYourCity": "Choose your city!"
+  "uiElements.collapse.ChooseYourCity": "Choose your city!",
+  "sidebar.recordPage": "Record Page",
+  "sidebar.addRecord": "Add Record",
+  "addRecord.name":"Name",
+  "addRecord.enterInfo":"Please enter your information"
 }
