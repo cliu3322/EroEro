@@ -73,15 +73,13 @@ export default class extends Component {
             >
               <ContentHolder>
                 <Input
-                  size="large"
-                  placeholder="large size"
+                  placeholder="exact location"
                   style={{ marginBottom: '15px' }}
                 />
                 <Input
-                  placeholder="default size"
+                  placeholder="zipcode"
                   style={{ marginBottom: '15px' }}
                 />
-                <Input size="small" placeholder="small size" />
               </ContentHolder>
             </Box>
           </Col>

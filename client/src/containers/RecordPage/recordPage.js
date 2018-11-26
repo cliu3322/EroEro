@@ -8,13 +8,13 @@ export default class extends Component {
 
   constructor(props) {
     super(props);
-    const articles = [
+    const records = [
       {
         id: 'a',
         timestamp: 811396800000,
         name: "sddssddssd",
         img: Img1,
-        location: {zipcode: 96859, exactAdd: '', },
+        location: 'location 1',
         tag: {race: 'asian', incall: 1, outcall: 0, Catalog:  'SPA/Agency'},
         Contact: {phone:'222334564',email: ''},
         price:{type: "Over Market price", exact: "Pleace contact the provider"},
@@ -25,22 +25,24 @@ export default class extends Component {
         timestamp: 1108702800000,
         name: "sddssdd",
         img: Img2,
+        location: 'kujhjhj',
         race: 'international spa'
       },]
     this.state = {
-      articles
+      records
     };
   }
   renderArticles() {
-    return this.state.articles.map((article, i) => {
+    return this.state.records.map((records, i) => {
       return (
         <ListItem
-          key={article.id}
+          key={records.id}
           view='list'
           index={i}
-          {...article}
+          {...records}
         />
-      );})}
+      );
+    })}
 
 
   render() {
