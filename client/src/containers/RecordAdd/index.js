@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
-import { Col, Row } from 'antd';
-import Input from '../../components/uielements/input';
-import Async from '../../helpers/asyncComponent';
+
 import PageHeader from '../../components/utility/pageHeader';
 import Box from '../../components/utility/box';
 import LayoutWrapper from '../../components/utility/layoutWrapper.js';
 import ContentHolder from '../../components/utility/contentHolder';
+import Tabs, { TabPane } from '../../components/uielements/tabs';
+import FormUploadImage from './FormUploadImage';
+import FormDescription from './FormDescription';
+import FormReview from './FormReview';
+import FormBasic from './FormBasic';
+import FormLocation from './FormLocation';
 
-import Uppy from '../../components/uielements/uppy';
-import config from "./uppy.config";
-import UppyStyleWrapper from "./uppy.style";
-import IntlMessages from '../../components/utility/intlMessages';
-const Editor = props => (
-  <Async
-    load={import(/* webpackChunkName: "forms-editor" */ '../../components/uielements/editor.js')}
-    componentProps={props}
-  />
-);
+
+import IntlMessages from '../../components/utility/intlMessages'
+
 
 export default class extends Component {
   constructor(props) {
@@ -24,82 +21,58 @@ export default class extends Component {
     this.state = {
       editorState: null,
       loading: false,
-      iconLoading: false
+      iconLoading: false,
+      value: 1,
     };
   }
-  componentDidMount() {
-    Uppy(config);
-  }
+
+  onChange = e => {
+    this.setState({
+      value: e.target.value
+    });
+  };
   render() {
-    const rowStyle = {
-      width: '100%',
-      display: 'flex',
-      flexFlow: 'row wrap'
-    };
-    const colStyle = {
-      marginBottom: '16px'
-    };
-    const gutter = 16;
-    const onEditorStateChange = editorState => {
-      this.setState({ editorState });
-    };
-    const editorOption = {
-      style: { width: '90%', height: '70%' },
-      editorState: this.state.editorState,
-      toolbarClassName: 'home-toolbar',
-      wrapperClassName: 'home-wrapper',
-      editorClassName: 'home-editor',
-      onEditorStateChange: onEditorStateChange,
-    };
+
 
     return (
       <LayoutWrapper>
         <PageHeader>{<IntlMessages id="addRecord.enterInfo" />}</PageHeader>
-        <Row style={rowStyle} gutter={gutter} justify="start">
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={<IntlMessages id="addRecord.name" />}
-              subtitle={<IntlMessages id="forms.input.basicSubTitle" />}
-            >
-              <ContentHolder>
-                <Input placeholder="Basic usage" />
-              </ContentHolder>
+        <Tabs defaultActiveKey="1">
+          <TabPane tab="Basic Info" key="1">
+            <Box title='Basic Info'>
+              <FormBasic />
             </Box>
-          </Col>
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box
-              title={<IntlMessages id="forms.input.variationsTitle" />}
-              subtitle={<IntlMessages id="forms.input.variationsSubtitle" />}
-            >
-              <ContentHolder>
-                <Input
-                  placeholder="exact location"
-                  style={{ marginBottom: '15px' }}
-                />
-                <Input
-                  placeholder="zipcode"
-                  style={{ marginBottom: '15px' }}
-                />
-              </ContentHolder>
+          </TabPane>
+          <TabPane tab="Location" key="2">
+            <Box title='Location'>
+              <FormLocation />
             </Box>
-          </Col>
-        </Row>
-        <Row style={rowStyle} gutter={gutter} justify="start">
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box>
-              <ContentHolder>
-                <UppyStyleWrapper id="uppyHolder" />
-              </ContentHolder>
-            </Box>
-          </Col>
-          <Col md={12} sm={12} xs={24} style={colStyle}>
-            <Box>
-              <ContentHolder>
-                <Editor {...editorOption} />
-              </ContentHolder>
-            </Box>
-          </Col>
-        </Row>
+          </TabPane>
+          <TabPane tab="Pictures" key="3">
+                <Box>
+                  <FormUploadImage />
+                </Box>
+          </TabPane>
+          <TabPane tab="Description(optional)" key="4">
+              <Box title='Description'>
+                <ContentHolder>
+                  <Box>
+                    <FormDescription />
+                  </Box>
+                </ContentHolder>
+              </Box>
+          </TabPane>
+          <TabPane tab="Review and Complete" key="5">
+              <Box title='Review your post'>
+                <ContentHolder>
+                  <Box>
+                    <FormReview />
+                  </Box>
+                </ContentHolder>
+              </Box>
+          </TabPane>
+        </Tabs>
+
       </LayoutWrapper>
     );
   }
