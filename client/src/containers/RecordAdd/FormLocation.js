@@ -1,18 +1,71 @@
 import React, { Component } from 'react';
-import Input from '../../components/uielements/input';
+import Input, {InputGroup} from '../../components/uielements/input';
 import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
 import Radio, { RadioGroup } from '../../components/uielements/radio';
 import Select, { SelectOption } from '../../components/uielements/select';
 import ContentHolder from '../../components/utility/contentHolder';
+import { Cascader } from 'antd';
+import Async from "../../helpers/asyncComponent";
+//import BasicMarker from "./maps/basicMarker";
+
+
+
+const LeafletMapWithMarkerCluster = props => (
+  <Async
+    load={import(/* webpackChunkName: "LeafletMapWithMarkerCluster" */ "./maps/mapWithMarkerCluster.js")}
+    componentProps={props}
+    componentArguement={"leafletMap"}
+  />
+);
 
 const FormItem = Form.Item;
 const Option = SelectOption;
 
+const options = [{
+  value: 'zhejiang',
+  label: 'Zhejiang',
+  children: [{
+    value: 'hangzhou',
+    label: 'Hangzhou',
+    children: [{
+      value: 'xihu',
+      label: 'West Lake',
+    }, {
+      value: 'xiasha',
+      label: 'Xia Sha',
+    }],
+  }],
+}, {
+  value: 'jiangsu',
+  label: 'Jiangsu',
+  children: [{
+    value: 'nanjing',
+    label: 'Nanjing',
+    children: [{
+      value: 'zhonghuamen',
+      label: 'Zhong Hua men',
+    }],
+  }],
+}];
 
 class FormLocation extends Component {
-  state = {
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      contactOptions: 1,
+    };
+  }
+
+  onChange =  (value, selectedOptions) => {
+    this.setState({
+      //contactOptions: value.target.value,
+    },() => {});
+  }
+
+  filter = (inputValue, path) => {
+    return (path.some(option => (option.label).toLowerCase().indexOf(inputValue.toLowerCase()) > -1));
+  }
 
   render() {
     const radioStyle = {
@@ -24,48 +77,18 @@ class FormLocation extends Component {
     return (
       <Form>
         <FormItem label='Choose your City'>
-            <Select
-              defaultValue="US"
-              onChange={this.handleChange}
-              style={{ width: '120px' }}
-            >
-              <Option value="US">US</Option>
-              <Option value="lucy">Lucy</Option>
-              <Option value="disabled" disabled>
-                Disabled
-              </Option>
-              <Option value="Yiminghe">yiminghe</Option>
-            </Select>
-            <Select
-              defaultValue="CA"
-              onChange={this.handleChange}
-              style={{ width: '120px' }}
-            >
-              <Option value="CA">CA</Option>
-              <Option value="lucy">Lucy</Option>
-              <Option value="disabled" disabled>
-                Disabled
-              </Option>
-              <Option value="Yiminghe">yiminghe</Option>
-            </Select>
-            <Select
-              defaultValue="LA"
-              onChange={this.handleChange}
-              style={{ width: '120px' }}
-            >
-              <Option value="LA">LA</Option>
-              <Option value="lucy">Lucy</Option>
-              <Option value="disabled" disabled>
-                Disabled
-              </Option>
-              <Option value="Yiminghe">yiminghe</Option>
-            </Select>
+        <Cascader
+        options={options}
+        onChange={this.onChange}
+        placeholder="Please select"
+        showSearch={ this.filter }
+        />
         </FormItem>
         <FormItem label='Choose one of following'>
-          <RadioGroup value={this.state.value}  onChange={this.onChange}>
+          <RadioGroup value={this.state.contactOptions} onChange={this.onChange}>
             <ContentHolder>
               <Radio value={1} style={radioStyle}>Exact Address
-              {this.state.value === 1 ? (
+              {this.state.contactOptions === 1 ? (
                 <Input
                   style={{
                     width: 300,
@@ -74,7 +97,7 @@ class FormLocation extends Component {
                   }}
                 />
               ) : null}
-              {this.state.value === 1 ? (
+              {this.state.contactOptions === 1 ? (
                 <Button type="primary" htmlType="submit">
                   Verify
                 </Button>
@@ -84,7 +107,7 @@ class FormLocation extends Component {
             <ContentHolder>
               <Radio value={2} style={radioStyle}>
                 ZIP Code
-                {this.state.value === 2 ? (
+                {this.state.contactOptions === 2 ? (
                   <Input placeholder="zip code" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
                 ) : null}
               </Radio>
@@ -92,7 +115,7 @@ class FormLocation extends Component {
             <ContentHolder>
               <Radio value={3} style={radioStyle}>
                 Area
-                {this.state.value === 3 ? (
+                {this.state.contactOptions === 3 ? (
                   <Input placeholder="Area Name" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
                 ) : null}
               </Radio>
@@ -100,7 +123,7 @@ class FormLocation extends Component {
             <ContentHolder>
               <Radio value={4} style={radioStyle}>
                 Drop or search on the map
-                {this.state.value === 4 ? (
+                {this.state.contactOptions === 4 ? (
                   <Input placeholder="Area Name" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
                 ) : null}
               </Radio>
@@ -112,7 +135,13 @@ class FormLocation extends Component {
             Next
           </Button>
         </FormItem>
+        <FormItem>
+          <ContentHolder>
+          <LeafletMapWithMarkerCluster/>
+          </ContentHolder>
+        </FormItem>
       </Form>
+
     );
   }
 }

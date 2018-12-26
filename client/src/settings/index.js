@@ -25,4 +25,11 @@ const AlgoliaSearchConfig = {
   apiKey: ''
 };
 
-export { siteConfig, language, themeConfig, jwtConfig, AlgoliaSearchConfig};
+const mapboxConfig = {
+  tileLayer: '',
+  maxZoom: '',
+  defaultZoom: '',
+  center: []
+};
+
+export { siteConfig, language, themeConfig, jwtConfig, AlgoliaSearchConfig, mapboxConfig};

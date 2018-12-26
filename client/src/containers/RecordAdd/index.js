@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import PageHeader from '../../components/utility/pageHeader';
 import Box from '../../components/utility/box';
 import LayoutWrapper from '../../components/utility/layoutWrapper.js';
@@ -16,45 +15,29 @@ import IntlMessages from '../../components/utility/intlMessages'
 
 
 export default class extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      editorState: null,
-      loading: false,
-      iconLoading: false,
-      value: 1,
-    };
-  }
 
-  onChange = e => {
-    this.setState({
-      value: e.target.value
-    });
-  };
   render() {
-
-
     return (
       <LayoutWrapper>
         <PageHeader>{<IntlMessages id="addRecord.enterInfo" />}</PageHeader>
         <Tabs defaultActiveKey="1">
           <TabPane tab="Basic Info" key="1">
-            <Box title='Basic Info'>
+            <Box>
               <FormBasic />
             </Box>
           </TabPane>
           <TabPane tab="Location" key="2">
-            <Box title='Location'>
+            <Box>
               <FormLocation />
             </Box>
           </TabPane>
           <TabPane tab="Pictures" key="3">
-                <Box>
-                  <FormUploadImage />
-                </Box>
+            <Box>
+              <FormUploadImage />
+            </Box>
           </TabPane>
           <TabPane tab="Description(optional)" key="4">
-              <Box title='Description'>
+              <Box>
                 <ContentHolder>
                   <Box>
                     <FormDescription />
