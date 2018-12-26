@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Input, {InputGroup} from '../../components/uielements/input';
+import Input from '../../components/uielements/input';
 import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
 import Radio, { RadioGroup } from '../../components/uielements/radio';
-import Select, { SelectOption } from '../../components/uielements/select';
 import ContentHolder from '../../components/utility/contentHolder';
 import { Cascader } from 'antd';
 import Async from "../../helpers/asyncComponent";
@@ -20,7 +19,6 @@ const LeafletMapWithMarkerCluster = props => (
 );
 
 const FormItem = Form.Item;
-const Option = SelectOption;
 
 const options = [{
   value: 'zhejiang',

@@ -3,8 +3,9 @@ import 'leaflet';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+import { OpenStreetMapProvider } from 'leaflet-geosearch';
 
-import { mapboxConfig } from '../../../settings';
+
 import { markerCluster } from './config';
 import LeafletMapWrapper from './map.style';
 
@@ -12,6 +13,11 @@ export default class extends Component {
   constructor(props) {
     super(props);
     this.mountMap = this.mountMap.bind(this);
+
+    const provider = new OpenStreetMapProvider();
+    const results = provider.search({ query: "Aiea" })
+    .then(res => console.log(res));
+
   }
   mountMap(element) {
     if (!element) return;

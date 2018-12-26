@@ -7,10 +7,23 @@ import Button from '../../components/uielements/button';
 import authAction from '../../redux/auth/actions';
 import IntlMessages from '../../components/utility/intlMessages';
 import SignInStyleWrapper from './signin.style';
+import publicIP from 'react-native-public-ip';
 
 const { login } = authAction;
 
 class SignIn extends Component {
+  constructor(props) {
+    super(props);
+    publicIP()
+      .then(ip => {
+        console.log(ip);
+        // '47.122.71.234'
+      })
+      .catch(error => {
+        console.log(error);
+        // 'Unable to get IP address.'
+      });
+  }
   state = {
     redirectToReferrer: false,
   };

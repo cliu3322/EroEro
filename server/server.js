@@ -68,10 +68,12 @@ mongoose.connect(Config.database,{ useNewUrlParser: true } ,(mongooseErr) => {
 });
 
 app.get('/', (req, res) => {
+
 	res.json({ status: 'OK' });
 });
 
 app.post('/api/login', (req, res) => {
+	console.log(req.headers['x-forwarded-for'] || req.connection.remoteAddress);
 	const { username, password } = req.body;
 	const response = {};
 	// You can use DB checking here
