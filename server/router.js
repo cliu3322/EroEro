@@ -1,6 +1,7 @@
 import express from 'express';
 import multer from 'multer';
 import mongoose from 'mongoose';
+import City from './models/City';
 
 
 export default function (app) {
@@ -30,6 +31,28 @@ export default function (app) {
 
   apiRoutes.post("/uploadFile", upload.single('file'), function (req, res, next) {
 
+  });
+
+  apiRoutes.get('/getCXGCities', function (req, res) {
+
+    console.log('asdfsdf');
+
+    City.find({ }).exec(function(err, files) {
+        if (files) {
+
+          res.status(201).json({
+
+        allFilesDetail:files
+
+      });
+        } else {
+          res.status(204).json({
+
+        allFilesDetail:files
+
+      });
+        }
+      });
   });
 
 

@@ -7,14 +7,30 @@ const customHeader = () => ({
 });
 
 const base = (method, url, data = {}) => {
-  return fetch(`${jwtConfig.fetchUrl}${url}`, {
-    method,
-    headers: customHeader(),
-    body: JSON.stringify(data),
-  })
-    .then(response => response.json())
-    .then(res => res)
-    .catch(error => ({ error: 'Server Error' }));
+  switch(method) {
+    case 'post':
+      return fetch(`${jwtConfig.fetchUrl}${url}`, {
+        method,
+        headers: customHeader(),
+        body: JSON.stringify(data),
+      })
+        .then(response => response.json())
+        .then(res => res)
+        .catch(error => ({ error: error }));
+        break;
+    case 'get':
+      return fetch(`${jwtConfig.fetchUrl}${url}`, {
+        method,
+        headers: customHeader(),
+      })
+        .then(response => response.json())
+        .then(res => res)
+        .catch(error => ({ error: error }));
+      break;
+    default:
+      // code block
+  }
+
 };
 
 const SuperFetch = {};

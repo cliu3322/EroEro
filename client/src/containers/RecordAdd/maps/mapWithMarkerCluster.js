@@ -16,18 +16,18 @@ export default class extends Component {
 
     const provider = new OpenStreetMapProvider();
     const results = provider.search({ query: "Aiea" })
-    .then(res => console.log(res));
+    //.then(res => console.log(res));
 
   }
   mountMap(element) {
     if (!element) return;
     const { L } = window;
-    var map = L.map(element).setView([21.3069,-157.8583], 11);
+    var map = L.map(element).setView([40.7128,-74.0060], 11);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([21.3069,-157.8583]).addTo(map)
+    L.marker([40.7128,-74.0060]).addTo(map)
         .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
         .openPopup();
 
