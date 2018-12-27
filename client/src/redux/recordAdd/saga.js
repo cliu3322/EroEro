@@ -2,11 +2,19 @@ import { all, takeEvery, put } from 'redux-saga/effects';
 import actions from './actions';
 import fake from './fake';
 import fakeinitdata from '../../containers/Ecommerce/cart/config';
+import SuperFetch from '../../helpers/superFetch';
+
+const getCities =  async () => {
+     const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
+     return response;
+  };
+
 
 export function* changedCard() {
   yield takeEvery(actions.CHANGE_CARDS, function*() {});
 }
 export function* initData() {
+  console.log('saga init')
   let fakeData = fakeinitdata;
   if (fakeinitdata.productQuantity.length === 0) {
     fakeData = fake;

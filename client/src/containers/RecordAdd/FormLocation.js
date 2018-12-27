@@ -8,8 +8,38 @@ import ContentHolder from '../../components/utility/contentHolder';
 import { Cascader } from 'antd';
 import Async from "../../helpers/asyncComponent";
 //import BasicMarker from "./maps/basicMarker";
-
 import invoiceActions from '../../redux/recordAdd/actions';
+
+import SuperFetch from '../../helpers/superFetch';
+
+
+const options = [{
+  value: 'zhejiang',
+  label: 'Zhejiang',
+  children: [{
+    value: 'hangzhou',
+    label: 'Hangzhou',
+    children: [{
+      value: 'xihu',
+      label: 'West Lake',
+    }, {
+      value: 'xiasha',
+      label: 'Xia Sha',
+      disabled: true,
+    }],
+  }],
+}, {
+  value: 'jiangsu',
+  label: 'Jiangsu',
+  children: [{
+    value: 'nanjing',
+    label: 'Nanjing',
+    children: [{
+      value: 'zhonghuamen',
+      label: 'Zhong Hua men',
+    }],
+  }],
+}];
 
 const LeafletMapWithMarkerCluster = props => (
   <Async
@@ -30,34 +60,16 @@ class FormLocation extends Component {
   }
 
   componentDidMount() {
-    //console.log(this.props);
-    //
-    //  this.state.cityOptions.push({
-    //   value: 'zhejiang',
-    //   label: 'Zhejiang',
-    //   children: [{
-    //     value: 'hangzhou',
-    //     label: 'Hangzhou',
-    //     children: [{
-    //       value: 'xihu',
-    //       label: 'West Lake',
-    //     }, {
-    //       value: 'xiasha',
-    //       label: 'Xia Sha',
-    //     }],
-    //   }],
-    // }, {
-    //   value: 'jiangsu',
-    //   label: 'Jiangsu',
-    //   children: [{
-    //     value: 'nanjing',
-    //     label: 'Nanjing',
-    //     children: [{
-    //       value: 'zhonghuamen',
-    //       label: 'Zhong Hua men',
-    //     }],
-    //   }],
-    // });
+
+    const getCities =  async () => {
+         const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
+         console.log(response);
+         this.setState({
+           cityOptions: options,
+         },() => {});
+         return response;
+      };
+    getCities();
   }
 
   onChangeRadio =  (value, selectedOptions) => {
@@ -82,7 +94,7 @@ class FormLocation extends Component {
       <Form>
         <FormItem label='Choose your City'>
         <Cascader
-        options={this.props.cityOptions}
+        options={this.state.cityOptions}
         onChange={this.onChange}
         placeholder="Please select"
         showSearch={ this.filter }
@@ -144,7 +156,7 @@ class FormLocation extends Component {
 
 
 function mapStateToProps(state) {
-  console.log(state)
+  console.log(state.RecordAdd)
   return {
     cityOptions:state.RecordAdd.cityOptions,
   };

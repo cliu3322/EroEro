@@ -17,7 +17,6 @@ const base = (method, url, data = {}) => {
         .then(response => response.json())
         .then(res => res)
         .catch(error => ({ error: error }));
-        break;
     case 'get':
       return fetch(`${jwtConfig.fetchUrl}${url}`, {
         method,
@@ -26,9 +25,6 @@ const base = (method, url, data = {}) => {
         .then(response => response.json())
         .then(res => res)
         .catch(error => ({ error: error }));
-      break;
-    default:
-      // code block
   }
 
 };

@@ -1,14 +1,9 @@
 import clone from "clone";
 import actions from "./actions";
-import SuperFetch from '../../helpers/superFetch';
-
-const getCities =  async userInfo => {
-    return await SuperFetch.get('getCXGCities');
-  };
 
 
 
-const initState = getCities();
+const initState =[];
 export default (state = initState, action) => {
   switch (action.type) {
     case actions.INIT_DATA:
