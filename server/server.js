@@ -100,32 +100,8 @@ app.post('/api/secret/test', (req, res) => {
 	});
 });
 
-app.get('/api/getCXGCities', (req, res) => {
-	console.log('asds');
-	res.json({ status: 'OK' });
-});
 
-app.get('/api/getCXGCities1', function (req, res, err) {
 
-	console.log(err);
-
-	City.find({ }).exec(function(err, files) {
-			if (files) {
-
-				res.status(201).json({
-
-			allFilesDetail:files
-
-		});
-			} else {
-				res.status(204).json({
-
-			allFilesDetail:files
-
-		});
-			}
-		});
-});
 
 
 app.listen(port, () => {

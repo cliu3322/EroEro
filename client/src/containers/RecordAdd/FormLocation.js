@@ -13,34 +13,6 @@ import invoiceActions from '../../redux/recordAdd/actions';
 import SuperFetch from '../../helpers/superFetch';
 
 
-const options = [{
-  value: 'zhejiang',
-  label: 'Zhejiang',
-  children: [{
-    value: 'hangzhou',
-    label: 'Hangzhou',
-    children: [{
-      value: 'xihu',
-      label: 'West Lake',
-    }, {
-      value: 'xiasha',
-      label: 'Xia Sha',
-      disabled: true,
-    }],
-  }],
-}, {
-  value: 'jiangsu',
-  label: 'Jiangsu',
-  children: [{
-    value: 'nanjing',
-    label: 'Nanjing',
-    children: [{
-      value: 'zhonghuamen',
-      label: 'Zhong Hua men',
-    }],
-  }],
-}];
-
 const LeafletMapWithMarkerCluster = props => (
   <Async
     load={import(/* webpackChunkName: "LeafletMapWithMarkerCluster" */ "./maps/mapWithMarkerCluster.js")}
@@ -65,7 +37,7 @@ class FormLocation extends Component {
          const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
          console.log(response);
          this.setState({
-           cityOptions: options,
+           cityOptions: response.allcities,
          },() => {});
          return response;
       };

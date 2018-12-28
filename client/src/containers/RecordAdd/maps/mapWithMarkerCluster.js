@@ -14,8 +14,8 @@ export default class extends Component {
     super(props);
     this.mountMap = this.mountMap.bind(this);
 
-    const provider = new OpenStreetMapProvider();
-    const results = provider.search({ query: "Aiea" })
+    //const provider = new OpenStreetMapProvider();
+    //const results = provider.search({ query: "Aiea" })
     //.then(res => console.log(res));
 
   }

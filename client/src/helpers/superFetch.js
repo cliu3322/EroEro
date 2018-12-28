@@ -25,6 +25,8 @@ const base = (method, url, data = {}) => {
         .then(response => response.json())
         .then(res => res)
         .catch(error => ({ error: error }));
+    default:
+      return;
   }
 
 };

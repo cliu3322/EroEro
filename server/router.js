@@ -1,7 +1,11 @@
 import express from 'express';
 import multer from 'multer';
 import mongoose from 'mongoose';
-import City from './models/City';
+import Cities from './models/City';
+
+
+var getCXGCitiesQuery = require('./queries/getCXGCities.js');
+
 
 
 export default function (app) {
@@ -34,30 +38,25 @@ export default function (app) {
   });
 
   apiRoutes.get('/getCXGCities', function (req, res) {
-
-    console.log('asdfsdf');
-
-    City.find({ }).exec(function(err, files) {
-        if (files) {
+    console.log(getCXGCitiesQuery);
+    Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
+      console.log(cities)
+        if (cities) {
 
           res.status(201).json({
 
-        allFilesDetail:files
+        allcities:cities
 
       });
         } else {
           res.status(204).json({
 
-        allFilesDetail:files
+        allcities:cities
 
       });
         }
       });
   });
-
-
-
-
 
   app.use('/api', apiRoutes);
 };
