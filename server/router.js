@@ -38,7 +38,7 @@ export default function (app) {
   });
 
   apiRoutes.get('/getCXGCities', function (req, res) {
-    console.log(getCXGCitiesQuery);
+  
     Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
       console.log(cities)
         if (cities) {

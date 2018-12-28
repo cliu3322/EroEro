@@ -1,23 +1,36 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import 'leaflet';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import { OpenStreetMapProvider } from 'leaflet-geosearch';
 
+import actions from '../../../redux/recordAdd/actions.js';
+
 
 import { markerCluster } from './config';
 import LeafletMapWrapper from './map.style';
 
-export default class extends Component {
+export class LeafletMap extends Component {
   constructor(props) {
     super(props);
     this.mountMap = this.mountMap.bind(this);
-
+    console.log(props)
     //const provider = new OpenStreetMapProvider();
     //const results = provider.search({ query: "Aiea" })
     //.then(res => console.log(res));
 
+  }
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
+      console.log('UNSAFE_componentWillUpdate');
+      nextState.open = nextProps.open;
+      console.log(nextState.open);
+  }
+  componentWillUpdate(nextProps, nextState) {
+      console.log('componentWillUpdate');
+      nextState.open = nextProps.open;
+      console.log(nextState.open)
   }
   mountMap(element) {
     if (!element) return;
@@ -50,6 +63,7 @@ export default class extends Component {
   render() {
     return (
       <LeafletMapWrapper className="isoLeafletMap">
+      {this.props.open}
         <div
           id="basic-map-marker"
           style={{ height: '400px', width: '100%' }}
@@ -59,3 +73,12 @@ export default class extends Component {
     );
   }
 }
+
+
+function mapStateToProps(state) {
+  console.log(state);
+  return {
+  };
+}
+
+export default connect(mapStateToProps,{actions})(LeafletMap);

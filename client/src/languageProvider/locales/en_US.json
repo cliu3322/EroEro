@@ -556,7 +556,7 @@
 
   "uiElements.collapse.ChooseYourCity": "Choose your city!",
   "sidebar.recordPage": "Record Page",
-  "sidebar.addRecord": "Add Record",
+  "sidebar.addRecord": "POST AD",
   "addRecord.name":"Name",
   "addRecord.enterInfo":"Please enter your information"
 }

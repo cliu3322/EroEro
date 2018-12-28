@@ -5,6 +5,8 @@ const actions = {
   UPDATE_DATA_SAGA: 'ECOMMERCE_UPDATE_DATA_SAGA',
   CHANGE_VIEW: 'ECOMMERCE_CHANGE_VIEW',
   VIEW_TOPBAR_CART: 'ECOMMERCE_VIEW_TOPBAR_CART',
+
+  UPDATE_ADDRESS: 'POSTAD_UPDATE_ADDRESS',
   initData: () => ({ type: actions.INIT_DATA_SAGA }),
   changeView: view => ({
     type: actions.CHANGE_VIEW,
@@ -38,6 +40,10 @@ const actions = {
         productQuantity
       });
     };
-  }
+  },
+  updateAddress: address => ({
+    type: actions.UPDATE_ADDRESS,
+    address
+  }),
 };
 export default actions;

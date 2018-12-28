@@ -8,18 +8,20 @@ import ContentHolder from '../../components/utility/contentHolder';
 import { Cascader } from 'antd';
 import Async from "../../helpers/asyncComponent";
 //import BasicMarker from "./maps/basicMarker";
-import invoiceActions from '../../redux/recordAdd/actions';
+import actions from '../../redux/recordAdd/actions';
 
 import SuperFetch from '../../helpers/superFetch';
 
+const { updateAddress } = actions;
 
-const LeafletMapWithMarkerCluster = props => (
+const LeafletMapWithMarkerCluster = props =>{
+  return (
   <Async
     load={import(/* webpackChunkName: "LeafletMapWithMarkerCluster" */ "./maps/mapWithMarkerCluster.js")}
     componentProps={props}
     componentArguement={"leafletMap"}
   />
-);
+);}
 
 const FormItem = Form.Item;
 
@@ -28,6 +30,7 @@ class FormLocation extends Component {
     super(props);
     this.state = {
       contactOptions: 1,
+      locationQuery:1,
     };
   }
 
@@ -35,7 +38,6 @@ class FormLocation extends Component {
 
     const getCities =  async () => {
          const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
-         console.log(response);
          this.setState({
            cityOptions: response.allcities,
          },() => {});
@@ -53,6 +55,15 @@ class FormLocation extends Component {
 
   filter = (inputValue, path) => {
     return (path.some(option => (option.label).toLowerCase().indexOf(inputValue.toLowerCase()) > -1));
+  }
+
+  onVerify =  (value) => {
+    this.setState({
+      locationQuery: 2,
+    },() => {});
+    console.log(this.state.locationQuery)
+    this.props.updateAddress(2)
+    LeafletMapWithMarkerCluster(this.state.locationQuery);
   }
 
   render() {
@@ -86,7 +97,7 @@ class FormLocation extends Component {
                 />
               ) : null}
               {this.state.contactOptions === 1 ? (
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit" onClick={this.onVerify}>
                   Verify
                 </Button>
               ) : null}
@@ -114,10 +125,11 @@ class FormLocation extends Component {
           <Button type="primary" htmlType="submit">
             Next
           </Button>
+          {this.state.locationQuery}
         </FormItem>
         <FormItem>
           <ContentHolder>
-          <LeafletMapWithMarkerCluster/>
+          <LeafletMapWithMarkerCluster open={this.state.locationQuery}/>
           </ContentHolder>
         </FormItem>
       </Form>
@@ -128,13 +140,13 @@ class FormLocation extends Component {
 
 
 function mapStateToProps(state) {
-  console.log(state.RecordAdd)
+  //console.log(state.RecordAdd)
   return {
     cityOptions:state.RecordAdd.cityOptions,
   };
 }
 
-export default connect(mapStateToProps,invoiceActions)(FormLocation);
+export default connect(mapStateToProps,{ updateAddress } )(FormLocation);
 
 //
 // const WrappedFormLocation = Form.create()(FormLocation);

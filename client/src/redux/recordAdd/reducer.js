@@ -29,6 +29,11 @@ export default (state = initState, action) => {
         products: clone(action.products),
         productQuantity: clone(action.productQuantity)
       };
+    case actions.UPDATE_ADDRESS:
+      return {
+        ...state,
+        address: action.address
+      };
     default:
       return state;
   }
