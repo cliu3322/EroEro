@@ -1,41 +1,29 @@
-import { all, takeEvery, put } from 'redux-saga/effects';
+import { all, takeEvery, call } from 'redux-saga/effects';
 import actions from './actions';
-import fake from './fake';
-import fakeinitdata from '../../containers/Ecommerce/cart/config';
 import SuperFetch from '../../helpers/superFetch';
 
-const getCities =  async () => {
-     const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
-     return response;
-  };
-
-
-export function* changedCard() {
-  yield takeEvery(actions.CHANGE_CARDS, function*() {});
+const onPostRequest = async (data) => {
+  return await SuperFetch.post('reocrd/basic',data)
 }
-export function* initData() {
-  console.log('saga init')
-  let fakeData = fakeinitdata;
-  if (fakeinitdata.productQuantity.length === 0) {
-    fakeData = fake;
+
+function* addBasic({payload}) {
+  console.log('saga')
+  const { data } = payload;
+  try {
+    const addResult = yield call(
+      onPostRequest,
+      data
+    );
+    console.log(addResult)
+    // if (addResult) {
+    //   console.log(addResult)
+    // } else {
+    //   yield put(actions.addpaperSuccess());
+    // }
+  } catch (error) {
+    console.log(error);
   }
-  yield put({
-    type: actions.INIT_DATA,
-    payload: fakeData
-  });
 }
-export function* updateData({ products, productQuantity }) {
-  localStorage.setItem('cartProductQuantity', JSON.stringify(productQuantity));
-  localStorage.setItem('cartProducts', JSON.stringify(products));
-  yield put({
-    type: actions.UPDATE_DATA,
-    products,
-    productQuantity
-  });
-}
-export default function*() {
-  yield all([
-    takeEvery(actions.INIT_DATA_SAGA, initData),
-    takeEvery(actions.UPDATE_DATA_SAGA, updateData)
-  ]);
+export default function* rootSaga() {
+  yield all([takeEvery(actions.ADD_BASIC, addBasic)]);
 }

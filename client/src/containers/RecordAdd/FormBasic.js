@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
 import { Form, Input, Divider, Checkbox, Select,} from 'antd';
 import Button from '../../components/uielements/button';
+import actions from '../../redux/recordAdd/actions.js';
+
+const { addBasic } = actions;
 
 const formItemLayout = {
   labelCol: { span: 4 },
@@ -24,10 +28,11 @@ class FormBasic extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.props.form.getFieldsValue());
+
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        console.log(this.props.form.getFieldsValue());
+        this.props.addBasic(this.props.form.getFieldsValue())
       }
     });
   }
@@ -207,5 +212,12 @@ class FormBasic extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  //console.log(state)
+  return {
+  };
+}
+
 const WrappedFormBasic = Form.create()(FormBasic);
-export default WrappedFormBasic;
+
+export default connect(mapStateToProps, {addBasic})(WrappedFormBasic);
