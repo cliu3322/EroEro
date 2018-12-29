@@ -4,34 +4,38 @@ import Input from '../../components/uielements/input';
 import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
 import Radio, { RadioGroup } from '../../components/uielements/radio';
-import ContentHolder from '../../components/utility/contentHolder';
-import { Cascader } from 'antd';
-import Async from "../../helpers/asyncComponent";
-//import BasicMarker from "./maps/basicMarker";
+import { Cascader,  Row, Col  } from 'antd';
 import actions from '../../redux/recordAdd/actions';
 
 import SuperFetch from '../../helpers/superFetch';
 
+
+import 'leaflet';
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+import { OpenStreetMapProvider } from 'leaflet-geosearch';
+
+
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
+
 const { updateAddress } = actions;
 
-const LeafletMapWithMarkerCluster = props =>{
-  return (
-  <Async
-    load={import(/* webpackChunkName: "LeafletMapWithMarkerCluster" */ "./maps/mapWithMarkerCluster.js")}
-    componentProps={props}
-    componentArguement={"leafletMap"}
-  />
-);}
 
 const FormItem = Form.Item;
+const provider = new OpenStreetMapProvider();
 
 class FormLocation extends Component {
   constructor(props) {
     super(props);
     this.state = {
       contactOptions: 1,
-      locationQuery:1,
+      locationQuery:'',
+      markers:[],
+      mapCenter:[51.505, -0.09],
+      city:[],
     };
+    //this.mountMap = this.mountMap.bind(this);
   }
 
   componentDidMount() {
@@ -46,8 +50,27 @@ class FormLocation extends Component {
     getCities();
   }
 
+
+  onChange =(value, selectedOptions) => {
+    //console.log(value, selectedOptions);
+    this.setState({
+      city: value,
+    },() => {
+      //console.log(this.state.city[2] + ' ' +this.state.city[1]);
+      provider.search({ query: this.state.city[2] + ' ' +this.state.city[1]})
+        .then(res => {
+          if(res.length>0) {
+            this.setState({
+                mapCenter:[res[0].y,res[0].x],
+            });
+          }
+        });
+      });
+
+  }
+
   onChangeRadio =  (value, selectedOptions) => {
-    console.log(value.target.value)
+    //console.log(value.target.value)
     this.setState({
       contactOptions: value.target.value,
     },() => {});
@@ -57,13 +80,20 @@ class FormLocation extends Component {
     return (path.some(option => (option.label).toLowerCase().indexOf(inputValue.toLowerCase()) > -1));
   }
 
-  onVerify =  (value) => {
-    this.setState({
-      locationQuery: 2,
-    },() => {});
-    console.log(this.state.locationQuery)
-    this.props.updateAddress(2)
-    LeafletMapWithMarkerCluster(this.state.locationQuery);
+  onVerify =  () => {
+
+    provider.search({ query: this.state.locationQuery+' ' +this.state.city[2] + ' ' +this.state.city[1]})
+    .then(res => {
+      console.log( this.state.locationQuery+' ' +this.state.city[2] + ' ' +this.state.city[1])
+      console.log(res)
+      if(res.length>0) {
+        this.setState({
+            markers:[[res[0].y,res[0].x]],
+            mapCenter:[res[0].y,res[0].x],
+        });
+      }
+    });
+
   }
 
   render() {
@@ -83,43 +113,53 @@ class FormLocation extends Component {
         showSearch={ this.filter }
         />
         </FormItem>
+
         <FormItem label='Choose one of following'>
-          <RadioGroup value={this.state.contactOptions} onChange={this.onChangeRadio}>
-            <ContentHolder>
-              <Radio value={1} style={radioStyle}>Exact Address
-              {this.state.contactOptions === 1 ? (
-                <Input
-                  style={{
-                    width: 300,
-                    marginLeft: 10,
-                    marginRight: 10
-                  }}
-                />
+          <Row>
+            <Col span={6}>
+              <RadioGroup value={this.state.contactOptions} onChange={this.onChangeRadio}>
+                <Radio value={1} style={radioStyle}>Address
+                </Radio>
+                <Radio value={2} style={radioStyle}>
+                  Click the map to choose the location
+                </Radio>
+              </RadioGroup>
+            </Col>
+            <Col span={12}>
+              {this.state.contactOptions === 2 ? (
+                <Input placeholder="zip code" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
               ) : null}
               {this.state.contactOptions === 1 ? (
-                <Button type="primary" htmlType="submit" onClick={this.onVerify}>
-                  Verify
-                </Button>
+                <div>
+                  <Row>
+                    <Col span={24}>
+                    <Input
+                      onChange={event => this.setState({ locationQuery: event.target.value })}
+                      placeholder="Enter your address or area or zipcode"
+                    />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col span={24}>
+                    <h4>If it didn't find any record, try to replace apt/unit to #</h4>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col span={24}>
+                    <h4>   {this.state.city[2]} {this.state.city[1]}</h4>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col span={2}>
+                    <Button type="primary" htmlType="submit" onClick={this.onVerify}>
+                      Verify
+                    </Button>
+                    </Col>
+                  </Row>
+                </div>
               ) : null}
-              </Radio>
-            </ContentHolder>
-            <ContentHolder>
-              <Radio value={2} style={radioStyle}>
-                ZIP Code
-                {this.state.contactOptions === 2 ? (
-                  <Input placeholder="zip code" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
-                ) : null}
-              </Radio>
-            </ContentHolder>
-            <ContentHolder>
-              <Radio value={3} style={radioStyle}>
-                Area
-                {this.state.contactOptions === 3 ? (
-                  <Input placeholder="Area Name" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
-                ) : null}
-              </Radio>
-            </ContentHolder>
-          </RadioGroup>
+            </Col>
+          </Row>
         </FormItem>
         <FormItem>
           <Button type="primary" htmlType="submit">
@@ -128,9 +168,22 @@ class FormLocation extends Component {
           {this.state.locationQuery}
         </FormItem>
         <FormItem>
-          <ContentHolder>
-          <LeafletMapWithMarkerCluster open={this.state.locationQuery}/>
-          </ContentHolder>
+            <Map style={{ height: '400px', width: '100%' }}
+              center={this.state.mapCenter}
+              zoom={13}
+              >
+              <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+              />
+              {this.state.markers.map((position, idx) =>
+         <Marker key={`marker-${idx}`} position={position}>
+         <Popup>
+           <span>A pretty CSS3 popup. <br/> Easily customizable.</span>
+         </Popup>
+       </Marker>
+       )}
+            </Map>
         </FormItem>
       </Form>
 

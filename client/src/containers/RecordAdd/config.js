@@ -1,16 +1,17 @@
 const config = {
+  id:'photo',
   target: '#uppyHolder',
   endpoint: 'fakeServer',
   DashboardInline: true,
-  Webcam: true,
-  GoogleDrive: true,
-  Dropbox: true,
-  Instagram: true,
+  Webcam: false,
+  GoogleDrive: false,
+  Dropbox: false,
+  Instagram: false,
   autoProceed: false,
   restrictions: {
     maxFileSize: 1000000,
-    maxNumberOfFiles: 3,
-    minNumberOfFiles: 2,
+    maxNumberOfFiles: 10,
+    minNumberOfFiles: 1,
     allowedFileTypes: ['image/*', 'video/*']
   },
   metaFields: [

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {
-  Form, Input, Button,Divider, Checkbox, Row, Col, Select,
-} from 'antd';
+import { Form, Input, Divider, Checkbox, Select,} from 'antd';
+import Button from '../../components/uielements/button';
 
 const formItemLayout = {
   labelCol: { span: 4 },
@@ -11,7 +10,8 @@ const formTailLayout = {
   labelCol: { span: 4 },
   wrapperCol: { span: 8, offset: 4 },
 };
-class DynamicRule extends Component {
+
+class FormBasic extends Component {
 
   constructor(props) {
     super(props);
@@ -21,16 +21,17 @@ class DynamicRule extends Component {
     //console.log(this.state.contactOptions)
   }
 
-  check = () => {
-    console.log('check')
-    this.props.form.validateFields(
-      (err) => {
-        if (!err) {
-          console.info('success');
-        }
-      },
-    );
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.props.form.getFieldsValue());
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        console.log('Received values of form: ', values);
+      }
+    });
   }
+
   onChange = (checkedValues) =>{
     this.setState({
       contactOptions: checkedValues,
@@ -61,7 +62,7 @@ class DynamicRule extends Component {
     ];
 
     return (
-      <div>
+      <Form onSubmit={this.handleSubmit}>
         <Divider orientation="left">Name</Divider>
         <Form.Item {...formItemLayout} label="Name">
           {getFieldDecorator('username', {
@@ -77,14 +78,18 @@ class DynamicRule extends Component {
         <Divider orientation="left">Contact</Divider>
 
         <Form.Item {...formItemLayout} label="Contact Method">
-          <Row>
-            <Col>
-              <Checkbox.Group checked={this.props.contactOptions} defaultValue={['pphone']} options={contactOptions} onChange={this.onChange} style={{ width: '100%' }}/>
-            </Col>
-          </Row>
+          {getFieldDecorator('contactmethod', {
+            initialValue: ['pphone'],
+          })(
+            <Checkbox.Group checked={this.props.contactOptions} options={contactOptions} onChange={this.onChange}/>
+          )}
         </Form.Item>
         <Form.Item {...formItemLayout} label="Contact Way">
-          <Checkbox.Group options={contactOK} defaultValue={['SMS']} onChange={this.onChange} />
+          {getFieldDecorator('contactway', {
+            initialValue: ["SMS"],
+          })(
+            <Checkbox.Group options={contactOK} />
+          )}
         </Form.Item>
         <Divider orientation="left">Contact Detail</Divider>
         <div>
@@ -173,26 +178,34 @@ class DynamicRule extends Component {
         </div>
         <Divider orientation="left">Ethnicity</Divider>
         <Form.Item {...formItemLayout} label="Ethnicity">
-          <Select defaultValue="asian" >
-            <Select.Option value="asian">Asian</Select.Option>
-            <Select.Option value="caucasion">Caucasion</Select.Option>
-            <Select.Option value="aa">African American</Select.Option>
-            <Select.Option value="mixed">Mixed</Select.Option>
-            <Select.Option value="other">Other</Select.Option>
-          </Select>
+          {getFieldDecorator('ethnicity', {
+            initialValue: "asian",
+          })(
+            <Select >
+              <Select.Option value="asian">Asian</Select.Option>
+              <Select.Option value="caucasion">Caucasion</Select.Option>
+              <Select.Option value="aa">African American</Select.Option>
+              <Select.Option value="mixed">Mixed</Select.Option>
+              <Select.Option value="other">Other</Select.Option>
+            </Select>
+          )}
         </Form.Item>
         <Form.Item {...formItemLayout} label="Service">
-          <Checkbox.Group options={serviceOptions} defaultValue={['incall']} onChange={this.onChange} />
+          {getFieldDecorator('service', {
+            initialValue: ['incall'],
+          })(
+            <Checkbox.Group options={serviceOptions} />
+          )}
         </Form.Item>
         <Form.Item {...formTailLayout}>
-          <Button type="primary" onClick={this.check}>
-            Check
+          <Button type="primary" htmlType="submit">
+            Save
           </Button>
         </Form.Item>
-      </div>
+      </Form>
     );
   }
 }
 
-const WrappedFormBasic = Form.create()(DynamicRule);
+const WrappedFormBasic = Form.create()(FormBasic);
 export default WrappedFormBasic;
