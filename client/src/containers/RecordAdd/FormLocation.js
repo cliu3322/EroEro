@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Input from '../../components/uielements/input';
 import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
 import Radio, { RadioGroup } from '../../components/uielements/radio';
-import { Cascader,  Row, Col  } from 'antd';
+import { Cascader,  Row, Col, Input  } from 'antd';
 import actions from '../../redux/recordAdd/actions';
 
 import SuperFetch from '../../helpers/superFetch';
@@ -50,6 +49,15 @@ class FormLocation extends Component {
     getCities();
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        console.log(this.props.form.getFieldsValue())
+      }
+    });
+    this.props.handler('2');
+  }
 
   onChange =(value, selectedOptions) => {
     //console.log(value, selectedOptions);
@@ -84,8 +92,7 @@ class FormLocation extends Component {
 
     provider.search({ query: this.state.locationQuery+' ' +this.state.city[2] + ' ' +this.state.city[1]})
     .then(res => {
-      console.log( this.state.locationQuery+' ' +this.state.city[2] + ' ' +this.state.city[1])
-      console.log(res)
+
       if(res.length>0) {
         this.setState({
             markers:[[res[0].y,res[0].x]],
@@ -97,6 +104,7 @@ class FormLocation extends Component {
   }
 
   render() {
+    const { getFieldDecorator } = this.props.form;
     const radioStyle = {
       display: 'block',
       height: '30px',
@@ -104,70 +112,84 @@ class FormLocation extends Component {
     };
 
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <FormItem label='Choose your City'>
-        <Cascader
-        options={this.state.cityOptions}
-        onChange={this.onChange}
-        placeholder="Please select"
-        showSearch={ this.filter }
-        />
-        </FormItem>
+          {getFieldDecorator('city', {
+            rules: [{
+              required: true,
 
-        <FormItem label='Choose one of following'>
-          <Row>
-            <Col span={6}>
-              <RadioGroup value={this.state.contactOptions} onChange={this.onChangeRadio}>
+              message: 'Please input your city',
+            }],
+          })(
+            <Cascader
+            options={this.state.cityOptions}
+            onChange={this.onChange}
+            placeholder="Please select"
+            showSearch={ this.filter }
+            />
+          )}
+        </FormItem>
+        <Row>
+          <Col span={6}>
+            <FormItem label='Choose one of following'>
+              {getFieldDecorator('locationOption', {
+                rules: [{
+                  required: true,
+                  message: 'Please input your city',
+                }],
+              })(
+              <RadioGroup  onChange={this.onChangeRadio}>
                 <Radio value={1} style={radioStyle}>Address
                 </Radio>
                 <Radio value={2} style={radioStyle}>
                   Click the map to choose the location
                 </Radio>
               </RadioGroup>
-            </Col>
-            <Col span={12}>
-              {this.state.contactOptions === 2 ? (
-                <Input placeholder="zip code" style={{width: 100, marginLeft: 10,marginRight: 10}}/>
-              ) : null}
-              {this.state.contactOptions === 1 ? (
-                <div>
-                  <Row>
-                    <Col span={24}>
-                    <Input
-                      onChange={event => this.setState({ locationQuery: event.target.value })}
-                      placeholder="Enter your address or area or zipcode"
-                    />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={24}>
-                    <h4>If it didn't find any record, try to replace apt/unit to #</h4>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={24}>
-                    <h4>   {this.state.city[2]} {this.state.city[1]}</h4>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={2}>
-                    <Button type="primary" htmlType="submit" onClick={this.onVerify}>
-                      Verify
-                    </Button>
-                    </Col>
-                  </Row>
-                </div>
-              ) : null}
-            </Col>
-          </Row>
-        </FormItem>
+                )}
+            </FormItem>
+          </Col>
+          <Col span={12}>
+            <FormItem label='Choose one of following'>
+              {getFieldDecorator('addess', {
+                rules: [{
+                  required: true,
+                  message: 'Please input your city',
+                }],
+              })(
+                <Input placeholder="Enter your address or area or zipcode" name="address"/>
+              )}
+            </FormItem>
+
+            <h4>If it didn't find any record, try to replace apt/unit to #</h4>
+            <Row>
+              <Col span={24}>
+              <h4>   {this.state.city[2]} {this.state.city[1]}</h4>
+              </Col>
+            </Row>
+            <Row>
+              <Col span={2}>
+              <Button type="primary" htmlType="submit" onClick={this.onVerify}>
+                Verify
+              </Button>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+
+
         <FormItem>
           <Button type="primary" htmlType="submit">
-            Next
+            Save
           </Button>
           {this.state.locationQuery}
         </FormItem>
         <FormItem>
+        {getFieldDecorator('addess1', {
+          rules: [{
+            required: false,
+            message: 'Please input your city',
+          }],
+        })(
             <Map style={{ height: '400px', width: '100%' }}
               center={this.state.mapCenter}
               zoom={13}
@@ -177,13 +199,14 @@ class FormLocation extends Component {
                 url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
               />
               {this.state.markers.map((position, idx) =>
-         <Marker key={`marker-${idx}`} position={position}>
-         <Popup>
-           <span>A pretty CSS3 popup. <br/> Easily customizable.</span>
-         </Popup>
-       </Marker>
-       )}
+                 <Marker key={`marker-${idx}`} position={position}>
+                 <Popup>
+                   <span>A pretty CSS3 popup. <br/> Easily customizable.</span>
+                 </Popup>
+               </Marker>
+               )}
             </Map>
+            )}
         </FormItem>
       </Form>
 
@@ -199,7 +222,9 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps,{ updateAddress } )(FormLocation);
+const WrappedFormLocation = Form.create()(FormLocation);
+
+export default connect(mapStateToProps,{ updateAddress } )(WrappedFormLocation);
 
 //
 // const WrappedFormLocation = Form.create()(FormLocation);

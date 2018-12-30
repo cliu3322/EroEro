@@ -26,7 +26,6 @@ class RecordAdd extends Component {
   }
 
   click =  (e) => {
-    console.log(e)
     //console.log(value.target.value)
     this.setState({
       tab_id:e.toString()
@@ -45,9 +44,9 @@ class RecordAdd extends Component {
               <FormBasic handler = {this.click} />
             </Box>
           </TabPane>
-          <TabPane tab="Location" key="2" disabled={!this.props.basicTab}>
+          <TabPane tab="Location" key="2" >
             <Box>
-              <FormLocation />
+              <FormLocation handler = {this.click} />
             </Box>
           </TabPane>
           <TabPane tab="Pictures" key="3" >

@@ -20,7 +20,6 @@ export default function appReducer(state = initState, action) {
     case actions.TOGGLE_ALL:
       if (state.view !== action.view || action.height !== state.height) {
         const height = action.height ? action.height : state.height;
-        console.log(height);
         return {
           ...state,
           height,
