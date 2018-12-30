@@ -1,25 +1,26 @@
-import { all, takeEvery, call } from 'redux-saga/effects';
+import { all, takeEvery, call, put } from 'redux-saga/effects';
 import actions from './actions';
 import SuperFetch from '../../helpers/superFetch';
 
 const onPostRequest = async (data) => {
-  return await SuperFetch.post('reocrd/basic',data)
+  return await SuperFetch.post('record',data)
 }
 
 function* addBasic({payload}) {
-  console.log('saga')
-  const { data } = payload;
   try {
-    const addResult = yield call(
+    const result = yield call(
       onPostRequest,
-      data
+      payload
     );
-    console.log(addResult)
-    // if (addResult) {
-    //   console.log(addResult)
-    // } else {
-    //   yield put(actions.addpaperSuccess());
-    // }
+    if (result._id) {
+      yield put(
+        actions.basicAddSuccess(
+          result._id
+        )
+      );
+    } else {
+      yield put(actions.basicAddSuccess(result._id));
+    }
   } catch (error) {
     console.log(error);
   }
