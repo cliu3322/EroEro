@@ -1,7 +1,7 @@
 const config = {
   id:'photo',
   target: '#uppyHolder',
-  endpoint: 'fakeServer',
+  endpoint: '/api/image',
   DashboardInline: true,
   Webcam: false,
   GoogleDrive: false,
@@ -9,7 +9,7 @@ const config = {
   Instagram: false,
   autoProceed: false,
   restrictions: {
-    maxFileSize: 1000000,
+    maxFileSize: 10000000,
     maxNumberOfFiles: 10,
     minNumberOfFiles: 1,
     allowedFileTypes: ['image/*', 'video/*']

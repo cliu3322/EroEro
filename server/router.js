@@ -57,38 +57,64 @@ export default function (app) {
 
   apiRoutes.post('/record', (req, res) => {
     console.log(req.body)
-    const record = new Record({
-      _id: new mongoose.Types.ObjectId(),
-      username: req.body.username,
-      contactmethod: req.body.contactmethod,
-      contactway: req.body.contactway,
-      phone: req.body.phone,
-      aphone: req.body.aphone,
-      email: req.body.email,
-      wechat: req.body.wechat,
-      line: req.body.line,
-      whatsapp: req.body.whatsapp,
-      kakao: req.body.kakao,
-      ethnicity: req.body.ethnicity,
-      service: req.body.service,
-    });
-
-    record.save().then(result => {
-      if (result) {
-        res.status(201).json({
-          _id:result._id
-        });
-      } else {
-        res.status(204).json({
-          message: "No file detail exist",
-        });
-      }
-    }).catch(err => {
-      console.log('err');
-      res.status(500).json({
-        error: err
+    if(!req.body.id) {
+      const record = new Record({
+        _id: new mongoose.Types.ObjectId(),
+        username: req.body.username,
+        contactmethod: req.body.contactmethod,
+        contactway: req.body.contactway,
+        phone: req.body.phone,
+        aphone: req.body.aphone,
+        email: req.body.email,
+        wechat: req.body.wechat,
+        line: req.body.line,
+        whatsapp: req.body.whatsapp,
+        kakao: req.body.kakao,
+        ethnicity: req.body.ethnicity,
+        service: req.body.service,
       });
-    });
+
+      record.save().then(result => {
+        if (result) {
+          res.status(201).json({
+            _id:result._id
+          });
+        } else {
+          res.status(204).json({
+            message: "No file detail exist",
+          });
+        }
+      }).catch(err => {
+        console.log('err');
+        res.status(500).json({
+          error: err
+        });
+      });
+    }
+    else {
+      Record.findOneAndUpdate(
+        { _id: req.body.id },
+        {
+          city: req.body.city,
+          address: req.body.address,
+        }
+      ).then(result => {
+        if (result) {
+          res.status(201).json({
+            _id:result._id
+          });
+        } else {
+          res.status(204).json({
+            message: "No file detail exist",
+          });
+        }
+      }).catch(err => {
+        console.log('err');
+        res.status(500).json({
+          error: err
+        });
+      });
+    }
   });
 
   app.use('/api', apiRoutes);

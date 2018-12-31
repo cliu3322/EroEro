@@ -15,6 +15,9 @@ const RecordSchema = new Schema({
     kakao: { type: String, required: false },
     ethnicity: { type: String, required: true },
     service: { type: Array, required: true },
+    city: { type: Array, required: false },
+    address: { type: String, required: false },
+    markers: { type: Array, required: false },
 
 }
 

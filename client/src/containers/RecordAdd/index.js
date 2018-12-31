@@ -51,14 +51,14 @@ class RecordAdd extends Component {
           </TabPane>
           <TabPane tab="Pictures" key="3" >
             <Box>
-              <FormUploadImage />
+              <FormUploadImage handler = {this.click}/>
             </Box>
           </TabPane>
           <TabPane tab="Description(optional)" key="4">
               <Box>
                 <ContentHolder>
                   <Box>
-                    <FormDescription />
+                    <FormDescription handler = {this.click}/>
                   </Box>
                 </ContentHolder>
               </Box>

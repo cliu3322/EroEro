@@ -25,6 +25,28 @@ function* addBasic({payload}) {
     console.log(error);
   }
 }
+
+function* updateAddress({payload}) {
+  try {
+    const result = yield call(
+      onPostRequest,
+      payload
+    );
+    if (result._id) {
+      yield put(
+        actions.addressUpdateSuccess(
+          result._id
+        )
+      );
+    } else {
+      yield put(actions.basicAddSuccess(result._id));
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 export default function* rootSaga() {
   yield all([takeEvery(actions.ADD_BASIC, addBasic)]);
+  yield all([takeEvery(actions.UPDATE_ADDRESS, updateAddress)]);
 }

@@ -32,9 +32,10 @@ class FormBasic extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         this.props.addBasic(this.props.form.getFieldsValue())
+        this.props.handler('2');
       }
     });
-    this.props.handler('2');
+
   }
 
   onChange = (checkedValues) =>{
