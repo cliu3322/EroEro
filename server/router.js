@@ -17,7 +17,7 @@ export default function (app) {
 
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-
+      console.log(req.body.id)
       cb(null, './uploads/')
     },
     filename: function (req, file, cb) {
@@ -120,8 +120,7 @@ export default function (app) {
 
   apiRoutes.post('/image',upload.single('file'), (req, res) => {
 
-    console.log('body',req.body);
-    console.log('file',req.file);
+    console.log('body',req.body.id);
     res.json({
 
     })

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Form from '../../components/uielements/form';
 import { Upload, Icon, Modal } from 'antd';
 import Button from '../../components/uielements/button';
-import Uppy from "../../components/uielements/uppy";
-import config from "./config";
-import UppyStyleWrapper from "./uppy.style";
-const FormItem = Form.Item;
+
 
 class FormUploadImage extends Component {
   state = {
@@ -17,21 +15,19 @@ class FormUploadImage extends Component {
   handleCancel = () => this.setState({ previewVisible: false })
 
   handlePreview = (file) => {
-    file.originalname = 'xxxxxx';
     this.setState({
       previewImage: file.url || file.thumbUrl,
       previewVisible: true,
+      //beforeUpload:false
     });
   }
 
-  handleChange = ({ fileList }) =>{
+  handleChange = (e) =>{
+
+    var { fileList } = e;
+    console.log(e)
     this.setState({ fileList });
     fileList = fileList.map((file) => {
-      console.log(file)
-
-        // Component will show file.url as link
-        file.originalname = 'xxxxxx';
-
       return file;
     });
 
@@ -56,7 +52,7 @@ class FormUploadImage extends Component {
           onChange={this.handleChange}
           multiple = {true}
           accept="image/*,audio/*"
-          data={(file) => console.log(file)}
+          data={{id:this.props.id}}
         >
           {fileList.length >= 10 ? null : uploadButton}
         </Upload>
@@ -69,5 +65,13 @@ class FormUploadImage extends Component {
   }
 }
 
+function mapStateToProps(state) {
+
+  return {
+    id:state.RecordAdd._id,
+  };
+}
+
+
 const WrappedFormUploadImage = Form.create()(FormUploadImage);
-export default WrappedFormUploadImage;
+export default connect(mapStateToProps,{  } )(WrappedFormUploadImage);
