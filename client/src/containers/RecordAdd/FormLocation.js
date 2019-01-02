@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
-import Radio, { RadioGroup } from '../../components/uielements/radio';
 import { Cascader,  Row, Col, Input  } from 'antd';
 import actions from '../../redux/recordAdd/actions';
 
@@ -101,11 +100,6 @@ class FormLocation extends Component {
 
   render() {
     const { getFieldDecorator } = this.props.form;
-    const radioStyle = {
-      display: 'block',
-      height: '30px',
-      lineHeight: '30px'
-    };
 
     return (
 
