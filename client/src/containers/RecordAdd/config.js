@@ -3,7 +3,10 @@ const config = {
   target: '#uppyHolder',
   endpoint: '/api/image',
   DashboardInline: true,
-
+  Webcam: false,
+  GoogleDrive: false,
+  Dropbox: false,
+  Instagram: false,
   autoProceed: false,
   restrictions: {
     maxFileSize: 10000000,

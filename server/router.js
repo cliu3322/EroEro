@@ -3,7 +3,6 @@ import multer from 'multer';
 import mongoose from 'mongoose';
 import Cities from './models/City';
 import Record from './models/Record';
-const path = require('path');
 
 
 var getCXGCitiesQuery = require('./queries/getCXGCities.js');
@@ -17,11 +16,11 @@ export default function (app) {
 
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-
+      console.log(file.originalname)
       cb(null, './uploads/')
     },
     filename: function (req, file, cb) {
-      cb(null, new mongoose.Types.ObjectId()+path.extname(file.originalname))
+      cb(null, file.originalname)
     }
   })
 
@@ -117,16 +116,6 @@ export default function (app) {
       });
     }
   });
-
-  apiRoutes.post('/image',upload.single('file'), (req, res) => {
-
-    console.log('body',req.body);
-    console.log('file',req.file);
-    res.json({
-
-    })
-
-  })
 
   app.use('/api', apiRoutes);
 };

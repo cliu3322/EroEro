@@ -3,8 +3,6 @@
 # dependencies
 /node_modules
 
-/uploads
-
 # testing
 /coverage
 
