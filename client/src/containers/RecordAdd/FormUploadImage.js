@@ -18,20 +18,21 @@ class FormUploadImage extends Component {
     this.setState({
       previewImage: file.url || file.thumbUrl,
       previewVisible: true,
-      //beforeUpload:false
+      beforeUpload:false
     });
   }
 
   handleChange = (e) =>{
 
     var { fileList } = e;
-    console.log(e)
+    //console.log(e)
     this.setState({ fileList });
     fileList = fileList.map((file) => {
       return file;
     });
 
   }
+
 
 
   render() {
@@ -59,6 +60,12 @@ class FormUploadImage extends Component {
         <Modal visible={previewVisible} footer={null} onCancel={this.handleCancel}>
           <img alt="example" style={{ width: '100%' }} src={previewImage} />
         </Modal>
+
+          <Button type="primary" htmlType="submit" disabled = {true}>
+            Save
+          </Button>
+
+
       </div>
     );
 

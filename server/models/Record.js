@@ -18,7 +18,7 @@ const RecordSchema = new Schema({
     city: { type: Array, required: false },
     address: { type: String, required: false },
     markers: { type: Array, required: false },
-
+    images:{ type: Array, required: false },
 }
 
 );

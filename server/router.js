@@ -120,10 +120,34 @@ export default function (app) {
 
   apiRoutes.post('/image',upload.single('file'), (req, res) => {
 
-    console.log('body',req.body.id);
-    res.json({
+    console.log('id',req.body.id);
+    console.log('file',req.file);
 
-    })
+    const record = new Record({
+      _id: req.body.id,
+    });
+
+    Record.findOneAndUpdate(
+      { _id: req.body.id },
+      {
+         $push: { images: req.file.filename },
+      }
+    ).then(result => {
+      if (result) {
+        res.status(201).json({
+          _id:result._id
+        });
+      } else {
+        res.status(204).json({
+          message: "No file detail exist",
+        });
+      }
+    }).catch(err => {
+      console.log('err');
+      res.status(500).json({
+        error: err
+      });
+    });
 
   })
 
