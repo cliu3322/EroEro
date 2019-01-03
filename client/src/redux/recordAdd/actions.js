@@ -4,6 +4,7 @@ const recordActions = {
   ADD_BASIC: 'RECORDADD_ADD_BASIC',
   ADD_BASIC_SUCCESS_RESULT: 'RECORDADBASIC_SUCCESS_RESULT',
   UPDATE_ADDRESS_SUCCESS_RESULT:'RECORD_UPDATE_ADDRESS_SUCCESS_RESULT',
+  UPDATE_IMAGE_SUCCESS_RESULT: 'RECORD_UPDATE_IMAGE_SUCCESS_RESULT',
 
   updateAddress: address => ({
     type: recordActions.UPDATE_ADDRESS,
@@ -26,6 +27,11 @@ const recordActions = {
 
   addressUpdateSuccess: (_id) => ({
     type: recordActions.UPDATE_ADDRESS_SUCCESS_RESULT,
+    _id:_id
+  }),
+
+  addressImageSuccess: (_id) => ({
+    type: recordActions.UPDATE_IMAGE_SUCCESS_RESULT,
     _id:_id
   })
 };

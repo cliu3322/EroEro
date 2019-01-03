@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import Form from '../../components/uielements/form';
 import { Upload, Icon, Modal } from 'antd';
 import Button from '../../components/uielements/button';
+import actions from '../../redux/recordAdd/actions';
+
+
+const { addressImageSuccess } = actions;
 
 
 class FormUploadImage extends Component {
@@ -33,6 +37,10 @@ class FormUploadImage extends Component {
 
   }
 
+  click= () =>{
+    this.props.handler('4');
+
+  }
 
 
   render() {
@@ -61,11 +69,12 @@ class FormUploadImage extends Component {
           <img alt="example" style={{ width: '100%' }} src={previewImage} />
         </Modal>
 
-          <Button type="primary" htmlType="submit" disabled = {true}>
+          <Button type="primary" htmlType="submit"
+          disabled = {(this.state.fileList.length>0)?false:true}
+          onClick = {this.click}
+          >
             Save
           </Button>
-
-
       </div>
     );
 
@@ -81,4 +90,4 @@ function mapStateToProps(state) {
 
 
 const WrappedFormUploadImage = Form.create()(FormUploadImage);
-export default connect(mapStateToProps,{  } )(WrappedFormUploadImage);
+export default connect(mapStateToProps,{addressImageSuccess} )(WrappedFormUploadImage);

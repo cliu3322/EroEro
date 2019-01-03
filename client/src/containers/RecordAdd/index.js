@@ -54,14 +54,10 @@ class RecordAdd extends Component {
               <FormUploadImage handler = {this.click}/>
             </Box>
           </TabPane>
-          <TabPane tab="Description(optional)" key="4">
-              <Box>
-                <ContentHolder>
-                  <Box>
-                    <FormDescription handler = {this.click}/>
-                  </Box>
-                </ContentHolder>
-              </Box>
+          <TabPane tab="Description(optional)" key="4" >
+            <Box>
+              <FormDescription handler = {this.click}/>
+            </Box>
           </TabPane>
           <TabPane tab="Review and Complete" key="5">
               <Box title='Review your post'>
@@ -81,8 +77,10 @@ class RecordAdd extends Component {
 
 
 function mapStateToProps(state) {
+  console.log(state.RecordAdd.tab_id.toString())
   return {
     basicTab:state.RecordAdd._id?true:false,
+    //tab_id:state.RecordAdd.tab_id.toString()
     tab_id:state.RecordAdd.tab_id.toString()
   };
 }

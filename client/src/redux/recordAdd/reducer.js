@@ -7,7 +7,7 @@ const initState = {
 
 
 export default (state = initState, action) => {
-  //console.log(action)
+
   switch (action.type) {
     case actions.ADD_BASIC:
       return {
@@ -18,7 +18,7 @@ export default (state = initState, action) => {
       return {
         ...state,
         _id: action._id,
-        tab_id:2
+
       };
     case actions.UPDATE_ADDRESS:
       return {
@@ -28,7 +28,11 @@ export default (state = initState, action) => {
     case actions.UPDATE_ADDRESS_SUCCESS_RESULT:
       return {
         ...state,
-        tab_id:3
+
+      };
+    case actions.UPDATE_IMAGE_SUCCESS_RESULT:
+      return {
+
       };
     default:
       return state;
