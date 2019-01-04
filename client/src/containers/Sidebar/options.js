@@ -5,6 +5,11 @@ const options = [
     leftIcon: 'ion-document',
   },
   {
+    key: 'recordList',
+    label: 'sidebar.recordList',
+    leftIcon: 'ion-document',
+  },
+  {
     key: 'recordPage',
     label: 'sidebar.recordPage',
     leftIcon: 'ion-document',

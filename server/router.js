@@ -12,6 +12,8 @@ var getCXGCitiesQuery = require('./queries/getCXGCities.js');
 
 export default function (app) {
 
+  app.use('/images', express.static('uploads'));
+
   const apiRoutes = express.Router();
 
 
@@ -150,6 +152,18 @@ export default function (app) {
     });
 
   })
+
+  apiRoutes.get('/getrecordlist', function (req, res) {
+    //console.log('parames',req.query.id)
+    Record.find({}).exec(function(err, records) {
+      //console.log(records)
+        if (records) {
+          res.status(201).json(records);
+        } else {
+          res.status(204).json(records);
+        }
+      });
+  });
 
   app.use('/api', apiRoutes);
 };

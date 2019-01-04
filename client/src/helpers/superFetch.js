@@ -28,8 +28,7 @@ const base = (method, url, data = {}) => {
     default:
       return;
   }
-
-};
+}
 
 const SuperFetch = {};
 ['get', 'post', 'put', 'delete'].forEach(method => {

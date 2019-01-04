@@ -558,5 +558,7 @@
   "sidebar.recordPage": "Record Page",
   "sidebar.addRecord": "POST AD",
   "addRecord.name":"Name",
-  "addRecord.enterInfo":"Please enter your information"
+  "addRecord.enterInfo":"Please enter your information",
+
+  "sidebar.recordList": "Record List"
 }

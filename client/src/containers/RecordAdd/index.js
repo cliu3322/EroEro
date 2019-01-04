@@ -77,7 +77,7 @@ class RecordAdd extends Component {
 
 
 function mapStateToProps(state) {
-  console.log(state.RecordAdd.tab_id.toString())
+  //console.log(state.RecordAdd.tab_id.toString())
   return {
     basicTab:state.RecordAdd._id?true:false,
     //tab_id:state.RecordAdd.tab_id.toString()

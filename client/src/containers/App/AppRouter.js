@@ -12,6 +12,10 @@ const routes = [
     component: asyncComponent(() => import('../RecordAdd/index.js')),
   },
   {
+    path: 'recordList',
+    component: asyncComponent(() => import('../RecordList/index.js')),
+  },
+  {
     path: 'recordPage',
     component: asyncComponent(() => import('../RecordPage/recordPage')),
   },
