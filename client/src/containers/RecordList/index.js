@@ -29,7 +29,7 @@ class Papers extends Component {
     // profileItems = papers.map(paper => (
     //   <ProfileItem key={paper._id} paper={paper} />
     // ));
-    console.log(this.props.recordlist)
+    //console.log(this.props.recordlist)
     return (
       <List
         header={<div>Header</div>}

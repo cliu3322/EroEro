@@ -8,6 +8,14 @@ const routes = [
     component: asyncComponent(() => import('../dashboard')),
   },
   {
+    path: 'chatRoom',
+    component: asyncComponent(() => import('../ChatRoom/ConversationChat.js')),
+  },
+  {
+    path: 'masterChatRoom',
+    component: asyncComponent(() => import('../MasterChatRoom/ConversationChat.js')),
+  },
+  {
     path: 'addRecord',
     component: asyncComponent(() => import('../RecordAdd/index.js')),
   },

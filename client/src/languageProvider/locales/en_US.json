@@ -560,5 +560,7 @@
   "addRecord.name":"Name",
   "addRecord.enterInfo":"Please enter your information",
 
-  "sidebar.recordList": "Record List"
+  "sidebar.recordList": "Record List",
+  "sidebar.chatRoom": "Chat Room",
+  "sidebar.masterChatRoom": "Master Chat Room"
 }

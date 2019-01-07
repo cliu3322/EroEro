@@ -4,6 +4,7 @@ import ecommerceSaga from './ecommerce/saga';
 import cardsSagas from './card/saga';
 import recordAddSagas from './recordAdd/saga';
 import recordListSagas from './recordlist/saga';
+import chatRoomSagas from './chatRoom/saga';
 
 export default function* rootSaga(getState) {
   yield all([
@@ -11,6 +12,7 @@ export default function* rootSaga(getState) {
     ecommerceSaga(),
     cardsSagas(),
     recordAddSagas(),
-    recordListSagas()
+    recordListSagas(),
+    chatRoomSagas()
   ]);
 }

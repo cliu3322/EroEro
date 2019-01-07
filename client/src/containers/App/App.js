@@ -14,12 +14,25 @@ import themes from '../../settings/themes';
 import { themeConfig } from '../../settings';
 import AppHolder from './commonStyle';
 import './global.css';
+//import socketIOClient from 'socket.io-client'
+//import { Affix, Button } from 'antd';
+
 
 const { Content, Footer } = Layout;
 const { logout } = authAction;
 const { toggleAll } = appActions;
 export class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      endpoint: "localhost:3000" // this is where we are connecting to with sockets
+    }
+  }
+
   render() {
+
+
     const { url } = this.props.match;
     const { height } = this.props;
     const appHeight = window.innerHeight;
@@ -40,6 +53,7 @@ export class App extends Component {
             <Topbar url={url} />
             <Layout style={{ flexDirection: 'row', overflowX: 'hidden' }}>
               <Sidebar url={url} />
+
               <Layout
                 className="isoContentMainLayout"
                 style={{

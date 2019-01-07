@@ -20,10 +20,15 @@ const jwtConfig = {
   secretKey: 'secretKey',
 };
 
+const jwtConfigChat = {
+  fetchUrl: 'http://localhost:8888/',
+  secretKey: 'secretKey',
+};
+
 const AlgoliaSearchConfig = {
   appId: '',
   apiKey: ''
 };
 
 
-export { siteConfig, language, themeConfig, jwtConfig, AlgoliaSearchConfig};
+export { siteConfig, language, themeConfig, jwtConfig, jwtConfigChat, AlgoliaSearchConfig};

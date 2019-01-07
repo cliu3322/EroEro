@@ -1,15 +1,8 @@
 import { all, takeEvery, call, put } from "redux-saga/effects";
 import actions from "./actions";
-import axios from "axios";
 import SuperFetch from '../../helpers/superFetch';
 
-const onGetRequest1 = async (data) => {
-  return await axios.get('http://localhost:3000/api/getrecordlist',{
-    params: {
-      ID: 12345
-    }
-  });
-};
+
 
 const onGetRequest = async (data) => {
   return  await SuperFetch.get('getrecordlist?id=1234')

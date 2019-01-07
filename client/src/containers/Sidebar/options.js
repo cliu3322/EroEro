@@ -1,5 +1,15 @@
 const options = [
   {
+    key: 'ChatRoom',
+    label: 'sidebar.chatRoom',
+    leftIcon: 'ion-document',
+  },
+  {
+    key: 'MasterChatRoom',
+    label: 'sidebar.masterChatRoom',
+    leftIcon: 'ion-document',
+  },
+  {
     key: 'AddRecord',
     label: 'sidebar.addRecord',
     leftIcon: 'ion-document',

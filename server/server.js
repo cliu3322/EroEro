@@ -102,6 +102,6 @@ app.post('/api/secret/test', (req, res) => {
 
 
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
 	console.log('Isomorphic JWT login ' + port);
 });

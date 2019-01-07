@@ -19,7 +19,7 @@ export default function (app) {
 
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      console.log(req.body.id)
+      //console.log(req.body.id)
       cb(null, './uploads/')
     },
     filename: function (req, file, cb) {
@@ -40,7 +40,7 @@ export default function (app) {
   apiRoutes.get('/getCXGCities', function (req, res) {
 
     Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
-      console.log(cities)
+      //console.log(cities)
         if (cities) {
 
           res.status(201).json({
@@ -59,7 +59,7 @@ export default function (app) {
   });
 
   apiRoutes.post('/record', (req, res) => {
-    console.log(req.body)
+    //console.log(req.body)
     if(!req.body.id) {
       const record = new Record({
         _id: new mongoose.Types.ObjectId(),
