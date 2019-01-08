@@ -5,9 +5,13 @@ import cors from 'cors';
 import Config from './config';
 import { authenticate, authError } from './middleware';
 import router from './router';
+import socketRouter from './socketRouter';
 import logger from 'morgan';
 import mongoose from 'mongoose';
 import session from 'express-session';
+
+import * as handlers from './handlers';
+
 
 const { port, secretKey, expiredAfter } = Config;
 const app = express();
@@ -63,7 +67,11 @@ mongoose.connect(Config.database,{ useNewUrlParser: true } ,(mongooseErr) => {
       }
     });
     app.use(sessionParameters);
+
+
+
     router(app);
+		socketRouter(app);
   }
 });
 
@@ -92,6 +100,8 @@ app.post('/api/login', (req, res) => {
 	}
 	res.json(response);
 });
+
+app.post('/api/signUp', handlers.createUser);
 app.use('/api/secret', [authenticate, authError]);
 app.post('/api/secret/test', (req, res) => {
 	res.json({
@@ -104,4 +114,29 @@ app.post('/api/secret/test', (req, res) => {
 
 const server = app.listen(port, () => {
 	console.log('Isomorphic JWT login ' + port);
+});
+
+
+const sockets = {};
+
+
+const socketio = require('socket.io')(server, {
+  pingTimeout: 5000,
+});
+
+socketio.on('connection', (socket) => {
+  socket.on('init', (userId) => {
+    console.log('init', userId);
+    sockets[userId.senderId] = socket;
+  });
+  socket.on('message', (message) => {
+    console.log('message', message);
+    if (sockets[message.receiverId]) {
+      sockets[message.receiverId].emit('message', message);
+    }
+    handlers.createMessage(message);
+  });
+  socket.on('disconnect', (userId) => {
+    delete sockets[userId.senderId];
+  });
 });

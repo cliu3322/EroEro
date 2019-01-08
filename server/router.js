@@ -59,7 +59,7 @@ export default function (app) {
   });
 
   apiRoutes.post('/record', (req, res) => {
-    //console.log(req.body)
+    console.log('record')
     if(!req.body.id) {
       const record = new Record({
         _id: new mongoose.Types.ObjectId(),

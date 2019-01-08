@@ -10,6 +10,15 @@ class AuthHelper {
       return this.checkExpirity(response.token);
     });
   };
+  signup = async userInfo => {
+    if (!userInfo.username || !userInfo.password) {
+      return { error: 'please fill in the input' };
+    }
+    return await SuperFetch.post('signup', userInfo).then(response => {
+      //console.log(response)
+      return this.checkExpirity(response.token);
+    });
+  };
   async checkDemoPage(token) {
     if (this.checkExpirity(token).error) {
       return { error: 'Token expired' };
@@ -33,6 +42,7 @@ class AuthHelper {
       const expiredAt = profile.expiredAt || profile.exp * 1000;
 
       if (expiredAt > new Date().getTime()) {
+        console.log('profile',profile)
         return {
           ...profile,
           token,

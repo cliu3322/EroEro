@@ -29,6 +29,22 @@ const AlgoliaSearchConfig = {
   appId: '',
   apiKey: ''
 };
+const firebaseConfig = {
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: ''
+};
 
 
-export { siteConfig, language, themeConfig, jwtConfig, jwtConfigChat, AlgoliaSearchConfig};
+export {
+  siteConfig,
+  language,
+  themeConfig,
+  jwtConfig,
+  jwtConfigChat,
+  AlgoliaSearchConfig,
+  firebaseConfig
+};

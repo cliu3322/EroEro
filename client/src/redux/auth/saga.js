@@ -42,6 +42,24 @@ export function* logout() {
     yield put(push('/'));
   });
 }
+
+export function* signupRequest() {
+  yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
+    console.log(payload)
+    const result = yield call(AuthHelper.signup, payload);
+    if (result.token) {
+      yield put({
+        type: actions.LOGIN_SUCCESS,
+        payload: result,
+        token: result.token
+      });
+    } else {
+      notification('error', result.error || result);
+      yield put({ type: actions.LOGIN_ERROR });
+    }
+  });
+}
+
 export function* checkAuthorization() {
   yield takeEvery(actions.CHECK_AUTHORIZATION, function*() {
     const { token } = AuthHelper.checkExpirity(getToken());
@@ -61,6 +79,7 @@ export default function* rootSaga() {
     fork(loginRequest),
     fork(loginSuccess),
     fork(loginError),
-    fork(logout)
+    fork(logout),
+    fork(signupRequest)
   ]);
 }

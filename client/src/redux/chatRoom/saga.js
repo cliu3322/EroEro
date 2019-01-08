@@ -1,6 +1,6 @@
 import { all, takeEvery, call, put } from 'redux-saga/effects';
 import conversationActions from './actions/createConversation';
-import SuperFetch from '../../helpers/chatFetch';
+import SuperFetch from '../../helpers/superFetch';
 
 const onPostRequest = async (data) => {
   console.log(data)

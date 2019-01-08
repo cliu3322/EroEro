@@ -43,7 +43,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 
 
     const host = 'localhost';
-    const port = '8888';
+    const port = '3000';
     this.socket = SocketIOClient(`http://${host}:${port}`);
     console.log(`http://${host}:${port}`)
     this.socket.emit('init', {

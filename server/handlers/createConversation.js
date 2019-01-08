@@ -4,7 +4,7 @@ import User from '../db/models/user';
 import Conversation from '../db/models/conversation';
 
 export default async function (request, reply) {
-  console.log('hapi createConversation');
+  console.log('conversation3');
   await User.findOne({ email: request.auth.credentials.email }).populate('conversations').then(
     (user) => {
       if (user) {

@@ -36,7 +36,7 @@ class ConversationChat extends React.Component<void, Props, State> {
     super(props);
 
     const host = 'localhost';
-    const port = '8888';
+    const port = '3000';
     this.socket = SocketIOClient(`http://${host}:${port}`);
     this.socket.emit('init', {
       senderId: this.props.user.myId,
@@ -71,7 +71,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 
   _onCreatConversation = () => {
 
-    this.props.createConversation('userid2')
+    this.props.createConversation({a:'userid2'})
   }
 
   render() {
