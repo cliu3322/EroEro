@@ -106,6 +106,7 @@ app.post('/api/login', (req, res) => {
 			if (!passwordMatch) {
 				response.error = 'Wrong email or password';
 			} else {
+				response.token = jsonwebtoken.sign(
 					{
 						expiredAt: new Date().getTime() + expiredAfter,
 						email: user.email

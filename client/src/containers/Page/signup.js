@@ -13,6 +13,11 @@ const { login, signup } = authAction;
 const { clearMenu } = appActions;
 
 class SignUp extends Component {
+  constructor(props) {
+    super(props);
+
+    console.log('props',props)
+  }
   state = {
     redirectToReferrer: false
   };
@@ -25,14 +30,14 @@ class SignUp extends Component {
     }
   }
   handleSignup = () => {
-
+    const { signup, history } = this.props;
     const userInfo = {
       username: document.getElementById('inputUserName').value || '',
       email: document.getElementById('inputEmail').value,
       password: document.getElementById('inpuPassword').value || '',
     };
     console.log(userInfo);
-    this.props.signup(userInfo);
+    signup({ history, userInfo });
   };
   render() {
     return (

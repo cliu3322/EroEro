@@ -23,6 +23,7 @@ class SignIn extends Component {
         console.log(error);
         // 'Unable to get IP address.'
       });
+    console.log('props',props)
   }
   state = {
     redirectToReferrer: false,

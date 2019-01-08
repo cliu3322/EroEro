@@ -26,6 +26,7 @@ export function* loginRequest() {
 export function* loginSuccess() {
   yield takeEvery(actions.LOGIN_SUCCESS, function*({ payload, history }) {
     yield setToken(payload.token);
+    console.log('history',history)
     if (history) {
       history.push('/dashboard');
     }
@@ -45,12 +46,14 @@ export function* logout() {
 
 export function* signupRequest() {
   yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
-    const result = yield call(AuthHelper.signup, payload);
+    const { history, userInfo } = payload;
+    const result = yield call(AuthHelper.signup, userInfo);
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
         payload: result,
-        token: result.token
+        token: result.token,
+        history
       });
     } else {
       notification('error', result.error || result);
