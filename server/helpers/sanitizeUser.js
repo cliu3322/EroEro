@@ -1,5 +1,5 @@
 const sanitizeUser = user => ({
-  fullName: user.fullName,
+  fullName: user.username,
   email: user.email,
   accountBalance: user.accountBalance,
   myId: user._id,

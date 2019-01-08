@@ -9,6 +9,10 @@ import socketRouter from './socketRouter';
 import logger from 'morgan';
 import mongoose from 'mongoose';
 import session from 'express-session';
+import User from './db/models/user';
+import Boom from 'boom';
+import bcrypt from 'bcrypt';
+import sanitizeUser from './helpers/sanitizeUser';
 
 import * as handlers from './handlers';
 
@@ -82,23 +86,38 @@ app.get('/', (req, res) => {
 
 app.post('/api/login', (req, res) => {
 	console.log(req.headers['x-forwarded-for'] || req.connection.remoteAddress);
-	const { username, password } = req.body;
+	const { username, password, email } = req.body;
 	const response = {};
 	// You can use DB checking here
 
-	if (doesUserExists(username, password)) {
-		response.token = jsonwebtoken.sign(
-			{
-				expiredAt: new Date().getTime() + expiredAfter,
-				username,
-				id: 1,
-			},
-			secretKey
-		);
-	} else {
-		response.error = 'Not found';
-	}
-	res.json(response);
+	User.findOne({$or: [
+		    {email: email},
+		    {username: username}
+		]}).then(
+		(user) => {
+			if (!user) {
+				return res(Boom.notFound('Wrong email or password'));
+			}
+			console.log('password',password)
+			console.log('user',user.password)
+			const passwordMatch = bcrypt.compareSync(password, user.password);
+			console.log('match',passwordMatch)
+			const response = {};
+			if (!passwordMatch) {
+				response.error = 'Wrong email or password';
+			} else {
+					{
+						expiredAt: new Date().getTime() + expiredAfter,
+						email: user.email
+					},
+					secretKey
+				);
+			}
+
+			res.json(response);
+
+		});
+
 });
 
 app.post('/api/signUp', handlers.createUser);

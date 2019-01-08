@@ -45,7 +45,6 @@ export function* logout() {
 
 export function* signupRequest() {
   yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
-    console.log(payload)
     const result = yield call(AuthHelper.signup, payload);
     if (result.token) {
       yield put({
