@@ -1,13 +1,13 @@
 import bcrypt from 'bcrypt';
 import Boom from 'boom';
-import JWT from 'jsonwebtoken';
+import jsonwebtoken from 'jsonwebtoken';
 
 import User from '../db/models/user';
 import config from '../config';
 import sanitizeUser from '../helpers/sanitizeUser';
 
-const secret = config.secretKey;
-const expiresIn = config.expiredAfter;
+const secretKey = config.secretKey;
+const expiredAfter = config.expiredAfter;
 
 const getHashedPassword = (password) => {
   const saltRounds = 10;
@@ -16,8 +16,6 @@ const getHashedPassword = (password) => {
 };
 
 export default async function (request, res) {
-  console.log('body',request.body)
-  console.log('payload',request.payload)
   let newUser;
   await User.findOne({ email: request.body.email }).then(
     (user) => {
@@ -28,15 +26,30 @@ export default async function (request, res) {
           email: request.body.email,
           password: hashedPassword,
         });
-        newUser.save((err) => { console.log(err); });
-        const token = JWT.sign({ email: newUser.email }, secret, { expiresIn });
+        newUser.save().then(result => {
+          const response = {};
+          response.token = jsonwebtoken.sign(
+  					{
+  						expiredAt: new Date().getTime() + expiredAfter,
+  						email: result.email,
+  						username: result.email
+  					},
+  					secretKey
+  				)
+          console.log(response)
+          res.json(response);
+        }).catch(err => {
+          console.log('err',err);
+          res.status(500).json({
+            error: err
+          });
+        });
+
+      } else {
+        console.log("User already exists")
         res.json({
-      		token,
-      		user: sanitizeUser(newUser),
-      	});
+          message: "User already exists",
+        });
       }
-      res.json({
-        message: "User already exists",
-      });
     });
 }

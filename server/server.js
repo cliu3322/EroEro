@@ -90,35 +90,30 @@ app.post('/api/login', (req, res) => {
 	const response = {};
 	// You can use DB checking here
 
-	User.findOne({$or: [
-		    {email: email},
-		    {username: username}
-		]}).then(
+	User.findOne({$or: [{email: email}, {username: username}]}).then(
 		(user) => {
 			if (!user) {
-				return res(Boom.notFound('Wrong email or password'));
+				res.json({
+					message: 'Wrong username or password',
+				});
 			}
-			console.log('password',password)
-			console.log('user',user.password)
-			const passwordMatch = bcrypt.compareSync(password, user.password);
-			console.log('match',passwordMatch)
-			const response = {};
-			if (!passwordMatch) {
-				response.error = 'Wrong email or password';
-			} else {
-				response.token = jsonwebtoken.sign(
-					{
-						expiredAt: new Date().getTime() + expiredAfter,
-						email: user.email
-					},
-					secretKey
-				);
+			else {
+				const passwordMatch = bcrypt.compareSync(password, user.password);
+				const response = {};
+				if (!passwordMatch) {
+					response.message = 'Wrong email or password';
+				}
+				else {
+					response.token = jsonwebtoken.sign(
+						{
+							expiredAt: new Date().getTime() + expiredAfter,
+							email: user.email,
+							username: user.email
+						}, secretKey)
+				}
+				res.json(response);
 			}
-
-			res.json(response);
-
 		});
-
 });
 
 app.post('/api/signUp', handlers.createUser);

@@ -3,10 +3,16 @@ import SuperFetch from './superFetch';
 
 class AuthHelper {
   login = async userInfo => {
+    console.log(userInfo)
     if (!userInfo.username || !userInfo.password) {
       return { error: 'please fill in the input' };
     }
     return await SuperFetch.post('login', userInfo).then(response => {
+      if (!response.token) {
+        return {
+          error: response.message,
+        };
+      }
       return this.checkExpirity(response.token);
     });
   };
@@ -15,7 +21,11 @@ class AuthHelper {
       return { error: 'please fill in the input' };
     }
     return await SuperFetch.post('signup', userInfo).then(response => {
-      //console.log(response)
+      if (!response.token) {
+        return {
+          error: response.message,
+        };
+      }
       return this.checkExpirity(response.token);
     });
   };
@@ -31,18 +41,14 @@ class AuthHelper {
       .catch(error => ({ error: JSON.stringify(error) }));
   }
   checkExpirity = token => {
-    if (!token) {
-      return {
-        error: 'not matched',
-      };
-    }
+
     try {
       const profile = jwtDecode(token);
-
+      console.log(profile)
       const expiredAt = profile.expiredAt || profile.exp * 1000;
 
       if (expiredAt > new Date().getTime()) {
-        console.log('profile',profile)
+        //console.log('profile',profile)
         return {
           ...profile,
           token,

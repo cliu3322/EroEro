@@ -26,7 +26,7 @@ export function* loginRequest() {
 export function* loginSuccess() {
   yield takeEvery(actions.LOGIN_SUCCESS, function*({ payload, history }) {
     yield setToken(payload.token);
-    console.log('history',history)
+    //console.log('history',history)
     if (history) {
       history.push('/dashboard');
     }

@@ -5,7 +5,7 @@ import { Button } from 'antd';
 
 import SocketIOClient from 'socket.io-client';
 
-import { loadMessages, sendMessage } from '../../redux/chatRoom/actions/loadMessages';
+//import { loadMessages, sendMessage } from '../../redux/chatRoom/actions/loadMessages';
 
 
 import actions from '../../redux/chatRoom/actions/createConversation';
@@ -59,7 +59,7 @@ class ConversationChat extends React.Component<void, Props, State> {
   _onSend = message => {
 
 
-    const conversation = this.props.conversations[this.props.conversations.currentConversationId];
+//    const conversation = this.props.conversations[this.props.conversations.currentConversationId];
     const { user, onSendMessage } = this.props;
     this.socket.emit('message', {
       text: 'asdf',
@@ -70,7 +70,7 @@ class ConversationChat extends React.Component<void, Props, State> {
   };
 
   _onCreatConversation = () => {
-
+    console.log('props',this.props)
     this.props.createConversation({a:'userid2'})
   }
 
@@ -85,7 +85,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 }
 
 function mapStateToProps(state) {
-  //console.log(state)
+  console.log(state)
   return {
     user: {myId:'userid1'},
     messages: state.messages[state.conversations.currentConversationId],
