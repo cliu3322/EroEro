@@ -107,8 +107,7 @@ app.post('/api/login', (req, res) => {
 					response.token = jsonwebtoken.sign(
 						{
 							expiredAt: new Date().getTime() + expiredAfter,
-							email: user.email,
-							username: user.email
+							username: user.username
 						}, secretKey)
 				}
 				res.json(response);

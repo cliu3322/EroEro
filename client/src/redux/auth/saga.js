@@ -9,11 +9,13 @@ export function* loginRequest() {
   yield takeEvery('LOGIN_REQUEST', function*({ payload }) {
     const { history, userInfo } = payload;
     const result = yield call(AuthHelper.login, userInfo);
+    //console.log(result);
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
         payload: result,
         token: result.token,
+        username: result.username,
         history
       });
     } else {
@@ -53,6 +55,7 @@ export function* signupRequest() {
         type: actions.LOGIN_SUCCESS,
         payload: result,
         token: result.token,
+        username: result.username,
         history
       });
     } else {

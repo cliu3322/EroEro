@@ -31,8 +31,7 @@ export default async function (request, res) {
           response.token = jsonwebtoken.sign(
   					{
   						expiredAt: new Date().getTime() + expiredAfter,
-  						email: result.email,
-  						username: result.email
+  						username: result.username,
   					},
   					secretKey
   				)

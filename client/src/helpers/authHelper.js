@@ -3,7 +3,6 @@ import SuperFetch from './superFetch';
 
 class AuthHelper {
   login = async userInfo => {
-    console.log(userInfo)
     if (!userInfo.username || !userInfo.password) {
       return { error: 'please fill in the input' };
     }
@@ -44,7 +43,6 @@ class AuthHelper {
 
     try {
       const profile = jwtDecode(token);
-      console.log(profile)
       const expiredAt = profile.expiredAt || profile.exp * 1000;
 
       if (expiredAt > new Date().getTime()) {
