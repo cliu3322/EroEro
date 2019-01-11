@@ -61,5 +61,17 @@ class AuthHelper {
       return { error: 'Server Error' };
     }
   };
+  checkUsername = token => {
+
+    try {
+      const profile = jwtDecode(token);
+      console.log(profile);
+      return profile.username
+    } catch (e) {
+      console.log(e);
+
+      return { error: 'Server Error' };
+    }
+  };
 }
 export default new AuthHelper();

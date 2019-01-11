@@ -7,13 +7,12 @@ import notification from '../../components/notification';
 
 export function* loginRequest() {
   yield takeEvery('LOGIN_REQUEST', function*({ payload }) {
-    console.log('loginRequest',payload)
     const { history, userInfo } = payload;
     const result = yield call(AuthHelper.login, userInfo);
-
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
+        payload: result,
         token: result.token,
         history
       });
@@ -24,11 +23,29 @@ export function* loginRequest() {
   });
 }
 
-export function* loginSuccess() {
 
-  yield takeEvery(actions.LOGIN_SUCCESS, function*({ token, history }) {
-    yield setToken(token);
-    console.log('history',history);
+export function* signupRequest() {
+  yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
+    const { history, userInfo } = payload;
+    const result = yield call(AuthHelper.signup, userInfo);
+    if (result.token) {
+      yield put({
+        type: actions.LOGIN_SUCCESS,
+        payload: result,
+        token: result.token,
+        history
+      });
+    } else {
+      notification('error', result.error || result);
+      yield put({ type: actions.LOGIN_ERROR });
+    }
+  });
+}
+
+
+export function* loginSuccess() {
+  yield takeEvery(actions.LOGIN_SUCCESS, function*({ payload, history }) {
+    yield setToken(payload.token);
     if (history) {
       history.push('/dashboard');
     }
@@ -45,43 +62,28 @@ export function* logout() {
     yield put(push('/'));
   });
 }
-
-export function* signupRequest() {
-  yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
-    const { history, userInfo } = payload;
-    const result = yield call(AuthHelper.signup, userInfo);
-    if (result.token) {
-      yield put({
-        type: actions.LOGIN_SUCCESS,
-        token: result.token,
-        history
-      });
-    } else {
-      notification('error', result.error || result);
-      yield put({ type: actions.LOGIN_ERROR });
-    }
-  });
-}
-
 export function* checkAuthorization() {
-
   yield takeEvery(actions.CHECK_AUTHORIZATION, function*() {
     const { token } = AuthHelper.checkExpirity(getToken());
     if (token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
-        token: { token },
+        payload: { token },
+        token,
+        profile: 'Profile'
       });
     }
   });
 }
+
+
 export default function* rootSaga() {
   yield all([
     fork(checkAuthorization),
+    fork(signupRequest),
     fork(loginRequest),
     fork(loginSuccess),
     fork(loginError),
-    fork(logout),
-    fork(signupRequest)
+    fork(logout)
   ]);
 }
