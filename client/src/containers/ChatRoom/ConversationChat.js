@@ -34,12 +34,12 @@ class ConversationChat extends React.Component<void, Props, State> {
 
   constructor(props) {
     super(props);
-
+    console.log(props)
     const host = 'localhost';
     const port = '3000';
     this.socket = SocketIOClient(`http://${host}:${port}`);
     this.socket.emit('init', {
-      senderId: this.props.user.myId,
+      senderId: this.props.id,
     });
     this.socket.on('message', message => {
       console.log(message)
@@ -51,7 +51,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 
   componentWillUnmount() {
     this.socket.emit('disconnect', {
-      senderId: this.props.user.myId,
+      senderId: this.props.id,
     });
   }
 
@@ -71,7 +71,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 
   _onCreatConversation = () => {
     console.log('props',this.props)
-    this.props.createConversation({a:'userid2'})
+    this.props.createConversation('master')
   }
 
   render() {
@@ -87,7 +87,7 @@ class ConversationChat extends React.Component<void, Props, State> {
 function mapStateToProps(state) {
   console.log(state)
   return {
-    user: {myId:'userid1'},
+    id:state.Auth.username,
     messages: state.messages[state.conversations.currentConversationId],
     friends: state.friends.friends,
     conversations:state.conversations,

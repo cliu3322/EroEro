@@ -5,7 +5,7 @@ const conversationActions = {
 
 
   createConversation: friendId => {
-
+    console.log('action')
     return (dispatch, getState) => {
       dispatch({
         type: conversationActions.CREATE_CONVERSATION,

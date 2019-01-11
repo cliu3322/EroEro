@@ -10,7 +10,7 @@ class AuthCheck extends Component {
   state = { loading: false };
   checkDemo = () => {
     this.setState({ loading: true });
-    AuthHelper.checkDemoPage(this.props.idToken).then(result => {
+    AuthHelper.checkDemoPage(this.props.token).then(result => {
       if (result.error) {
         notification('error', result.error);
       } else {
@@ -33,7 +33,7 @@ class AuthCheck extends Component {
 }
 export default connect(
   state => ({
-    idToken: state.Auth.idToken,
+    token: state.Auth.token,
   }),
   {}
 )(AuthCheck);

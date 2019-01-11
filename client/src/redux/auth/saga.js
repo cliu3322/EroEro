@@ -1,15 +1,16 @@
 import { all, takeEvery, put, call, fork } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
 import actions from './actions';
-import { setToken, clearToken, getToken } from '../../helpers/utility';
+import { setProfile, clearProfile, getProfile } from '../../helpers/utility';
 import AuthHelper from '../../helpers/authHelper';
 import notification from '../../components/notification';
 
 export function* loginRequest() {
   yield takeEvery('LOGIN_REQUEST', function*({ payload }) {
+    console.log('loginRequest',payload)
     const { history, userInfo } = payload;
     const result = yield call(AuthHelper.login, userInfo);
-    //console.log(result);
+
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
@@ -26,8 +27,10 @@ export function* loginRequest() {
 }
 
 export function* loginSuccess() {
+
   yield takeEvery(actions.LOGIN_SUCCESS, function*({ payload, history }) {
-    yield setToken(payload.token);
+    console.log('payload',payload)
+    yield setProfile(payload);
     //console.log('history',history)
     if (history) {
       history.push('/dashboard');
@@ -41,7 +44,7 @@ export function* loginError() {
 
 export function* logout() {
   yield takeEvery(actions.LOGOUT, function*() {
-    clearToken();
+    clearProfile();
     yield put(push('/'));
   });
 }
@@ -50,6 +53,7 @@ export function* signupRequest() {
   yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
     const { history, userInfo } = payload;
     const result = yield call(AuthHelper.signup, userInfo);
+    console.log('signupRequest')
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
@@ -66,12 +70,15 @@ export function* signupRequest() {
 }
 
 export function* checkAuthorization() {
+
   yield takeEvery(actions.CHECK_AUTHORIZATION, function*() {
-    const { token } = AuthHelper.checkExpirity(getToken());
+    console.log('checkAuthorization',getProfile())
+    const { token } = AuthHelper.checkExpirity(getProfile().idToken);
     if (token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
         payload: { token },
+        username:getProfile().username,
         token,
         profile: 'Profile'
       });
