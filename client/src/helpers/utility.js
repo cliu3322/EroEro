@@ -1,20 +1,16 @@
-export function clearProfile() {
+export function clearToken() {
   localStorage.removeItem('id_token');
-  localStorage.removeItem('username');
 }
-export function setProfile(profile) {
-  localStorage.setItem('id_token', profile.token);
-  localStorage.setItem('username', profile.username);
+export function setToken(token) {
+  localStorage.setItem('id_token', token);
 }
 
-export function getProfile() {
+export function getToken() {
   try {
-    const profile ={}
-    profile.idToken = localStorage.getItem('id_token');
-    profile.username = localStorage.getItem('username');
-    return profile;
+    const idToken = localStorage.getItem('id_token');
+    return idToken;
   } catch (err) {
-    clearProfile();
+    clearToken();
   }
 }
 

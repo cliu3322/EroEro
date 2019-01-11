@@ -6,7 +6,7 @@ export default function authReducer(state = initState, action) {
   switch (action.type) {
     case actions.LOGIN_SUCCESS:
       console.log('action',action)
-      return { ...state, token: action.token, username: action.username };
+      return { ...state, token: action.token };
     case actions.LOGOUT:
       return initState;
     default:

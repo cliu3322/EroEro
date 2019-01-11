@@ -1,7 +1,7 @@
 import { all, takeEvery, put, call, fork } from 'redux-saga/effects';
 import { push } from 'react-router-redux';
 import actions from './actions';
-import { setProfile, clearProfile, getProfile } from '../../helpers/utility';
+import { setToken, clearToken, getToken } from '../../helpers/utility';
 import AuthHelper from '../../helpers/authHelper';
 import notification from '../../components/notification';
 
@@ -14,9 +14,7 @@ export function* loginRequest() {
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
-        payload: result,
         token: result.token,
-        username: result.username,
         history
       });
     } else {
@@ -28,10 +26,9 @@ export function* loginRequest() {
 
 export function* loginSuccess() {
 
-  yield takeEvery(actions.LOGIN_SUCCESS, function*({ payload, history }) {
-    console.log('payload',payload)
-    yield setProfile(payload);
-    //console.log('history',history)
+  yield takeEvery(actions.LOGIN_SUCCESS, function*({ token, history }) {
+    yield setToken(token);
+    console.log('history',history);
     if (history) {
       history.push('/dashboard');
     }
@@ -44,7 +41,7 @@ export function* loginError() {
 
 export function* logout() {
   yield takeEvery(actions.LOGOUT, function*() {
-    clearProfile();
+    clearToken();
     yield put(push('/'));
   });
 }
@@ -53,13 +50,10 @@ export function* signupRequest() {
   yield takeEvery('SIGNUP_REQUEST', function*({ payload }) {
     const { history, userInfo } = payload;
     const result = yield call(AuthHelper.signup, userInfo);
-    console.log('signupRequest')
     if (result.token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
-        payload: result,
         token: result.token,
-        username: result.username,
         history
       });
     } else {
@@ -72,15 +66,11 @@ export function* signupRequest() {
 export function* checkAuthorization() {
 
   yield takeEvery(actions.CHECK_AUTHORIZATION, function*() {
-    console.log('checkAuthorization',getProfile())
-    const { token } = AuthHelper.checkExpirity(getProfile().idToken);
+    const { token } = AuthHelper.checkExpirity(getToken());
     if (token) {
       yield put({
         type: actions.LOGIN_SUCCESS,
-        payload: { token },
-        username:getProfile().username,
-        token,
-        profile: 'Profile'
+        token: { token },
       });
     }
   });
