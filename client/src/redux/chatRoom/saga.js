@@ -3,7 +3,6 @@ import conversationActions from './actions/createConversation';
 import SuperFetch from '../../helpers/superFetch';
 
 const onPostRequest = async (data) => {
-  console.log(data)
   return await SuperFetch.post('conversations',data)
 }
 
@@ -14,15 +13,14 @@ function* createConversation({payload}) {
       onPostRequest,
       payload
     );
-    if (result._id) {
-      // yield put(
-      //   actions.basicAddSuccess(
-      //     result._id
-      //   )
-      //);
+    console.log(result)
+    if (result) {
+      yield put(
+        conversationActions.createConversationSuccess(result)
+      );
     } else {
 
-      // yield put(actions.basicAddSuccess(result._id));
+
     }
   } catch (error) {
     console.log(error);

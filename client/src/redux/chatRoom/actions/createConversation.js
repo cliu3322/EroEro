@@ -5,7 +5,6 @@ const conversationActions = {
 
 
   createConversation: friendId => {
-    console.log('action')
     return (dispatch, getState) => {
       dispatch({
         type: conversationActions.CREATE_CONVERSATION,
@@ -13,5 +12,11 @@ const conversationActions = {
       });
     };
   },
+
+
+  createConversationSuccess : conversation => ({
+    type: 'CREATE_CONVERSATION_SUCCESS',
+    conversation,
+  }),
 };
 export default conversationActions;

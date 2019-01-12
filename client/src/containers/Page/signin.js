@@ -16,14 +16,14 @@ class SignIn extends Component {
     super(props);
     publicIP()
       .then(ip => {
-        console.log(ip);
+        //console.log(ip);
         // '47.122.71.234'
       })
       .catch(error => {
         console.log(error);
         // 'Unable to get IP address.'
       });
-    console.log('props',props)
+    //console.log('props',props)
   }
   state = {
     redirectToReferrer: false,

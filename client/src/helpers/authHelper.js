@@ -65,7 +65,7 @@ class AuthHelper {
 
     try {
       const profile = jwtDecode(token);
-      console.log(profile);
+      //console.log(profile);
       return profile.username
     } catch (e) {
       console.log(e);

@@ -4,23 +4,25 @@ import User from '../db/models/user';
 import Conversation from '../db/models/conversation';
 
 export default async function (request, reply) {
-  console.log('conversation3');
-  await User.findOne({ email: request.auth.credentials.email }).populate('conversations').then(
+  console.log('conversation3',request.body.username);
+  await User.findOne({ username: request.body.username }).populate('conversations').then(
     (user) => {
       if (user) {
-        const isConversationExist = user.conversations.filter(conversation => (
-            conversation.userOneId === request.payload.friendId ||
-            conversation.userTwoId === request.payload.friendId
+        const ConversationExist =user.conversations.filter(conversation => (
+            conversation.userOneId === request.body.username ||
+            conversation.userTwoId === request.body.username
           ),
-    ).length > 0;
+        )
+
+        const isConversationExist = ConversationExist.length > 0;
         if (isConversationExist) {
-          reply(Boom.badData('You already have conversation with this user'));
+          reply.json(ConversationExist);
         } else {
-          User.findById(request.payload.friendId).then(
+          User.findOne({ username: request.body.friendname }).then(
             (friend) => {
               const newConversation = new Conversation({
-                userOneId: user._id,
-                userTwoId: friend._id,
+                userOneId: user.username,
+                userTwoId: friend.username,
               });
               newConversation.save().then((conversation) => {
                 user.conversations.push(conversation);
@@ -28,13 +30,13 @@ export default async function (request, reply) {
                 friend.conversations.push(conversation);
                 friend.save();
 
-                reply({ id: conversation._id, friendId: friend._id });
+                reply.json(conversation);
               });
             },
           );
         }
       } else {
-        reply(Boom.notFound('Cannot find user'));
+        reply.json(Boom.notFound('Cannot find user'));
       }
     },
   );
