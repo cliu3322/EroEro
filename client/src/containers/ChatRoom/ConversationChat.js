@@ -10,7 +10,7 @@ import SocketIOClient from 'socket.io-client';
 
 import actions from '../../redux/chatRoom/actions/createConversation';
 
-import type { User, Friend, Conversation, Message } from '../types/types';
+import type { User, Friend, Message } from '../types/types';
 
 const { createConversation } = actions;
 
@@ -60,7 +60,6 @@ class ConversationChat extends React.Component<void, Props, State> {
 
 
 //    const conversation = this.props.conversations[this.props.conversations.currentConversationId];
-    const { user, onSendMessage } = this.props;
     this.socket.emit('message', {
       text: 'asdf',
       senderId: this.props.username,
@@ -85,7 +84,6 @@ class ConversationChat extends React.Component<void, Props, State> {
 }
 
 function mapStateToProps(state) {
-  console.log(state.conversations.conversations[0]);
   return {
     username:state.Auth.username,
     messages: state.messages[state.conversations.currentConversationId],

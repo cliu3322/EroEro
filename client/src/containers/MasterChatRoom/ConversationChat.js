@@ -11,10 +11,7 @@ import { loadMessages, sendMessage } from '../../redux/chatRoom/actions/loadMess
 
 //import GoBack from '../components/GoBackButton';
 
-
-
-import { createConversation } from '../../redux/chatRoom/actions/createConversation';
-import type { User, Friend, Conversation, Message } from '../types/types';
+import type { User, Friend, Message } from '../types/types';
 
 
 type Props = {
@@ -45,19 +42,12 @@ class ConversationChat extends React.Component<void, Props, State> {
     const host = 'localhost';
     const port = '3000';
     this.socket = SocketIOClient(`http://${host}:${port}`);
-    console.log(`http://${host}:${port}`)
     this.socket.emit('init', {
       senderId: 'userid2',
     });
     this.socket.on('message', message => {
       console.log(message)
-      // const newMessage = {
-      //   createdAt: message.createdAt,
-      //   text: message.text,
-      //   userId: message.senderId,
-      //   _id: message.msgId,
-      // };
-      //this.props.onSendMessage(message.conversationId, newMessage);
+
     });
   }
 
@@ -104,8 +94,7 @@ class ConversationChat extends React.Component<void, Props, State> {
   _onSend = message => {
 
 
-    const conversation = this.props.conversations[this.props.conversations.currentConversationId];
-    const { user, onSendMessage } = this.props;
+    const { user } = this.props;
     this.socket.emit('message', {
       conversationId: this.props.conversations.currentConversationId,
       text: 'asdf',
