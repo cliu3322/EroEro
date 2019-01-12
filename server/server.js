@@ -144,13 +144,14 @@ socketio.on('connection', (socket) => {
     sockets[userId.senderId] = socket;
   });
   socket.on('message', (message) => {
-    console.log('message', message);
     if (sockets[message.receiverId]) {
+			console.log('message',message)
       sockets[message.receiverId].emit('message', message);
     }
     handlers.createMessage(message);
   });
   socket.on('disconnect', (userId) => {
+		console.log('disconnect', userId.senderId);
     delete sockets[userId.senderId];
   });
 });

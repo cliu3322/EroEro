@@ -2,7 +2,7 @@ import Conversation from '../db/models/conversation';
 import Message from '../db/models/message';
 
 const createMessage = (message) => {
-  console.log('createMessage')
+  console.log('createMessage',message)
   Conversation.findById(message.conversationId).then((conversation) => {
     const textMessage = new Message({
       text: message.text,

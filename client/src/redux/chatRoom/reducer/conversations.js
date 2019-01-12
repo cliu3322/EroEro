@@ -12,7 +12,6 @@ export default (state = initState, action) => {
       return initState;
     }
     case 'CREATE_CONVERSATION_SUCCESS': {
-      console.log(action)
       return {
         conversations: [...state.conversations, action.conversation[0]],
         currentConversationId: action.conversation[0]._id,

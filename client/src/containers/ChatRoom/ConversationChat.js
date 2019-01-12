@@ -42,7 +42,7 @@ class ConversationChat extends React.Component<void, Props, State> {
       senderId: this.props.username,
     });
     this.socket.on('message', message => {
-      console.log(message)
+      console.log('onMessage',message)
     });
   }
 
@@ -63,8 +63,9 @@ class ConversationChat extends React.Component<void, Props, State> {
     const { user, onSendMessage } = this.props;
     this.socket.emit('message', {
       text: 'asdf',
-      senderId: user.myId,
-      receiverId: 'userid2',
+      senderId: this.props.username,
+      receiverId: this.props.currentconversation.userTwoId,
+      conversationId:this.props.currentconversation._id,
       createdAt: new Date(),
     });
   };
@@ -84,13 +85,13 @@ class ConversationChat extends React.Component<void, Props, State> {
 }
 
 function mapStateToProps(state) {
-  console.log(state);
+  console.log(state.conversations.conversations[0]);
   return {
     username:state.Auth.username,
     messages: state.messages[state.conversations.currentConversationId],
     friends: state.friends.friends,
     conversations:state.conversations,
-    conversation:state.conversations[state.conversations.currentConversationId]
+    currentconversation:state.conversations.conversations[0]
   };
 }
 
