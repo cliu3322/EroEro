@@ -30,7 +30,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         <Route
           exact
           path={"/"}
-          component={asyncComponent(() => import("./containers/Page/signin"))}
+          component={asyncComponent(() => import("./containers/Uielements/Collapse"))}
         />
         <Route
           exact
@@ -41,6 +41,11 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           exact
           path={"/500"}
           component={asyncComponent(() => import("./containers/Page/500"))}
+        />
+        <Route
+          exact
+          path={"/recordList/:id"}
+          component ={asyncComponent(() => import('./containers/RecordList/index.js'))}
         />
         <Route
           exact

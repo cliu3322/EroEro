@@ -38,7 +38,6 @@ class FormLocation extends Component {
   componentDidMount() {
 
     const getCities =  async () => {
-        console.log('step 1')
          const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
          this.setState({
            cityOptions: response.allcities,

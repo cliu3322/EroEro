@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Row, Col } from 'antd';
+import Form from '../../../components/uielements/form';
 import Collapses from '../../../components/uielements/collapse';
 import PageHeader from '../../../components/utility/pageHeader';
 import Box from '../../../components/utility/box';
@@ -8,34 +10,61 @@ import ContentHolder from '../../../components/utility/contentHolder';
 import basicStyle from '../../../settings/basicStyle';
 import IntlMessages from '../../../components/utility/intlMessages';
 import CollapseWrapper from './collapse.style';
+import SuperFetch from '../../../helpers/superFetch';
 
 
 const Panel = Collapses.Panel;
+
 const Collapse = props => (
   <CollapseWrapper>
     <Collapses {...props}>{props.children}</Collapses>
   </CollapseWrapper>
 );
 
-export default class extends Component {
+class CityOptions extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      locationQuery:'',
+      markers:[],
+      mapCenter:[51.505, -0.09],
+      city:[],
+    };
+    //this.mountMap = this.mountMap.bind(this);
+  }
+
+  componentDidMount() {
+
+    const getCities =  async () => {
+         const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
+         this.setState({
+           cityOptions: response.allcities,
+         },() => {});
+
+         return response;
+      };
+    getCities();
+  }
+
   renderGeos(colStyle) {
-    var country = [{name:"asdff",states:[{statename:"state1", cities:["asdf","adsffd"]},{statename:"state2",cities:["asdf","adsffd"]}]},
-    {name:"sdfffff",states:[{statename:"state3",cities:["asdf","adsffd"]},{statename:"state4",cities:["asdf","adsffd"]}]}];
-    return country.map((country,i) => {
+    console.log(this.state.cityOptions)
+    if(this.state.cityOptions){
+    return this.state.cityOptions.map((country,i) => {
       return(
         <Col md={12} sm={12} xs={24} style={colStyle} key={i}>
           <Box
-            title={country.name}
+            title={country.label}
             subtitle={
               <IntlMessages id="uiElements.collapse.nestedExampleSubTitle" />
             }
           >
             <ContentHolder>
-            {country.states.map((state,j) =>(
+            {country.children.map((state,j) =>(
               <Collapse key={j}>
-                <Panel header={state.statename}>
-                  {state.cities.map((city,k) =>(
-                    <a href={city} key={k}>{city} </a>
+                <Panel header={state.label}>
+                  {state.children.map((city,k) =>(
+                    <a href={'/recordList/'+city.value} key={k}>{city.label} </a>
                   ))}
                 </Panel>
               </Collapse>
@@ -46,6 +75,7 @@ export default class extends Component {
         </Col>
       );
       })
+    }
   }
   callback = key => {};
   render() {
@@ -63,3 +93,16 @@ export default class extends Component {
     );
   }
 }
+
+
+
+function mapStateToProps(state) {
+
+  return {
+    cityOptions:state.RecordAdd.cityOptions,
+  };
+}
+
+const WrappedCityOptions = Form.create()(CityOptions);
+
+export default connect(mapStateToProps,{ } )(WrappedCityOptions);
