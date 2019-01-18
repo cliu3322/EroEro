@@ -4,6 +4,7 @@ import Ecommerce from './ecommerce/reducer';
 import Cards from './card/reducer';
 import RecordAdd from './recordAdd/reducer';
 import RecordList from './recordlist/reducer';
+import Cities from './cities/reducer';
 
 import auth from './chatRoom/reducer/auth';
 import friends from './chatRoom/reducer/friends';
@@ -21,6 +22,8 @@ export default {
   Cards,
   RecordAdd,
   RecordList,
+  Cities,
+  
   auth,
   friends,
   user,

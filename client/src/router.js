@@ -30,7 +30,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         <Route
           exact
           path={"/"}
-          component={asyncComponent(() => import("./containers/Uielements/Collapse"))}
+          component={asyncComponent(() => import("./containers/Page/City"))}
         />
         <Route
           exact

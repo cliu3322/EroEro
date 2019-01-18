@@ -39,4 +39,8 @@ module.exports = [
   'children': '$children'
 }
 }
-]
+, {
+    '$sort': {
+        'label': 1
+    }
+}]

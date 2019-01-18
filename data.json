@@ -1,0 +1,880 @@
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea2c"},"city":"Cameroon","link":"/c/cameroon","state":"Cameroon","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea2e"},"city":"Abidjan","link":"/c/abidjan","state":"Ivory Coast","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea30"},"city":"Nigeria","link":"/c/nigeria","state":"Nigeria","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea2f"},"city":"Morocco","link":"/c/morocco","state":"Morocco","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea2d"},"city":"Cairo","link":"/c/cairo","state":"Egypt","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea32"},"city":"Durban","link":"/c/durban","state":"South Africa","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea33"},"city":"Johannesburg","link":"/c/johannesburg","state":"South Africa","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea35"},"city":"Pretoria","link":"/c/pretoria","state":"South Africa","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea34"},"city":"Port Elizabeth","link":"/c/portelizabeth","state":"South Africa","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea37"},"city":"Bangladesh","link":"/c/bangladesh","state":"Bangladesh","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3a"},"city":"Chongqing","link":"/c/chongqing","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea39"},"city":"Chengdu","link":"/c/chengdu","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea38"},"city":"Beijing","link":"/c/beijing","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3c"},"city":"Guangzhou","link":"/c/guangzhou","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3d"},"city":"Hangzhou","link":"/c/hangzhou","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3e"},"city":"Nanjing","link":"/c/nanjing","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3f"},"city":"Shanghai","link":"/c/shanghai","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea41"},"city":"Shenzhen","link":"/c/shenzhen","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea31"},"city":"Cape Town","link":"/c/capetown","state":"South Africa","federal":"Africa","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea46"},"city":"New Territories","link":"/c/newterritories","state":"Hong Kong","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea44"},"city":"HK","link":"/c/hk","state":"Hong Kong","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea43"},"city":"Xi'an","link":"/c/xian","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea42"},"city":"Wuhan","link":"/c/wuhan","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea36"},"city":"Manama","link":"/c/manama","state":"Bahrain","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea49"},"city":"Bhubaneswar","link":"/c/bhubaneswar","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea48"},"city":"Bangalore","link":"/c/bangalore","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4b"},"city":"Chennai","link":"/c/chennai","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea47"},"city":"Ahmedabad","link":"/c/ahmedabad","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea3b"},"city":"Dalian","link":"/c/dalian","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4e"},"city":"Hyderabad","link":"/c/hyderabad","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4d"},"city":"Goa","link":"/c/goa","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea50"},"city":"Jaipur","link":"/c/jaipur","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4c"},"city":"Delhi","link":"/c/delhi","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea40"},"city":"Shenyang","link":"/c/shenyang","state":"China","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea53"},"city":"Lucknow","link":"/c/lucknow","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea51"},"city":"Kerala","link":"/c/kerala","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea58"},"city":"Bandung","link":"/c/bandung","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea55"},"city":"Pune","link":"/c/pune","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea45"},"city":"Kowloon","link":"/c/kowloon","state":"Hong Kong","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea52"},"city":"Kolkata","link":"/c/kolkata","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea56"},"city":"Surat","link":"/c/surat","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5d"},"city":"Surabaya","link":"/c/surabaya","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5a"},"city":"Jakarta","link":"/c/jakarta","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4a"},"city":"Chandigarh","link":"/c/chandigarh","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea57"},"city":"Bali","link":"/c/bali","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5b"},"city":"Makassar","link":"/c/makassar","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea62"},"city":"Osaka-Kobe-Kyoto","link":"/c/osaka-kobe-kyoto","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5f"},"city":"Hiroshima","link":"/c/hiroshima","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea4f"},"city":"Indore","link":"/c/indore","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5c"},"city":"Medan","link":"/c/medan","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea60"},"city":"Nagoya","link":"/c/nagoya","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea64"},"city":"Sendai","link":"/c/sendai","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea54"},"city":"Mumbai","link":"/c/mumbai","state":"India","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea61"},"city":"Okinawa","link":"/c/okinawa","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea65"},"city":"Tokyo","link":"/c/tokyo","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea67"},"city":"Busan","link":"/c/busan","state":"Korea","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea69"},"city":"Incheon","link":"/c/incheon","state":"Korea","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea59"},"city":"Batam","link":"/c/batam","state":"Indonesia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea66"},"city":"Amman","link":"/c/amman","state":"Jordan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6a"},"city":"Seoul","link":"/c/seoul","state":"Korea","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6c"},"city":"Kuwait","link":"/c/kuwait","state":"Kuwait","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6e"},"city":"Sidon","link":"/c/sidon","state":"Lebanon","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea5e"},"city":"Fukuoka","link":"/c/fukuoka","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6b"},"city":"Suwon","link":"/c/suwon","state":"Korea","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6f"},"city":"Tripoli","link":"/c/tripoli","state":"Lebanon","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea71"},"city":"Ipoh","link":"/c/ipoh","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea73"},"city":"Kota Kinabalu","link":"/c/kotakinabalu","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea70"},"city":"Macau","link":"/c/macau","state":"Macau","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea74"},"city":"Kuala Lumpur","link":"/c/kualalumpur","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea76"},"city":"Penang","link":"/c/penang","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea78"},"city":"Muscat","link":"/c/muscat","state":"Oman","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea63"},"city":"Sapporo","link":"/c/sapporo","state":"Japan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea75"},"city":"Kuching","link":"/c/kuching","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea79"},"city":"Faisalabad","link":"/c/faisalabad","state":"Pakistan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7b"},"city":"Karachi","link":"/c/karachi","state":"Pakistan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7d"},"city":"Cebu","link":"/c/cebu","state":"Philippines","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea68"},"city":"Daegu","link":"/c/daegu","state":"Korea","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7a"},"city":"Islamabad","link":"/c/islamabad","state":"Pakistan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7e"},"city":"Davao","link":"/c/davao","state":"Philippines","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea80"},"city":"Pampanga","link":"/c/pampanga","state":"Philippines","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea82"},"city":"Singapore","link":"/c/singapore","state":"Singapore","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea6d"},"city":"Beirut","link":"/c/beirut","state":"Lebanon","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7f"},"city":"Manila","link":"/c/manila","state":"Philippines","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea83"},"city":"Taipei","link":"/c/taipei","state":"Taiwan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea85"},"city":"Ankara","link":"/c/ankara","state":"Turkey","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea87"},"city":"Istanbul","link":"/c/istanbul","state":"Turkey","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea72"},"city":"Johor Bahru","link":"/c/johorbahru","state":"Malaysia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea84"},"city":"Bangkok","link":"/c/bangkok","state":"Thailand","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea88"},"city":"Abudhabi","link":"/c/abudhabi","state":"United Arab Emirates","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8a"},"city":"Al Ain","link":"/c/alain","state":"United Arab Emirates","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8c"},"city":"Sharjah","link":"/c/sharjah","state":"United Arab Emirates","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea77"},"city":"Ulaanbaatar","link":"/c/ulaanbaatar","state":"Mongolia","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea89"},"city":"Ajman","link":"/c/ajman","state":"United Arab Emirates","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8d"},"city":"Vietnam","link":"/c/vietnam","state":"Vietnam","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8f"},"city":"Brisbane","link":"/c/brisbane","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea7c"},"city":"Lahore","link":"/c/lahore","state":"Pakistan","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea92"},"city":"Darwin","link":"/c/darwin","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea91"},"city":"Canberra","link":"/c/canberra","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8e"},"city":"Adelaide","link":"/c/adelaide","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea81"},"city":"Doha","link":"/c/doha","state":"Qatar","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea94"},"city":"Hobart","link":"/c/hobart","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea96"},"city":"Melbourne","link":"/c/melbourne","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea97"},"city":"Newcastle","link":"/c/newcastle-australia","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea86"},"city":"Antalya","link":"/c/antalya","state":"Turkey","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea93"},"city":"Gold Coast","link":"/c/goldcoast","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9b"},"city":"Auckland","link":"/c/auckland","state":"New Zealand","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea99"},"city":"Sydney","link":"/c/sydney","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea8b"},"city":"Dubai","link":"/c/dubai","state":"United Arab Emirates","federal":"Asia, Pacific & Middle East","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9c"},"city":"Christchurch","link":"/c/christchurch","state":"New Zealand","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa0"},"city":"Calgary","link":"/c/calgary","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea98"},"city":"Perth","link":"/c/perth","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9e"},"city":"Hamilton","link":"/c/hamilton-nz","state":"New Zealand","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea90"},"city":"Cairns","link":"/c/cairns","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa5"},"city":"Medicine Hat","link":"/c/medicinehat","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa1"},"city":"Edmonton","link":"/c/edmonton","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9d"},"city":"Dunedin","link":"/c/dunedin","state":"New Zealand","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea95"},"city":"Launceston","link":"/c/launceston","state":"Australia","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa3"},"city":"Grande Prairie","link":"/c/grandeprairie","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa2"},"city":"Ft. McMurray","link":"/c/ftmcmurray","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaaa"},"city":"Comox Valley","link":"/c/comoxvalley","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa6"},"city":"Red Deer","link":"/c/reddeer","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9a"},"city":"Guam","link":"/c/guam","state":"Guam","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa7"},"city":"St. Albert","link":"/c/stalbert","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa8"},"city":"Abbotsford","link":"/c/abbotsford","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaab"},"city":"Cranbrook","link":"/c/cranbrook","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaaf"},"city":"Peace River Country","link":"/c/peace","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ea9f"},"city":"Wellington","link":"/c/wellington","state":"New Zealand","federal":"Australia & Oceania","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaad"},"city":"Kelowna","link":"/c/kelowna","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab0"},"city":"Prince George","link":"/c/princegeorge","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab4"},"city":"Victoria","link":"/c/victoria","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaac"},"city":"Kamloops","link":"/c/kamloops","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa4"},"city":"Lethbridge","link":"/c/lethbridge","state":"Alberta","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab2"},"city":"Sunshine Coast","link":"/c/sunshinecoast","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab5"},"city":"Whistler","link":"/c/whistler","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab9"},"city":"Moncton","link":"/c/moncton","state":"New Brunswick","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab1"},"city":"Skeena","link":"/c/skeena","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaa9"},"city":"Cariboo","link":"/c/cariboo","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab7"},"city":"Winnipeg","link":"/c/winnipeg","state":"Manitoba","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaba"},"city":"St. John","link":"/c/stjohn","state":"New Brunswick","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eabe"},"city":"Chatham","link":"/c/chatham","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab6"},"city":"Brandon","link":"/c/brandon","state":"Manitoba","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaae"},"city":"Nanaimo","link":"/c/nanaimo","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eabc"},"city":"Belleville","link":"/c/belleville","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eabf"},"city":"Cornwall","link":"/c/cornwall","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac3"},"city":"Kitchener","link":"/c/kitchener","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab3"},"city":"Vancouver","link":"/c/vancouver","state":"British Columbia","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eabb"},"city":"Barrie","link":"/c/barrie","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac4"},"city":"London","link":"/c/londonon","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac1"},"city":"Hamilton","link":"/c/hamilton","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eab8"},"city":"Fredericton","link":"/c/fredericton","state":"New Brunswick","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac8"},"city":"Peterborough","link":"/c/peterborough","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac0"},"city":"Guelph","link":"/c/guelph","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac9"},"city":"Sarnia","link":"/c/sarnia","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eabd"},"city":"Brantford","link":"/c/brantford","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eacd"},"city":"Toronto","link":"/c/toronto","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac6"},"city":"Ottawa","link":"/c/ottawa","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac5"},"city":"Niagara","link":"/c/niagara","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eace"},"city":"Windsor","link":"/c/windsor","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac2"},"city":"Kingston","link":"/c/kingston","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead2"},"city":"Sherbrooke","link":"/c/sherbrooke","state":"Quebec","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaca"},"city":"Sault Ste Marie","link":"/c/sault","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eacb"},"city":"Sudbury","link":"/c/sudbury","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead3"},"city":"Trois-Rivières","link":"/c/troisrivieres","state":"Quebec","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eac7"},"city":"Owen Sound","link":"/c/owensound","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eacf"},"city":"Montreal","link":"/c/montreal","state":"Quebec","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead7"},"city":"Whitehorse","link":"/c/whitehorse","state":"Yukon","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead8"},"city":"Tiranë","link":"/c/tirana","state":"Albania","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead0"},"city":"Quebec City","link":"/c/quebeccity","state":"Quebec","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead4"},"city":"Prince Albert","link":"/c/princealbert","state":"Saskatchewan","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eacc"},"city":"Thunder Bay","link":"/c/thunderbay","state":"Ontario","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eadc"},"city":"Salzburg","link":"/c/salzburg","state":"Austria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead5"},"city":"Regina","link":"/c/regina","state":"Saskatchewan","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eadd"},"city":"Wien","link":"/c/wien","state":"Austria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead1"},"city":"Saguenay","link":"/c/saguenay","state":"Quebec","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae1"},"city":"Charleroi","link":"/c/charleroi","state":"Belgium","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eada"},"city":"Innsbruck","link":"/c/innsbruck","state":"Austria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead9"},"city":"Graz","link":"/c/graz","state":"Austria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae2"},"city":"Ghent","link":"/c/ghent","state":"Belgium","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ead6"},"city":"Saskatoon","link":"/c/saskatoon","state":"Saskatchewan","federal":"Canada","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae6"},"city":"Zagreb","link":"/c/zagreb","state":"Croatia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eadf"},"city":"Antwerp","link":"/c/antwerp","state":"Belgium","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eade"},"city":"Minsk","link":"/c/minsk","state":"Belarus","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae7"},"city":"Nicosia","link":"/c/nicosia","state":"Cyprus","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eadb"},"city":"Linz","link":"/c/linz","state":"Austria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaeb"},"city":"Ostrava","link":"/c/ostrava","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae4"},"city":"Sarajevo","link":"/c/sarajevo","state":"Bosnia and Herzegovina","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae3"},"city":"Liege","link":"/c/liege","state":"Belgium","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaec"},"city":"Plzeň","link":"/c/plzen","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae0"},"city":"Brussel","link":"/c/brussel","state":"Belgium","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae9"},"city":"České Budějovice","link":"/c/ceskebudejovice","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf0"},"city":"Tallinn","link":"/c/tallinn","state":"Estonia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf1"},"city":"Helsinki","link":"/c/helsinki","state":"Finland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae8"},"city":"Brno","link":"/c/brno","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eae5"},"city":"Balgariya","link":"/c/balgariya","state":"Bulgaria","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaee"},"city":"Aarhus","link":"/c/aarhus","state":"Denmark","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf5"},"city":"Départements D'Outre","link":"/c/dom-tom","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf6"},"city":"Grenoble","link":"/c/grenoble","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaea"},"city":"Olomouc","link":"/c/olomouc","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaed"},"city":"Praha","link":"/c/praha","state":"Czech Republic","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eafa"},"city":"Marseille","link":"/c/marseille","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf3"},"city":"Bretagne","link":"/c/bretagne","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf2"},"city":"Bordeaux","link":"/c/bordeaux","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eafb"},"city":"Montpellier","link":"/c/montpellier","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf8"},"city":"Loire","link":"/c/loire","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaef"},"city":"København","link":"/c/kobenhavn","state":"Denmark","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaff"},"city":"Paris","link":"/c/paris","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb00"},"city":"Strasbourg","link":"/c/strasbourg","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf4"},"city":"Corse","link":"/c/corse","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf7"},"city":"Lille","link":"/c/lille","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eafd"},"city":"Nice","link":"/c/nice","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb04"},"city":"Bremen","link":"/c/bremen","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eaf9"},"city":"Lyon","link":"/c/lyon","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eafc"},"city":"Nantes","link":"/c/nantes","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb05"},"city":"Dortmund","link":"/c/dortmund","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb02"},"city":"Berlin","link":"/c/berlin","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eafe"},"city":"Normandie","link":"/c/normandie","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb09"},"city":"Frankfurt","link":"/c/frankfurt","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb01"},"city":"Toulouse","link":"/c/toulouse","state":"France","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb07"},"city":"Düsseldorf","link":"/c/dusseldorf","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0a"},"city":"Freiburg","link":"/c/freiburg","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb03"},"city":"Bodensee","link":"/c/bodensee","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0e"},"city":"Kaiserslautern","link":"/c/kaiserslautern","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb06"},"city":"Dresden","link":"/c/dresden","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0c"},"city":"Hannover","link":"/c/hannover","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0f"},"city":"Karlsruhe","link":"/c/karlsruhe","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb08"},"city":"Essen","link":"/c/essen","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb13"},"city":"Lübeck","link":"/c/luebeck","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0b"},"city":"Hamburg","link":"/c/hamburg","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb11"},"city":"Köln","link":"/c/koeln","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb14"},"city":"Mannheim","link":"/c/mannheim","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb0d"},"city":"Heidelberg","link":"/c/heidelberg","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb18"},"city":"Saarbrücken","link":"/c/saarbrucken","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb10"},"city":"Kiel","link":"/c/kiel","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb16"},"city":"Nürnberg","link":"/c/nuernberg","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb19"},"city":"Schwerin","link":"/c/schwerin","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb12"},"city":"Leipzig","link":"/c/leipzig","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1d"},"city":"Budapest","link":"/c/budapest","state":"Hungary","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb15"},"city":"München","link":"/c/muenchen","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1b"},"city":"Athens","link":"/c/athens","state":"Greece","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb17"},"city":"Rostock","link":"/c/rostock","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1e"},"city":"Iceland","link":"/c/iceland","state":"Iceland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb22"},"city":"Galway","link":"/c/galway","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1a"},"city":"Stuttgart","link":"/c/stuttgart","state":"Germany","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb20"},"city":"Derry","link":"/c/derry","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1c"},"city":"Thessaloniki","link":"/c/thessaloniki","state":"Greece","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb23"},"city":"Limerick","link":"/c/limerick","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb27"},"city":"Jerusalem","link":"/c/jerusalem","state":"Israel","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb1f"},"city":"Cork","link":"/c/cork","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb28"},"city":"Rishon Lezion","link":"/c/rishonlezion","state":"Israel","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb21"},"city":"Dublin","link":"/c/dublin","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb25"},"city":"Waterford","link":"/c/waterford","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb24"},"city":"Lisburn","link":"/c/lisburn","state":"Ireland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2c"},"city":"Bologna","link":"/c/bologna","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2d"},"city":"Calabria","link":"/c/calabria","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb26"},"city":"Haifa","link":"/c/haifa","state":"Israel","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2a"},"city":"Westbank","link":"/c/westbank","state":"Israel","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb31"},"city":"Milano","link":"/c/milano","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb32"},"city":"Napoli","link":"/c/napoli","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb29"},"city":"Telaviv","link":"/c/telaviv","state":"Israel","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2b"},"city":"Bari","link":"/c/bari","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2f"},"city":"Forli-Cesena","link":"/c/forli-cesena","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb37"},"city":"Torino","link":"/c/torino","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb2e"},"city":"Firenze","link":"/c/firenze","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb36"},"city":"Sicilia","link":"/c/sicilia","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb30"},"city":"Genova","link":"/c/genova","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb34"},"city":"Roma","link":"/c/roma","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb33"},"city":"Perugia","link":"/c/perugia","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb35"},"city":"Sardegna","link":"/c/sardegna","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3b"},"city":"Rīga","link":"/c/riga","state":"Latvia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb39"},"city":"Venezia","link":"/c/venezia","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3c"},"city":"Vilnius","link":"/c/vilnius","state":"Lithuania","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb38"},"city":"Trieste","link":"/c/trieste","state":"Italy","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3a"},"city":"Prishtinë","link":"/c/prishtina","state":"Kosovo","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3e"},"city":"Скопје","link":"/c/skopje","state":"Macedonia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb41"},"city":"Podgorica","link":"/c/podgorica","state":"Montenegro","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3d"},"city":"Luxembourg","link":"/c/luxembourg","state":"Luxembourg","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb40"},"city":"Monaco","link":"/c/monaco","state":"Monaco","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb43"},"city":"Den Haag","link":"/c/denhaag","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb3f"},"city":"Malta","link":"/c/malta","state":"Malta","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb46"},"city":"Rotterdam","link":"/c/rotterdam","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb42"},"city":"Amsterdam","link":"/c/amsterdam","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb45"},"city":"Groningen","link":"/c/groningen","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb48"},"city":"Bergen","link":"/c/bergen","state":"Norway","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4b"},"city":"Łódź","link":"/c/lodz","state":"Poland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb44"},"city":"Eindhoven","link":"/c/eindhoven","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb47"},"city":"Utrecht","link":"/c/utrecht","state":"Netherlands","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4d"},"city":"Warszawa","link":"/c/warszawa","state":"Poland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4a"},"city":"Kraków","link":"/c/krakow","state":"Poland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb50"},"city":"Coimbra","link":"/c/coimbra","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb49"},"city":"Oslo","link":"/c/oslo","state":"Norway","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4c"},"city":"Poznań","link":"/c/poznan","state":"Poland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb52"},"city":"Lisboa","link":"/c/lisboa","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb55"},"city":"Bucuresti","link":"/c/bucuresti","state":"Romania","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4e"},"city":"Wrocław","link":"/c/wroclaw","state":"Poland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb4f"},"city":"Braga","link":"/c/braga","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb57"},"city":"Sankt-Peterburg","link":"/c/sankt-peterburg","state":"Russia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb51"},"city":"Faro / Algarve","link":"/c/faro-algarve","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb53"},"city":"Madeira","link":"/c/madeira","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5c"},"city":"Barcelona","link":"/c/barcelona","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb54"},"city":"Porto","link":"/c/porto","state":"Portugal","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5a"},"city":"Košice","link":"/c/kosice","state":"Slovakia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb58"},"city":"Beograd","link":"/c/belgrade","state":"Serbia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb56"},"city":"Moskva","link":"/c/moskva","state":"Russia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb61"},"city":"Granada","link":"/c/granada","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb59"},"city":"Bratislava","link":"/c/bratislava","state":"Slovakia","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5f"},"city":"Canarias","link":"/c/canarias","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5d"},"city":"Bilbao","link":"/c/bilbao","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5b"},"city":"Alicante","link":"/c/alicante","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb66"},"city":"Murcia","link":"/c/murcia","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb64"},"city":"Málaga","link":"/c/malaga","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb5e"},"city":"Cádiz","link":"/c/cadiz","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb62"},"city":"Ibiza","link":"/c/ibiza","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb60"},"city":"Coruña","link":"/c/coruna","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6b"},"city":"Valencia","link":"/c/valencia","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb69"},"city":"San Sebastián","link":"/c/sansebastian","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb63"},"city":"Madrid","link":"/c/madrid","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb67"},"city":"Oviedo","link":"/c/oviedo","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb65"},"city":"Mallorca","link":"/c/mallorca","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb70"},"city":"Örebro","link":"/c/orebro","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6e"},"city":"Göteborg","link":"/c/gothenburg","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb68"},"city":"Salamanca","link":"/c/salamanca","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6c"},"city":"Valladolid","link":"/c/valladolid","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6a"},"city":"Sevilla","link":"/c/sevilla","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb75"},"city":"Basel","link":"/c/basel","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb73"},"city":"Uppsala","link":"/c/uppsala","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6d"},"city":"Zaragoza","link":"/c/zaragoza","state":"Spain","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb6f"},"city":"Malmö","link":"/c/malmo","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb71"},"city":"Stockholm","link":"/c/stockholm","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7a"},"city":"Zürich","link":"/c/zurich","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb78"},"city":"Lausanne","link":"/c/lausanne","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb72"},"city":"Umeå","link":"/c/umea","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb74"},"city":"Västerås","link":"/c/vasteras","state":"Sweden","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb76"},"city":"Bern","link":"/c/bern","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7f"},"city":"Odessa","link":"/c/odessa-ua","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7d"},"city":"Kyiv","link":"/c/kyiv","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb77"},"city":"Genève","link":"/c/geneve","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb79"},"city":"Lugano","link":"/c/lugano","state":"Switzerland","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7b"},"city":"Dnipropetrovsk","link":"/c/dnipropetrovsk","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb84"},"city":"Birmingham","link":"/c/birminghamuk","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb82"},"city":"Bath","link":"/c/bath","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7c"},"city":"Kharkiv","link":"/c/kharkiv","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb80"},"city":"Zaporizhia","link":"/c/zaporizhia","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb7e"},"city":"Lviv","link":"/c/lviv","state":"Ukraine","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb89"},"city":"East Anglia","link":"/c/eastanglia","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb87"},"city":"Cambridge","link":"/c/cambridge","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb85"},"city":"Brighton","link":"/c/brighton","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb81"},"city":"Aberdeen","link":"/c/aberdeen","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb83"},"city":"Belfast","link":"/c/belfast","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8c"},"city":"Essex","link":"/c/essex","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8e"},"city":"Hampshire","link":"/c/hampshire","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8a"},"city":"East Midlands","link":"/c/eastmidlands","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb88"},"city":"Devon","link":"/c/devon","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb86"},"city":"Bristol","link":"/c/bristol","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb91"},"city":"Liverpool","link":"/c/liverpool","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb93"},"city":"Manchester","link":"/c/manchester","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8f"},"city":"Kent","link":"/c/kent","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8d"},"city":"Glasgow","link":"/c/glasgow","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb8b"},"city":"Edinburgh","link":"/c/edinburgh","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb96"},"city":"Sheffield","link":"/c/sheffield","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb98"},"city":"Buenos Aires","link":"/c/buenosaires","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb94"},"city":"Newcastle","link":"/c/newcastle","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb92"},"city":"London","link":"/c/london","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9b"},"city":"Mendoza","link":"/c/mendoza","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9d"},"city":"Salta","link":"/c/salta","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb90"},"city":"Leeds","link":"/c/leeds","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb97"},"city":"Wales","link":"/c/wales","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba0"},"city":"Belize","link":"/c/belize","state":"Belize","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb99"},"city":"Cordoba","link":"/c/cordoba","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9e"},"city":"South Argentina","link":"/c/southargentina","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb95"},"city":"Oxford","link":"/c/oxford","state":"United Kingdom","federal":"Europe","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba2"},"city":"Bahia","link":"/c/bahia","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba5"},"city":"Brasilia","link":"/c/brasilia","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9c"},"city":"Rosario","link":"/c/rosario","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba7"},"city":"Fortaleza","link":"/c/fortaleza","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba3"},"city":"Belem","link":"/c/belem","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9a"},"city":"Laplata","link":"/c/laplata","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba1"},"city":"La Paz","link":"/c/lapaz","state":"Bolivia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebaa"},"city":"Porto Alegre","link":"/c/portoalegre","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebac"},"city":"Rio De Janeiro","link":"/c/riodejaneiro","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba8"},"city":"Goiânia","link":"/c/goiania","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eb9f"},"city":"Tucuman","link":"/c/tucuman","state":"Argentina","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba6"},"city":"Curitiba","link":"/c/curitiba","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebaf"},"city":"Dominican Republic","link":"/c/dominican","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb1"},"city":"Other Caribbean","link":"/c/caribbean","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebad"},"city":"São Paulo","link":"/c/saopaulo","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebab"},"city":"Recife","link":"/c/recife","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba4"},"city":"Belo Horizonte","link":"/c/belohorizonte","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb6"},"city":"Concepcion","link":"/c/concepcion","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb2"},"city":"Puerto Rico","link":"/c/puertorico","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb4"},"city":"Antofagasta","link":"/c/antofagasta","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eba9"},"city":"Manaus","link":"/c/manaus","state":"Brazil","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebbb"},"city":"Santiago","link":"/c/santiago","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb0"},"city":"Jamaica","link":"/c/jamaica","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb7"},"city":"Iquique","link":"/c/iquique","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb9"},"city":"Montt","link":"/c/montt","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc0"},"city":"Bogota","link":"/c/bogota","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb5"},"city":"Chillán","link":"/c/chillan","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc5"},"city":"Ibagué","link":"/c/ibague","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebbe"},"city":"Valparaiso","link":"/c/valparaiso","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebbc"},"city":"Talca","link":"/c/talca","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebae"},"city":"Bahamas","link":"/c/bahamas","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc3"},"city":"Cartagena","link":"/c/cartagena","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebba"},"city":"Rancagua","link":"/c/rancagua","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebca"},"city":"Manta","link":"/c/manta","state":"Ecuador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc1"},"city":"Bucaramanga","link":"/c/bucaramanga","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc8"},"city":"Cuenca","link":"/c/cuenca","state":"Ecuador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebbf"},"city":"Barranquilla","link":"/c/barranquilla","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb3"},"city":"Virgin Islands","link":"/c/virginislands","state":"Caribbean","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc6"},"city":"Medellin","link":"/c/medellin","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebcf"},"city":"Georgetown","link":"/c/georgetown","state":"Guyana","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebcd"},"city":"Santa Ana","link":"/c/santaana","state":"El Salvador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebb8"},"city":"La Serena","link":"/c/laserena","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc4"},"city":"Cucuta","link":"/c/cucuta","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebcb"},"city":"Quito","link":"/c/quito","state":"Ecuador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd4"},"city":"Ciudad Juárez","link":"/c/ciudadjuarez","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd2"},"city":"Baja California","link":"/c/bajacalifornia","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebbd"},"city":"Temuco","link":"/c/temuco","state":"Chile","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd0"},"city":"Tegucigalpa","link":"/c/tegucigalpa","state":"Honduras","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc9"},"city":"Guayaquil","link":"/c/guayaquil","state":"Ecuador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd7"},"city":"Guanajuato","link":"/c/guanajuato","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd9"},"city":"Hidalgo","link":"/c/hidalgo","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc2"},"city":"Cali","link":"/c/cali","state":"Colombia","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd5"},"city":"Df","link":"/c/df","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebdc"},"city":"Oaxaca","link":"/c/oaxaca","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebce"},"city":"Guatemala","link":"/c/guatemala","state":"Guatemala","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebde"},"city":"Puerto Vallarta","link":"/c/puertovallarta","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebc7"},"city":"Costa Rica","link":"/c/costarica","state":"Costa Rica","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebda"},"city":"Mazatlán","link":"/c/mazatlan","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd3"},"city":"Chihuahua","link":"/c/chihuahua","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe1"},"city":"Tijuana","link":"/c/tijuana","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe3"},"city":"Vera Cruz","link":"/c/veracruz","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebdf"},"city":"Querétaro","link":"/c/queretaro","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebcc"},"city":"San Miguel","link":"/c/sanmiguel","state":"El Salvador","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd8"},"city":"Hermosillo","link":"/c/hermosillo","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe8"},"city":"Arequipa","link":"/c/arequipa","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe4"},"city":"Yucatán","link":"/c/yucatan","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe6"},"city":"Panama","link":"/c/panama","state":"Panama","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd1"},"city":"Acapulco","link":"/c/acapulco","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebed"},"city":"Piura","link":"/c/piura","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebeb"},"city":"Iquitos","link":"/c/iquitos","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebdd"},"city":"Puebla","link":"/c/puebla","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe9"},"city":"Chiclayo","link":"/c/chiclayo","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebd6"},"city":"Guadalajara","link":"/c/guadalajara","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf2"},"city":"Auburn","link":"/c/auburn","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf0"},"city":"Montevideo","link":"/c/montevideo","state":"Uruguay","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe2"},"city":"Toluca","link":"/c/toluca","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebdb"},"city":"Monterrey","link":"/c/monterrey","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebee"},"city":"Trujillo","link":"/c/trujillo","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf7"},"city":"Mobile","link":"/c/mobile","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf5"},"city":"Gadsden","link":"/c/gadsden","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe7"},"city":"Asunción","link":"/c/asuncion","state":"Paraguay","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe0"},"city":"San Luis Potosí","link":"/c/sanluispotosi","state":"Mexico","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf3"},"city":"Birmingham","link":"/c/birmingham","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebfc"},"city":"Fairbanks","link":"/c/fairbanks","state":"Alaska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebec"},"city":"Lima","link":"/c/lima","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebfa"},"city":"Tuscaloosa","link":"/c/tuscaloosa","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebe5"},"city":"Managua","link":"/c/managua","state":"Nicaragua","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec01"},"city":"Phoenix","link":"/c/phoenix","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf8"},"city":"Montgomery","link":"/c/montgomery","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf1"},"city":"Caracas","link":"/c/caracas","state":"Venezuela","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebea"},"city":"Cusco","link":"/c/cusco","state":"Peru","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec06"},"city":"Yuma","link":"/c/yuma","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebfd"},"city":"Juneau","link":"/c/juneau","state":"Alaska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebff"},"city":"Flagstaff/Sedona","link":"/c/flagstaff","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebef"},"city":"Paramaribo","link":"/c/paramaribo","state":"Suriname","federal":"Latin America & Caribbean","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf6"},"city":"Huntsville","link":"/c/huntsville","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0b"},"city":"Bakersfield","link":"/c/bakersfield","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec02"},"city":"Prescott","link":"/c/prescott","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec04"},"city":"Sierra Vista","link":"/c/sierravista","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf4"},"city":"Dothan","link":"/c/dothan","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebfb"},"city":"Anchorage","link":"/c/anchorage","state":"Alaska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec10"},"city":"Inland Empire","link":"/c/inlandempire","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec07"},"city":"Fayetteville","link":"/c/fayetteville","state":"Arkansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec09"},"city":"Jonesboro","link":"/c/jonesboro","state":"Arkansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebf9"},"city":"Muscle Shoals","link":"/c/shoals","state":"Alabama","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec00"},"city":"Mohave County","link":"/c/mohave","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec15"},"city":"Modesto","link":"/c/modesto","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0c"},"city":"Chico","link":"/c/chico","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0e"},"city":"Humboldt County","link":"/c/humboldt","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ebfe"},"city":"Kenai Peninsula","link":"/c/kenaipeninsula","state":"Alaska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec05"},"city":"Tucson","link":"/c/tucson","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1a"},"city":"Palm Springs","link":"/c/palmsprings","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec11"},"city":"Long Beach","link":"/c/longbeach","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec13"},"city":"Mendocino","link":"/c/mendocino","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec03"},"city":"Show Low","link":"/c/showlow","state":"Arizona","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1f"},"city":"San Fernando Valley","link":"/c/sanfernandovalley","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec16"},"city":"Monterey","link":"/c/monterey","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0a"},"city":"Little Rock","link":"/c/littlerock","state":"Arkansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec08"},"city":"Fort Smith","link":"/c/fortsmith","state":"Arkansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec24"},"city":"San Mateo","link":"/c/sanmateo","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec18"},"city":"Oakland/East Bay","link":"/c/eastbay","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0f"},"city":"Imperial County","link":"/c/imperial","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1b"},"city":"Palmdale/lancaster","link":"/c/palmdale","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec0d"},"city":"Fresno","link":"/c/fresno","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1d"},"city":"Sacramento","link":"/c/sacramento","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec29"},"city":"Stockton","link":"/c/stockton","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec14"},"city":"Merced","link":"/c/merced","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec20"},"city":"San Francisco","link":"/c/sf","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec22"},"city":"San Jose","link":"/c/sanjose","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2e"},"city":"Colorado Springs","link":"/c/coloradosprings","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec12"},"city":"Los Angeles","link":"/c/losangeles","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec25"},"city":"Santa Barbara","link":"/c/santabarbara","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec19"},"city":"Orange County","link":"/c/orangecounty","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec17"},"city":"North Bay","link":"/c/northbay","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec33"},"city":"Western Slope","link":"/c/westslope","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1e"},"city":"San Diego","link":"/c/sandiego","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec27"},"city":"Santa Maria","link":"/c/santamaria","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2a"},"city":"Susanville","link":"/c/susanville","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec1c"},"city":"Redding","link":"/c/redding","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec23"},"city":"San Luis Obispo","link":"/c/sanluisobispo","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec38"},"city":"Northwest Connecticut","link":"/c/nwct","state":"Connecticut","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2c"},"city":"Visalia","link":"/c/visalia","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2f"},"city":"Denver","link":"/c/denver","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3d"},"city":"Fort Lauderdale","link":"/c/ftlauderdale","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec31"},"city":"Pueblo","link":"/c/pueblo","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec28"},"city":"Siskiyou","link":"/c/siskiyou","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec21"},"city":"San Gabriel Valley","link":"/c/sangabrielvalley","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec34"},"city":"Bridgeport","link":"/c/bridgeport","state":"Connecticut","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec36"},"city":"Hartford","link":"/c/hartford","state":"Connecticut","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec42"},"city":"Lakeland","link":"/c/lakeland","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2d"},"city":"Boulder","link":"/c/boulder","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec26"},"city":"Santa Cruz","link":"/c/santacruz","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec39"},"city":"Northern Virginia","link":"/c/nova","state":"District of Columbia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3b"},"city":"Washington D.C.","link":"/c/dc","state":"District of Columbia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec47"},"city":"Panama City","link":"/c/panamacity","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec2b"},"city":"Ventura","link":"/c/ventura","state":"California","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec32"},"city":"Rockies","link":"/c/rockies","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3e"},"city":"Fort Myers","link":"/c/fortmyers","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec40"},"city":"Jacksonville","link":"/c/jacksonville","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4c"},"city":"Tallahassee","link":"/c/tallahassee","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec30"},"city":"Fort Collins","link":"/c/fortcollins","state":"Colorado","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec37"},"city":"New Haven","link":"/c/newhaven","state":"Connecticut","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec43"},"city":"Miami","link":"/c/miami","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec45"},"city":"Okaloosa","link":"/c/okaloosa","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec35"},"city":"Eastern Connecticut","link":"/c/newlondon","state":"Connecticut","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3c"},"city":"Daytona","link":"/c/daytona","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec48"},"city":"Pensacola","link":"/c/pensacola","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4a"},"city":"Space Coast","link":"/c/spacecoast","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3a"},"city":"Southern Maryland","link":"/c/southernmaryland","state":"District of Columbia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec51"},"city":"Athens","link":"/c/athensga","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec41"},"city":"Keys","link":"/c/keys","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4f"},"city":"West Palm Beach","link":"/c/westpalmbeach","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4d"},"city":"Tampa","link":"/c/tampa","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec56"},"city":"Macon","link":"/c/macon","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec3f"},"city":"Gainesville","link":"/c/gainesville","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec54"},"city":"Brunswick","link":"/c/brunswick","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec46"},"city":"Orlando","link":"/c/orlando","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5b"},"city":"Big Island","link":"/c/bigisland","state":"Hawaii","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec52"},"city":"Atlanta","link":"/c/atlanta","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec44"},"city":"Ocala","link":"/c/ocala","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec59"},"city":"Statesboro","link":"/c/statesboro","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec60"},"city":"East Idaho","link":"/c/eastidaho","state":"Idaho","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4b"},"city":"St. Augustine","link":"/c/staugustine","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec49"},"city":"Sarasota/Bradenton","link":"/c/sarasota","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5e"},"city":"Maui","link":"/c/maui","state":"Hawaii","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec57"},"city":"Northwest Georgia","link":"/c/nwga","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec65"},"city":"Chambana","link":"/c/chambana","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec4e"},"city":"Treasure Coast","link":"/c/treasurecoast","state":"Florida","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec50"},"city":"Albany","link":"/c/albanyga","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5c"},"city":"Honolulu","link":"/c/honolulu","state":"Hawaii","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec63"},"city":"Bloomington","link":"/c/bloomington","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6a"},"city":"Peoria","link":"/c/peoria","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec53"},"city":"Augusta","link":"/c/augusta","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6f"},"city":"Evansville","link":"/c/evansville","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec61"},"city":"Lewiston","link":"/c/lewiston","state":"Idaho","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec68"},"city":"La Salle County","link":"/c/lasalle","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec55"},"city":"Columbus","link":"/c/columbusga","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec58"},"city":"Savannah","link":"/c/savannah","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec74"},"city":"Muncie","link":"/c/muncie","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5a"},"city":"Valdosta","link":"/c/valdosta","state":"Georgia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6d"},"city":"Western Illinois","link":"/c/quincy","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec66"},"city":"Chicago","link":"/c/chicago","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5d"},"city":"Kauai","link":"/c/kauai","state":"Hawaii","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec79"},"city":"Cedar Rapids","link":"/c/cedarrapids","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec72"},"city":"Kokomo","link":"/c/kokomo","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec5f"},"city":"Boise","link":"/c/boise","state":"Idaho","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6b"},"city":"Rockford","link":"/c/rockford","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec62"},"city":"Twin Falls","link":"/c/twinfalls","state":"Idaho","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7e"},"city":"Mason City","link":"/c/masoncity","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec77"},"city":"Terre Haute","link":"/c/terrehaute","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec64"},"city":"Carbondale","link":"/c/carbondale","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec70"},"city":"Ft Wayne","link":"/c/fortwayne","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec67"},"city":"Decatur","link":"/c/decatur","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec83"},"city":"Lawrence","link":"/c/lawrence","state":"Kansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7c"},"city":"Fort Dodge","link":"/c/fortdodge","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec69"},"city":"Mattoon","link":"/c/mattoon","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec75"},"city":"Richmond","link":"/c/richmondin","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec88"},"city":"Bowling Green","link":"/c/bowlinggreen","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6c"},"city":"Springfield","link":"/c/springfieldil","state":"Illinois","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec81"},"city":"Southest Iowa","link":"/c/ottumwa","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7a"},"city":"Desmoines","link":"/c/desmoines","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec6e"},"city":"Bloomington","link":"/c/bloomingtonin","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8d"},"city":"Western Kentucky","link":"/c/westky","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec71"},"city":"Indianapolis","link":"/c/indianapolis","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec86"},"city":"Topeka","link":"/c/topeka","state":"Kansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec73"},"city":"Lafayette","link":"/c/tippecanoe","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7f"},"city":"Quad Cities","link":"/c/quadcities","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec92"},"city":"Lake Charles","link":"/c/lakecharles","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec76"},"city":"South Bend","link":"/c/southbend","state":"Indiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8b"},"city":"Louisville","link":"/c/louisville","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec78"},"city":"Ames","link":"/c/ames","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec84"},"city":"Manhattan","link":"/c/manhattanks","state":"Kansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec97"},"city":"Baltimore","link":"/c/baltimore","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7b"},"city":"Dubuque","link":"/c/dubuque","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec90"},"city":"Houma","link":"/c/houma","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec7d"},"city":"Iowa City","link":"/c/iowacity","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec89"},"city":"Eastern Kentucky","link":"/c/eastky","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9c"},"city":"Boston","link":"/c/boston","state":"Massachusetts","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec80"},"city":"Sioux City","link":"/c/siouxcity","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec82"},"city":"Waterloo","link":"/c/waterloo","state":"Iowa","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec95"},"city":"Shreveport","link":"/c/shreveport","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec85"},"city":"Salina","link":"/c/salina","state":"Kansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8e"},"city":"Alexandria","link":"/c/alexandria","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca1"},"city":"Ann Arbor","link":"/c/annarbor","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec87"},"city":"Wichita","link":"/c/wichita","state":"Kansas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9a"},"city":"Frederick","link":"/c/frederick","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8a"},"city":"Lexington","link":"/c/lexington","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec93"},"city":"Monroe","link":"/c/monroe","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca6"},"city":"Grand Rapids","link":"/c/grandrapids","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8c"},"city":"Owensboro","link":"/c/owensboro","state":"Kentucky","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9f"},"city":"Springfield","link":"/c/springfield","state":"Massachusetts","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec8f"},"city":"Baton Rouge","link":"/c/batonrouge","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec98"},"city":"Cumberland Valley","link":"/c/cumberlandvalley","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecab"},"city":"Monroe","link":"/c/monroemi","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec91"},"city":"Lafayette","link":"/c/lafayette","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca4"},"city":"Detroit","link":"/c/detroit","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec94"},"city":"New Orleans","link":"/c/neworleans","state":"Louisiana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb0"},"city":"Southwest Michigan","link":"/c/swmi","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca9"},"city":"Kalamazoo","link":"/c/kalamazoo","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec96"},"city":"Annapolis","link":"/c/annapolis","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9d"},"city":"Cape Cod","link":"/c/capecod","state":"Massachusetts","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec99"},"city":"Eastern Shore","link":"/c/easternshore","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb5"},"city":"Mankato","link":"/c/mankato","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9b"},"city":"Western Maryland","link":"/c/westernmaryland","state":"Maryland","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecae"},"city":"Port Huron","link":"/c/porthuron","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca2"},"city":"Battle Creek","link":"/c/battlecreek","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ec9e"},"city":"South Coast","link":"/c/southcoast","state":"Massachusetts","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca0"},"city":"Worcester","link":"/c/worcester","state":"Massachusetts","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecba"},"city":"Hattiesburg","link":"/c/hattiesburg","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb3"},"city":"Brainerd","link":"/c/brainerd","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca7"},"city":"Holland","link":"/c/holland","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca3"},"city":"Central Michigan","link":"/c/centralmich","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca5"},"city":"Flint","link":"/c/flint","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecbf"},"city":"Columbia/Jeff City","link":"/c/columbiamo","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb8"},"city":"St. Cloud","link":"/c/stcloud","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecac"},"city":"Muskegon","link":"/c/muskegon","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eca8"},"city":"Jackson","link":"/c/jacksonmi","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecaa"},"city":"Lansing","link":"/c/lansing","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc4"},"city":"Southeast Missouri","link":"/c/semo","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecbd"},"city":"North Mississippi","link":"/c/northmiss","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb1"},"city":"Upper Peninsula","link":"/c/up","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecaf"},"city":"Saginaw","link":"/c/saginaw","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecad"},"city":"Northern Michigan","link":"/c/northernmichigan","state":"Michigan","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc9"},"city":"Bozeman","link":"/c/bozeman","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc2"},"city":"Kirksville","link":"/c/kirksville","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb6"},"city":"Minneapolis / St. Paul","link":"/c/minneapolis","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb4"},"city":"Duluth","link":"/c/duluth","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecce"},"city":"Missoula","link":"/c/missoula","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb2"},"city":"Bemidji","link":"/c/bemidji","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc7"},"city":"St. Louis","link":"/c/stlouis","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecbb"},"city":"Jackson","link":"/c/jackson","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb9"},"city":"Biloxi","link":"/c/biloxi","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecb7"},"city":"Rochester","link":"/c/rochestermn","state":"Minnesota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd3"},"city":"Scottsbluff","link":"/c/scottsbluff","state":"Nebraska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eccc"},"city":"Helena","link":"/c/helena","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecbe"},"city":"Southwest Mississippi","link":"/c/natchez","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc0"},"city":"Joplin","link":"/c/joplin","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecbc"},"city":"Meridian","link":"/c/meridian","state":"Mississippi","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd8"},"city":"Jersey Shore","link":"/c/jerseyshore","state":"New Jersey","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd1"},"city":"North Platte","link":"/c/northplatte","state":"Nebraska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc3"},"city":"Lake Of The Ozarks","link":"/c/loz","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc5"},"city":"Springfield","link":"/c/springfieldmo","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc1"},"city":"Kansas City","link":"/c/kc","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecdd"},"city":"Farmington","link":"/c/farmington","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd6"},"city":"Reno","link":"/c/reno","state":"Nevada","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc8"},"city":"Billings","link":"/c/billings","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecca"},"city":"Butte","link":"/c/butte","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecc6"},"city":"St Joseph","link":"/c/stjoseph","state":"Missouri","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece2"},"city":"Binghamton","link":"/c/binghamton","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecdb"},"city":"Albuquerque","link":"/c/albuquerque","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eccd"},"city":"Kalispell","link":"/c/kalispell","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eccb"},"city":"Great Falls","link":"/c/greatfalls","state":"Montana","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9eccf"},"city":"Grand Island","link":"/c/grandisland","state":"Nebraska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece7"},"city":"Chautauqua","link":"/c/chautauqua","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece0"},"city":"Santa Fe/Taos","link":"/c/santafe","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd2"},"city":"Omaha","link":"/c/omaha","state":"Nebraska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd0"},"city":"Lincoln","link":"/c/lincoln","state":"Nebraska","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd4"},"city":"Elko","link":"/c/elko","state":"Nevada","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecec"},"city":"Hudson Valley","link":"/c/hudsonvalley","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece5"},"city":"Buffalo","link":"/c/buffalo","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd7"},"city":"Central Jersey","link":"/c/centraljersey","state":"New Jersey","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd5"},"city":"Las Vegas","link":"/c/lasvegas","state":"Nevada","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecd9"},"city":"North Jersey","link":"/c/northjersey","state":"New Jersey","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf1"},"city":"Oneonta","link":"/c/oneonta","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecea"},"city":"Finger Lakes","link":"/c/fingerlakes","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecdc"},"city":"Clovis / Portales","link":"/c/clovis","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecda"},"city":"South Jersey","link":"/c/southjersey","state":"New Jersey","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecde"},"city":"Las Cruces","link":"/c/lascruces","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf6"},"city":"Staten Island","link":"/c/statenisland","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecef"},"city":"Manhattan","link":"/c/manhattan","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece1"},"city":"Albany","link":"/c/albany","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ecdf"},"city":"Roswell / Carlsbad","link":"/c/roswell","state":"New Mexico","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecfb"},"city":"Westchester","link":"/c/westchester","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece3"},"city":"Bronx","link":"/c/bronx","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece6"},"city":"Catskills","link":"/c/catskills","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf4"},"city":"Queens","link":"/c/queens","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed00"},"city":"Fayetteville","link":"/c/fayettevillenc","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece4"},"city":"Brooklyn","link":"/c/brooklyn","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece8"},"city":"Elmira","link":"/c/elmira","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9eceb"},"city":"Glens Falls","link":"/c/glensfalls","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf9"},"city":"Utica","link":"/c/utica","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed05"},"city":"Wilmington","link":"/c/wilmington","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a60200fe764bdf9ece9"},"city":"Fairfield","link":"/c/fairfield","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf0"},"city":"New York City","link":"/c/newyorkcity","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecfe"},"city":"Charlotte","link":"/c/charlotte","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9eced"},"city":"Ithaca","link":"/c/ithaca","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecee"},"city":"Long Island","link":"/c/longisland","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0a"},"city":"Minot","link":"/c/minot","state":"North Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed03"},"city":"Outer Banks","link":"/c/outerbanks","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf5"},"city":"Rochester","link":"/c/rochester","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf2"},"city":"Plattsburgh","link":"/c/plattsburgh","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf3"},"city":"Potsdam","link":"/c/potsdam","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0f"},"city":"Cincinnati","link":"/c/cincinnati","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecfa"},"city":"Watertown","link":"/c/watertown","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed08"},"city":"Fargo","link":"/c/fargo","state":"North Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf7"},"city":"Syracuse","link":"/c/syracuse","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecf8"},"city":"Twin Tiers","link":"/c/twintiers","state":"New York","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed14"},"city":"Lima/Findlay","link":"/c/limaoh","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecff"},"city":"Eastern","link":"/c/easternnc","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0d"},"city":"Athens","link":"/c/athensoh","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecfc"},"city":"Asheville","link":"/c/asheville","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ecfd"},"city":"Boone","link":"/c/boone","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed19"},"city":"Youngstown","link":"/c/youngstown","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed04"},"city":"Raleigh-durham","link":"/c/raleigh","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed12"},"city":"Dayton","link":"/c/dayton","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed01"},"city":"Greensboro","link":"/c/greensboro","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed02"},"city":"Hickory","link":"/c/hickory","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed09"},"city":"Grand Forks","link":"/c/grandforks","state":"North Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1e"},"city":"Stillwater","link":"/c/stillwater","state":"Oklahoma","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed17"},"city":"Toledo","link":"/c/toledo","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed06"},"city":"Winston-Salem","link":"/c/winstonsalem","state":"North Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed07"},"city":"Bismarck","link":"/c/bismarck","state":"North Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed23"},"city":"Eugene","link":"/c/eugene","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0e"},"city":"Chillicothe","link":"/c/chillicothe","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1c"},"city":"Norman","link":"/c/norman","state":"Oklahoma","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0b"},"city":"Akron/Canton","link":"/c/akroncanton","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed0c"},"city":"Ashtabula","link":"/c/ashtabula","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed28"},"city":"Roseburg","link":"/c/roseburg","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed13"},"city":"Huntington/Ashland","link":"/c/huntingtonoh","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed21"},"city":"Corvallis","link":"/c/corvallis","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed11"},"city":"Columbus","link":"/c/columbus","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed10"},"city":"Cleveland","link":"/c/cleveland","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2d"},"city":"Erie","link":"/c/erie","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed18"},"city":"Tuscarawas County","link":"/c/tuscarawas","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed16"},"city":"Sandusky","link":"/c/sandusky","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed15"},"city":"Mansfield","link":"/c/mansfield","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed26"},"city":"Oregon Coast","link":"/c/oregoncoast","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1b"},"city":"Lawton","link":"/c/lawton","state":"Oklahoma","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed32"},"city":"Philadelphia","link":"/c/philadelphia","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1d"},"city":"Oklahoma City","link":"/c/oklahomacity","state":"Oklahoma","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2b"},"city":"Altoona","link":"/c/altoona","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1a"},"city":"Zanesville/Cambridge","link":"/c/zanesville","state":"Ohio","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed37"},"city":"Williamsport","link":"/c/williamsport","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed20"},"city":"Bend","link":"/c/bend","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed22"},"city":"East Oregon","link":"/c/eastoregon","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed1f"},"city":"Tulsa","link":"/c/tulsa","state":"Oklahoma","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3c"},"city":"Columbia","link":"/c/columbia","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed25"},"city":"Medford","link":"/c/medford","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed30"},"city":"Meadville","link":"/c/meadville","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed24"},"city":"Klamath Falls","link":"/c/klamath","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2a"},"city":"Allentown","link":"/c/allentown","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed27"},"city":"Portland","link":"/c/portland","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed35"},"city":"Reading","link":"/c/reading","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed41"},"city":"Aberdeen","link":"/c/aberdeen-sd","state":"South Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed29"},"city":"Salem","link":"/c/salem","state":"Oregon","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2c"},"city":"Chambersburg","link":"/c/chambersburg","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2f"},"city":"Lancaster","link":"/c/lancaster","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3a"},"city":"Warwick","link":"/c/warwick","state":"Rhode Island","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed46"},"city":"Clarksville","link":"/c/clarksville","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed31"},"city":"Penn State","link":"/c/pennstate","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed2e"},"city":"Harrisburg","link":"/c/harrisburg","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed34"},"city":"Poconos","link":"/c/poconos","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3f"},"city":"Hilton Head","link":"/c/hiltonhead","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4b"},"city":"Tri-Cities","link":"/c/tricities","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed36"},"city":"Scranton","link":"/c/scranton","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed33"},"city":"Pittsburgh","link":"/c/pittsburgh","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed39"},"city":"Providence","link":"/c/providence","state":"Rhode Island","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed44"},"city":"Sioux Falls","link":"/c/siouxfalls","state":"South Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3b"},"city":"Charleston","link":"/c/charleston","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3e"},"city":"Greenville","link":"/c/greenville","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed50"},"city":"Brownsville","link":"/c/brownsville","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed38"},"city":"York","link":"/c/york","state":"Pennsylvania","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed49"},"city":"Memphis","link":"/c/memphis","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed43"},"city":"Rapid City","link":"/c/rapidcity","state":"South Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed40"},"city":"Myrtle Beach","link":"/c/myrtlebeach","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed55"},"city":"Denton","link":"/c/denton","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed3d"},"city":"Florence","link":"/c/florence","state":"South Carolina","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed45"},"city":"Chattanooga","link":"/c/chattanooga","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5a"},"city":"Huntsville","link":"/c/huntsvilletx","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4e"},"city":"Austin","link":"/c/austin","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed48"},"city":"Knoxville","link":"/c/knoxville","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5f"},"city":"Mid Cities","link":"/c/arlington","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4a"},"city":"Nashville","link":"/c/nashville","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed53"},"city":"Dallas","link":"/c/dallas","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4d"},"city":"Amarillo","link":"/c/amarillo","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed42"},"city":"Pierre","link":"/c/pierre","state":"South Dakota","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed64"},"city":"Texoma","link":"/c/texoma","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed58"},"city":"Galveston","link":"/c/galveston","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4f"},"city":"Beaumont","link":"/c/beaumont","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed52"},"city":"Corpus Christi","link":"/c/corpuschristi","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed69"},"city":"Logan","link":"/c/logan","state":"Utah","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed47"},"city":"Cookeville","link":"/c/cookeville","state":"Tennessee","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5d"},"city":"Lubbock","link":"/c/lubbock","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed54"},"city":"Del Rio","link":"/c/delrio","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6e"},"city":"Burlington","link":"/c/burlington","state":"Vermont","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed57"},"city":"Fort Worth","link":"/c/fortworth","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed62"},"city":"San Marcos","link":"/c/sanmarcos","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed59"},"city":"Houston","link":"/c/houston","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed4c"},"city":"Abilene","link":"/c/abilene","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5c"},"city":"Laredo","link":"/c/laredo","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed73"},"city":"Hampton","link":"/c/hampton","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed67"},"city":"Waco","link":"/c/waco","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5e"},"city":"Mcallen","link":"/c/mcallen","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed61"},"city":"San Antonio","link":"/c/sanantonio","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed78"},"city":"Norfolk","link":"/c/norfolk","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6c"},"city":"Salt Lake City","link":"/c/saltlakecity","state":"Utah","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed51"},"city":"College Station","link":"/c/collegestation","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed63"},"city":"Texarkana","link":"/c/texarkana","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed66"},"city":"Victoria","link":"/c/victoriatx","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7d"},"city":"Suffolk","link":"/c/suffolk","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed71"},"city":"Danville","link":"/c/danville","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed68"},"city":"Wichita Falls","link":"/c/wichitafalls","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed56"},"city":"El Paso","link":"/c/elpaso","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed82"},"city":"Mt. Vernon","link":"/c/mtvernon","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed76"},"city":"New River Valley","link":"/c/blacksburg","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6b"},"city":"Provo","link":"/c/provo","state":"Utah","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6d"},"city":"St. George","link":"/c/stgeorge","state":"Utah","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed5b"},"city":"Killeen","link":"/c/killeen","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed87"},"city":"Tacoma","link":"/c/tacoma","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7b"},"city":"Roanoke","link":"/c/roanoke","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed70"},"city":"Chesapeake","link":"/c/chesapeake","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed72"},"city":"Fredericksburg","link":"/c/fredericksburg","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8c"},"city":"Huntington","link":"/c/huntington","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed80"},"city":"Everett","link":"/c/everett","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed60"},"city":"Odessa","link":"/c/odessa","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed77"},"city":"Newport News","link":"/c/newportnews","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed75"},"city":"Lynchburg","link":"/c/lynchburg","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed85"},"city":"Seattle","link":"/c/seattle","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed91"},"city":"Wheeling","link":"/c/wheeling","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7c"},"city":"Southwest Virginia","link":"/c/swva","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8a"},"city":"Yakima","link":"/c/yakima","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed65"},"city":"Tyler","link":"/c/tyler","state":"Texas","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7a"},"city":"Richmond","link":"/c/richmond","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed96"},"city":"La Crosse","link":"/c/lacrosse","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed81"},"city":"Moses Lake","link":"/c/moseslake","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6a"},"city":"Ogden","link":"/c/ogden","state":"Utah","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8f"},"city":"Parkersburg","link":"/c/parkersburg","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7f"},"city":"Bellingham","link":"/c/bellingham","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed9b"},"city":"Wausau","link":"/c/wausau","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed86"},"city":"Spokane / Coeur d'Alene","link":"/c/spokane","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed6f"},"city":"Charlottesville","link":"/c/charlottesville","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed84"},"city":"Pullman","link":"/c/pullman","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8b"},"city":"Charleston","link":"/c/charlestonwv","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed94"},"city":"Green Bay","link":"/c/greenbay","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed74"},"city":"Harrisonburg","link":"/c/harrisonburg","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed99"},"city":"Racine","link":"/c/racine","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed90"},"city":"Southern West Virginia","link":"/c/southernwestvirginia","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed89"},"city":"Wenatchee","link":"/c/wenatchee","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed95"},"city":"Janesville","link":"/c/janesville","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed79"},"city":"Portsmouth","link":"/c/portsmouth","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8e"},"city":"Morgantown","link":"/c/morgantown","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed7e"},"city":"Virginia Beach","link":"/c/virginiabeach","state":"Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed9a"},"city":"Sheboygan","link":"/c/sheboygan","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed93"},"city":"Eau Claire","link":"/c/eauclaire","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed83"},"city":"Olympia","link":"/c/olympia","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed98"},"city":"Milwaukee","link":"/c/milwaukee","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed88"},"city":"Tri-Cities","link":"/c/tricitieswa","state":"Washington","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed8d"},"city":"Martinsburg","link":"/c/martinsburg","state":"West Virginia","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed92"},"city":"Appleton","link":"/c/appleton","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5bfa2a61200fe764bdf9ed97"},"city":"Madison","link":"/c/madison","state":"Wisconsin","federal":"United States","__v":{"$numberInt":"0"}}
