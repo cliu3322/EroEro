@@ -54,7 +54,6 @@ class CityOptions extends Component {
   }
 
   renderGeos(colStyle) {
-    console.log(this.props.cityOptions)
     if(this.props.cityOptions){
     return this.props.cityOptions.map((country,i) => {
       country.state.sort((a,b) =>{return a.label.localeCompare(b.label)})
