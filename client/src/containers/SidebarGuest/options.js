@@ -1,6 +1,6 @@
 const options = [
   {
-    key: 'cities',
+    key: '',
     label: 'uiElements.collapse.ChooseYourCity',
     leftIcon: 'ion-document',
   },

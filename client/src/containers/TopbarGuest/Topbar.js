@@ -5,6 +5,7 @@ import appActions from "../../redux/app/actions";
 import TopbarWrapper from "./topbar.style";
 import themes from "../../settings/themes";
 import { themeConfig } from "../../settings";
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 const { toggleCollapsed } = appActions;
@@ -41,10 +42,14 @@ class Topbar extends Component {
             </Col>
             <Col span={4}>
               <Button type="primary">
-                <Icon type="upload" />POST AD
+                <Link to="/signin">
+                  <Icon type="upload" />POST AD
+                </Link>
               </Button>
               <Button type="primary">
-                <Icon type="dollar" />DONATE
+                <Link to="/signin">
+                  <Icon type="dollar" />DONATE
+                </Link>
               </Button>
             </Col>
           </Row>

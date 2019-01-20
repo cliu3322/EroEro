@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 import App from './containers/App/App';
 import App1 from './containers/App1/App';
+import LegalPage from './containers/Page/legal';
 import asyncComponent from './helpers/AsyncFunc';
 
 const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => (
@@ -73,8 +74,9 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           component={App1}
         />
         <Route
+          exact
           path={"/"}
-          component={App1}
+          component={LegalPage}
         />
       </div>
     </ConnectedRouter>

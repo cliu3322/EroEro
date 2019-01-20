@@ -8,10 +8,6 @@ const routes = [
     component: asyncComponent(() => import('../Page/City')),
   },
   {
-    path: 'cities',
-    component: asyncComponent(() => import('../Page/City')),
-  },
-  {
     path: 'recordList/:id',
     component: asyncComponent(() => import('../RecordList')),
   },

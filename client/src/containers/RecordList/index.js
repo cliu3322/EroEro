@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import actions from "../../redux/recordlist/actions";
-import {  List, Icon, Avatar, Row, Col, Tag, Modal } from 'antd';
+import {  List, Icon, Avatar, Row, Col, Tag, Modal, Breadcrumb } from 'antd';
 
 const IconText = ({ type, text }) => (
   <span>
@@ -54,13 +54,16 @@ class Papers extends Component {
     });
   }
 
-
   render() {
     return (
       <div>
+        <Breadcrumb>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item><a href="">Application Center</a></Breadcrumb.Item>
+          <Breadcrumb.Item><a href="">Application List</a></Breadcrumb.Item>
+          <Breadcrumb.Item>An Application</Breadcrumb.Item>
+        </Breadcrumb>
         <List
-        header={<div>Header</div>}
-        footer={<div>Footer</div>}
         bordered = {true}
         pagination={{
            pageSize: 3,
