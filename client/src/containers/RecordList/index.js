@@ -14,11 +14,9 @@ class Papers extends Component {
   constructor(props) {
     super(props);
 
-    console.log(this.props.match.params)
-
     const {  initData } = this.props;
 
-    initData();
+    initData(this.props.match.params);
 
     this.state = {
       visible: false,
@@ -26,13 +24,9 @@ class Papers extends Component {
     };
     //console.log(this.state.contactOptions)
   }
-  componentDidMount() {
-    const {  initData } = this.props;
-    initData();
-  }
 
 
-  completeTodo(id) {
+  popup(id) {
     this.setState({
       visible: true,
       id:{name:id}
@@ -76,13 +70,13 @@ class Papers extends Component {
         renderItem={item => (
           <List.Item
             key={item._id}
-            extra={<img width={150} alt="logo" src={"http://localhost:9000/images/"+item.images[0]} onClick={evt => this.completeTodo(item._id)}/>}
+            extra={<img width={150} alt="logo" src={"http://localhost:9000/images/"+item.images[0]} onClick={evt => this.popup(item._id)}/>}
           >
             <List.Item.Meta
               avatar={<Avatar src='https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png' />}
               title={<Row>
                       <Col span={6}>{item.username}</Col>
-                      <Col span={6}><Tag onClick={evt => this.completeTodo(item._id)}>Tag 1</Tag></Col>
+                      <Col span={6}><Tag onClick={evt => this.popup(item._id)}>Tag 1</Tag></Col>
                     </Row>}
               description={
                 <Row>
@@ -94,7 +88,7 @@ class Papers extends Component {
             />
             <Row>
               <Icon
-                onClick={evt => this.completeTodo(item._id)}
+                onClick={evt => this.popup(item._id)}
                 className="App-todo-complete"
                 type="check"
               />
@@ -105,7 +99,7 @@ class Papers extends Component {
                 <IconText type="like-o" text="156" /> |
               </Col>
               <Col span={2}>
-                <Icon type="message"  style={{ marginRight: 8 }} onClick={evt => this.completeTodo(item._id)}/>
+                <Icon type="message"  style={{ marginRight: 8 }} onClick={evt => this.popup(item._id)}/>
                 {'2'}
               </Col>
             </Row>

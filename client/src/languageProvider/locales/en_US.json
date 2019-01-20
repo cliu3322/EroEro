@@ -564,6 +564,7 @@
   "sidebar.chatRoom": "Chat Room",
   "sidebar.masterChatRoom": "Master Chat Room",
 
+  "legal.title":"AGE CONSENT",
   "legal.subTitle":"YOU MUST BE 18 YEARS OR ABOVE TO VIEW THE WEBPAGE",
   "legal.description":"You can enter other text, images or HTML into this Popup. Click on agree to view the page. This popup uses cookie and will open once per user.",
   "legal.backButton": "I AGREE"

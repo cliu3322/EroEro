@@ -19,6 +19,7 @@ const RecordSchema = new Schema({
     address: { type: String, required: false },
     markers: { type: Array, required: false },
     images:{ type: Array, required: false },
+    locationId: { type: mongoose.Schema.Types.ObjectId, required: false },
 }
 
 );

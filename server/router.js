@@ -144,8 +144,8 @@ export default function (app) {
   })
 
   apiRoutes.get('/getrecordlist', function (req, res) {
-    //console.log('parames',req.query.id)
-    Record.find({}).exec(function(err, records) {
+
+    Record.find({locationId:req.query.id}).exec(function(err, records) {
       //console.log(records)
         if (records) {
           res.status(201).json(records);

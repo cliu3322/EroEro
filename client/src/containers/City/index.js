@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Row, Col  } from 'antd';
+import { Row, Col } from 'antd';
 import Form from '../../components/uielements/form';
 import Collapses from '../../components/uielements/collapse';
 import Box from '../../components/utility/box';
@@ -37,22 +37,6 @@ class CityOptions extends Component {
 
   }
 
-  onOpenChange = (openKeys) => {
-    const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
-    if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-      this.setState({ openKeys });
-    } else {
-      this.setState({
-        openKeys: latestOpenKey ? [latestOpenKey] : [],
-      });
-    }
-  }
-
-  onClick = (e) => {
-    console.log(e);
-
-  }
-
   renderGeos(colStyle) {
     if(this.props.cityOptions){
     return this.props.cityOptions.map((country,i) => {
@@ -73,7 +57,6 @@ class CityOptions extends Component {
                       <Link to={'/guest/recordList/'+city.label} >
                         <p key={k}>{city.value} </p>
                       </Link>
-
                       <br/>
                     </div>
                   ))}

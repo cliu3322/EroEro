@@ -5,11 +5,10 @@ import SuperFetch from '../../helpers/superFetch';
 
 
 const onGetRequest = async (data) => {
-  return  await SuperFetch.get('getrecordlist?id=1234')
+  return await SuperFetch.get('getrecordlist?id='+data.locationId)
 };
 
-function* getPapers(payload) {;
-
+function* getPapers(payload) {
   try {
     const getResult = yield call(onGetRequest,payload);
     //console.log('result1',getResult);
@@ -23,5 +22,5 @@ function* getPapers(payload) {;
   }
 }
 export default function* rootSaga() {
-  yield all([takeEvery(actions.GET_PAPERLIST, getPapers)]);
+  yield all([takeEvery(actions.INIT_RECORDLIST, getPapers)]);
 }
