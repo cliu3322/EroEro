@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import WithDirection from '../../../settings/withDirection';
+import WithDirection from '../../settings/withDirection';
 
 const CollapseStyleWrapper = styled.div`
   #background-video{

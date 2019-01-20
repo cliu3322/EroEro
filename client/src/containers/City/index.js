@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Row, Col } from 'antd';
-import Form from '../../../components/uielements/form';
-import Collapses from '../../../components/uielements/collapse';
-import PageHeader from '../../../components/utility/pageHeader';
-import Box from '../../../components/utility/box';
-import ContentHolder from '../../../components/utility/contentHolder';
-import basicStyle from '../../../settings/basicStyle';
-import IntlMessages from '../../../components/utility/intlMessages';
+import Form from '../../components/uielements/form';
+import Collapses from '../../components/uielements/collapse';
+import Box from '../../components/utility/box';
+import ContentHolder from '../../components/utility/contentHolder';
+import basicStyle from '../../settings/basicStyle';
 import CollapseWrapper from './collapse.style';
 import CollapseWrapper0 from './collapse0.style';
 
-import citiesActions from '../../../redux/cities/actions';
-
-
-import SideBar from '../../SidebarGuest/Sidebar';
+import citiesActions from '../../redux/cities/actions';
 
 
 const Panel = Collapses.Panel;
@@ -41,6 +36,12 @@ class CityOptions extends Component {
 
   }
 
+
+  onClick = (e) => {
+    console.log(e);
+
+  }
+
   renderGeos(colStyle) {
     //console.log(this.props.cityOptions)
     if(this.props.cityOptions){
@@ -60,6 +61,7 @@ class CityOptions extends Component {
                   {state.children.map((city,k) =>(
                     <div key={k}>
                       <a href={'/guest/recordList/'+city.value} key={k}>{city.label} </a>
+                      <p onClick={this.onClick('asd')} >key={k}>{city.label} </p>
                       <br/>
                     </div>
                   ))}

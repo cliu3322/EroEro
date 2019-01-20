@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Layout, Button, Icon, Row, Col } from "antd";
 import appActions from "../../redux/app/actions";
-import TopbarWrapper from "./topbar.style";
+
 import themes from "../../settings/themes";
 import { themeConfig } from "../../settings";
 import { Link } from 'react-router-dom';

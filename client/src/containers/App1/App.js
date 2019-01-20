@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Layout } from 'antd';
-import { Debounce } from 'react-throttle';
-import WindowResizeListener from 'react-window-size-listener';
-import { ThemeProvider } from 'styled-components';
 
 import Sidebar from '../SidebarGuest/Sidebar';
 import Topbar from '../TopbarGuest/Topbar';
 import AppRouter from './AppRouter';
 import { siteConfig } from '../../settings';
-import themes from '../../settings/themes';
-import { themeConfig } from '../../settings';
+
 import AppHolder from './commonStyle';
 import './global.css';
 
@@ -18,10 +14,6 @@ import './global.css';
 const { Content, Footer } = Layout;
 
 export class App extends Component {
-  constructor() {
-    super()
-
-  }
 
   render() {
 

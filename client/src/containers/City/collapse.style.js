@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import { borderRadius, transition } from '../../../settings/style-util';
-import WithDirection from '../../../settings/withDirection';
+import { borderRadius, transition } from '../../settings/style-util';
+import WithDirection from '../../settings/withDirection';
 
 const CollapseStyleWrapper = styled.div`
   .ant-collapse {
