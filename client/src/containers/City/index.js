@@ -40,19 +40,19 @@ class CityOptions extends Component {
   renderGeos(colStyle) {
     if(this.props.cityOptions){
     return this.props.cityOptions.map((country,i) => {
-      country.state.sort((a,b) =>{return a.label.localeCompare(b.label)})
+      country.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
       return(
         <Col md={6} sm={12} xs={24} style={colStyle} key={i}>
           <Box
             title={country.label}
           >
             <ContentHolder>
-            {country.state.map((state,j) =>{
-              state.city.sort((a,b) =>{return a.label.localeCompare(b.label)})
+            {country.children.map((state,j) =>{
+              state.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
               return (
               <Collapse key={j}>
                 <Panel header={state.label}>
-                  {state.city.map((city,k) =>(
+                  {state.children.map((city,k) =>(
                     <div key={k}>
                       <Link to={'/guest/recordList/'+city.label} >
                         <p key={k}>{city.value} </p>

@@ -39,6 +39,7 @@ class FormLocation extends Component {
 
     const getCities =  async () => {
          const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
+         console.log(response)
          this.setState({
            cityOptions: response.allcities,
          },() => {});
@@ -182,8 +183,9 @@ class FormLocation extends Component {
 
 
 function mapStateToProps(state) {
-
+  console.log(state)
   return {
+    cities: state.Cities.cities,
     cityOptions:state.RecordAdd.cityOptions,
     id:state.RecordAdd._id,
   };
