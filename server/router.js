@@ -42,20 +42,10 @@ export default function (app) {
     Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
       //console.log(cities)
         if (cities) {
-          console.log(cities[4]);
-          res.status(201).json({
-
-        allcities:cities
-
-      });
-        } else {
-          res.status(204).json({
-
-        allcities:cities
-
-      });
-        }
-      });
+          console.log('length',cities.length);
+          res.status(201).json({allcities:cities});
+        } else {}
+      })
   });
 
   apiRoutes.post('/record', (req, res) => {

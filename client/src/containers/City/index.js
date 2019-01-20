@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Row, Col } from 'antd';
+import { Row, Col  } from 'antd';
 import Form from '../../components/uielements/form';
 import Collapses from '../../components/uielements/collapse';
 import Box from '../../components/utility/box';
@@ -8,9 +8,9 @@ import ContentHolder from '../../components/utility/contentHolder';
 import basicStyle from '../../settings/basicStyle';
 import CollapseWrapper from './collapse.style';
 import CollapseWrapper0 from './collapse0.style';
+import { Link } from 'react-router-dom';
 
 import citiesActions from '../../redux/cities/actions';
-
 
 const Panel = Collapses.Panel;
 
@@ -25,7 +25,8 @@ class CityOptions extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        videoURL: 'https://storage.googleapis.com/coverr-main/mp4/Bokeh-Go-Around.mp4'
+        videoURL: 'https://storage.googleapis.com/coverr-main/mp4/Bokeh-Go-Around.mp4',
+        openKeys: [],
     }
   }
 
@@ -36,6 +37,16 @@ class CityOptions extends Component {
 
   }
 
+  onOpenChange = (openKeys) => {
+    const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
+    if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+      this.setState({ openKeys });
+    } else {
+      this.setState({
+        openKeys: latestOpenKey ? [latestOpenKey] : [],
+      });
+    }
+  }
 
   onClick = (e) => {
     console.log(e);
@@ -43,25 +54,27 @@ class CityOptions extends Component {
   }
 
   renderGeos(colStyle) {
-    //console.log(this.props.cityOptions)
+    console.log(this.props.cityOptions)
     if(this.props.cityOptions){
     return this.props.cityOptions.map((country,i) => {
-      country.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
+      country.state.sort((a,b) =>{return a.label.localeCompare(b.label)})
       return(
         <Col md={6} sm={12} xs={24} style={colStyle} key={i}>
           <Box
             title={country.label}
           >
             <ContentHolder>
-            {country.children.map((state,j) =>{
-              state.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
+            {country.state.map((state,j) =>{
+              state.city.sort((a,b) =>{return a.label.localeCompare(b.label)})
               return (
               <Collapse key={j}>
                 <Panel header={state.label}>
-                  {state.children.map((city,k) =>(
+                  {state.city.map((city,k) =>(
                     <div key={k}>
-                      <a href={'/guest/recordList/'+city.value} key={k}>{city.label} </a>
-                      <p onClick={this.onClick('asd')} >key={k}>{city.label} </p>
+                      <Link to={'/guest/recordList/'+city.label} >
+                        <p key={k}>{city.value} </p>
+                      </Link>
+
                       <br/>
                     </div>
                   ))}
@@ -76,7 +89,6 @@ class CityOptions extends Component {
       })
     }
   }
-  callback = key => {};
   render() {
     const { rowStyle, colStyle, gutter } = basicStyle;
     return (

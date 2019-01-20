@@ -1,46 +1,38 @@
 module.exports = [
-{
-'$group': {
-  '_id': {
-    'federal': '$federal',
-    'state': '$state',
-    'city': '$city'
-  }
-}
-}, {
-'$group': {
-  '_id': {
-    'federal': '$_id.federal',
-    'state': '$_id.state'
-  },
-  'cityusage': {
-    '$push': {
-      'label': '$_id.city',
-      'value': '$_id.city'
+  {
+    '$group': {
+      '_id': {
+        'federal': '$federal',
+        'state': '$state'
+      },
+      'city': {
+        '$push': {
+          'label': '$_id',
+          'value': '$city'
+        }
+      }
     }
-  }
-}
-}, {
-'$group': {
-  '_id': '$_id.federal',
-  'children': {
-    '$push': {
-      'label': '$_id.state',
-      'value': '$_id.state',
-      'children': '$cityusage'
+  }, {
+    '$group': {
+      '_id': '$_id.federal',
+      'state': {
+        '$push': {
+          'label': '$_id.state',
+          'value': '$_id.state',
+          'city': '$city'
+        }
+      }
     }
-  }
-}
-}, {
-'$project': {
-  '_id': 0,
-  'label': '$_id',
-  'value': '$_id',
-  'children': '$children'
-}
-}
-, {
+  }, {
+    '$project': {
+      '_id': 0,
+      'label': '$_id',
+      'value': '$_id',
+      'state': '$state'
+    }
+  }, {
     '$sort': {
-        'label': 1
+      'label': 1
     }
-}]
+  }
+]

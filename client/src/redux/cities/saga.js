@@ -11,7 +11,9 @@ function* initData() {
     const result = yield call(
       onGetRequest
     );
-    result.allcities.sort(function(a, b){return b.children.length - a.children.length});
+        console.log(result)
+    result.allcities.sort(function(a, b){return b.state.length - a.state.length});
+
     if (result) {
       yield put({
         type: actions.INIT_CITIES,
