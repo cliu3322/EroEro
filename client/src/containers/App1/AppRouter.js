@@ -5,7 +5,15 @@ import asyncComponent from '../../helpers/AsyncFunc';
 const routes = [
   {
     path: '',
-    component: asyncComponent(() => import('../dashboard')),
+    component: asyncComponent(() => import('../Page/City')),
+  },
+  {
+    path: 'cities',
+    component: asyncComponent(() => import('../Page/City')),
+  },
+  {
+    path: 'recordList/:id',
+    component: asyncComponent(() => import('../RecordList')),
   },
   {
     path: 'chatRoom',

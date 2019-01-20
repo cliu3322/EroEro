@@ -72,6 +72,10 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           path={"/guest"}
           component={App1}
         />
+        <Route
+          path={"/"}
+          component={App1}
+        />
       </div>
     </ConnectedRouter>
   );

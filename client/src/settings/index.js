@@ -3,9 +3,9 @@ export default {
 };
 
 const siteConfig = {
-  siteName: 'ISOMORPHIC',
+  siteName: 'Eroero',
   siteIcon: 'ion-flash',
-  footerText: 'Isomorphic ©2018 Created by RedQ, Inc',
+  footerText: ' ©2018 Created by Kaman',
 };
 const themeConfig = {
   topbar: 'themedefault',

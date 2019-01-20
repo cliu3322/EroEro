@@ -8,14 +8,16 @@ export default ({ collapsed }) => {
       {collapsed ? (
         <div>
           <h3>
-            <Link to="/dashboard">
+            <Link to="/guest">
               <i className={siteConfig.siteIcon} />
             </Link>
           </h3>
         </div>
       ) : (
         <h3>
-          <Link to="/dashboard">{siteConfig.siteName}</Link>
+          <Link to="/guest">
+            <img src="/logo.png" alt="Smiley face" width="60" height="60"/>
+          </Link>
         </h3>
       )}
     </div>

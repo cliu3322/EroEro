@@ -5,8 +5,8 @@ import { Debounce } from 'react-throttle';
 import WindowResizeListener from 'react-window-size-listener';
 import { ThemeProvider } from 'styled-components';
 
-import Sidebar from '../Sidebar/Sidebar';
-import Topbar from '../Topbar/Topbar';
+import Sidebar from '../SidebarGuest/Sidebar';
+import Topbar from '../TopbarGuest/Topbar';
 import AppRouter from './AppRouter';
 import { siteConfig } from '../../settings';
 import themes from '../../settings/themes';

@@ -85,9 +85,6 @@ class CityOptions extends Component {
            Your browser does not support the video tag.
        </video>
 
-        <PageHeader>
-          {<IntlMessages id="uiElements.collapse.ChooseYourCity" />}
-        </PageHeader>
         <Row style={rowStyle} gutter={gutter} justify="start">
 
           {this.renderGeos(colStyle)}
