@@ -13,7 +13,8 @@ import CollapseWrapper0 from './collapse0.style';
 
 import citiesActions from '../../../redux/cities/actions';
 
-import Topbar from '../../Topbar0/Topbar';
+
+import SideBar from '../../SidebarGuest/Sidebar';
 
 
 const Panel = Collapses.Panel;
@@ -58,7 +59,7 @@ class CityOptions extends Component {
                 <Panel header={state.label}>
                   {state.children.map((city,k) =>(
                     <div key={k}>
-                      <a href={'/recordList/'+city.value} key={k}>{city.label} </a>
+                      <a href={'/guest/recordList/'+city.value} key={k}>{city.label} </a>
                       <br/>
                     </div>
                   ))}
@@ -83,7 +84,7 @@ class CityOptions extends Component {
            <source src={this.state.videoURL} type="video/ogg" />
            Your browser does not support the video tag.
        </video>
-        <Topbar  />
+
         <PageHeader>
           {<IntlMessages id="uiElements.collapse.ChooseYourCity" />}
         </PageHeader>

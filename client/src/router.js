@@ -4,6 +4,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { connect } from 'react-redux';
 
 import App from './containers/App/App';
+import App0 from './containers/App0/App';
 import asyncComponent from './helpers/AsyncFunc';
 
 const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => (
@@ -30,7 +31,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         <Route
           exact
           path={"/"}
-          component={asyncComponent(() => import("./containers/Page/City"))}
+          component={asyncComponent(() => import("./containers/App0/App"))}
         />
         <Route
           exact
@@ -42,11 +43,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           path={"/500"}
           component={asyncComponent(() => import("./containers/Page/500"))}
         />
-        <Route
-          exact
-          path={"/recordList/:id"}
-          component ={asyncComponent(() => import('./containers/RecordList/index.js'))}
-        />
+
         <Route
           exact
           path={"/signin"}
@@ -75,6 +72,10 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
           path="/dashboard"
           component={App}
           isLoggedIn={isLoggedIn}
+        />
+        <Route
+          path="/guest"
+          component={App0}
         />
       </div>
     </ConnectedRouter>

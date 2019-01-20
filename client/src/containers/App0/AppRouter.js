@@ -1,0 +1,37 @@
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import asyncComponent from '../../helpers/AsyncFunc';
+
+const routes = [
+  {
+    path: '',
+    component: asyncComponent(() => import('../Page/City')),
+  },
+  {
+    path: 'blankPage',
+    component: asyncComponent(() => import('../blankPage')),
+  },
+
+];
+
+class AppRouter extends Component {
+  render() {
+    const { url, style } = this.props
+    return (
+      <div style={style}>
+        {routes.map(singleRoute => {
+          const { path, exact, ...otherProps } = singleRoute;
+          return (
+            <Route
+              key={singleRoute.path}
+              path={`${url}/${singleRoute.path}`}
+              {...otherProps}
+            />
+          );
+        })}
+      </div>
+    );
+  }
+}
+
+export default AppRouter;
