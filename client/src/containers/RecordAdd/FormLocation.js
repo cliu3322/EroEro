@@ -29,6 +29,7 @@ class FormLocation extends Component {
       markers:[],
       mapCenter:[51.505, -0.09],
       city:[],
+      options:[]
     };
 
   }
@@ -82,7 +83,7 @@ class FormLocation extends Component {
     provider.search({ query: query})
     .then(res => {
       if(res.length>0) {
-
+        console.log(res)
         this.setState({
             markers:[[res[0].y,res[0].x]],
             mapCenter:[res[0].y,res[0].x],
@@ -100,7 +101,7 @@ class FormLocation extends Component {
       <Form onSubmit={this.handleSubmit}>
         <Row>
           <Col span={8}>
-          <FormItem label='Choose your City' >
+          <FormItem label='Choose the City you want to post' >
             {getFieldDecorator('city', {
               rules: [{
                 required: true,
@@ -121,7 +122,7 @@ class FormLocation extends Component {
           <h4>If it didn't find any record, try to replace apt/unit to #</h4>
           <Col span={8}>
 
-            <FormItem label='Your full address or zipcode'>
+            <FormItem label='Your full address or zipcode and confirm with the map'>
               {getFieldDecorator('address', {
                 rules: [{
                   required: true,
@@ -134,6 +135,7 @@ class FormLocation extends Component {
                 />
               )}
             </FormItem>
+
           </Col>
         </Row>
 

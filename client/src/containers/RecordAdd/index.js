@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import PageHeader from '../../components/utility/pageHeader';
-import { Steps, Row, Col, Divider } from 'antd';
+import { Steps, Divider } from 'antd';
 import LayoutWrapper from '../../components/utility/layoutWrapper.js';
 import Box from '../../components/utility/box';
 import FormBasic from './FormBasic';
@@ -84,7 +84,7 @@ class RecordAdd extends Component {
                 && (<FormReview handler = {this.click}/>)
               }
             </Box>
-          
+
 
       </LayoutWrapper>
     );
