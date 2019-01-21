@@ -54,8 +54,8 @@ class CityOptions extends Component {
                 <Panel header={state.label}>
                   {state.children.map((city,k) =>(
                     <div key={k}>
-                      <Link to={'/guest/recordList/'+city.label} >
-                        <p key={k}>{city.value} </p>
+                      <Link to={'/guest/recordList/'+city.value} >
+                        <p key={k}>{city.label} </p>
                       </Link>
                       <br/>
                     </div>

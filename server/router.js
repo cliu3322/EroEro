@@ -41,15 +41,15 @@ export default function (app) {
 
     Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
       //console.log(cities)
-        if (cities) {
-          console.log('length',cities.length);
-          res.status(201).json({allcities:cities});
-        } else {}
-      })
+      if (cities) {
+        console.log('length',cities.length);
+        res.status(201).json({allcities:cities});
+      } else {}
+    })
   });
 
   apiRoutes.post('/record', (req, res) => {
-    console.log('record')
+
     if(!req.body.id) {
       const record = new Record({
         _id: new mongoose.Types.ObjectId(),
@@ -90,6 +90,7 @@ export default function (app) {
         {
           city: req.body.city,
           address: req.body.address,
+          locationId: req.body.city[2]
         }
       ).then(result => {
         if (result) {
@@ -146,13 +147,12 @@ export default function (app) {
   apiRoutes.get('/getrecordlist', function (req, res) {
 
     Record.find({locationId:req.query.id}).exec(function(err, records) {
-      //console.log(records)
-        if (records) {
-          res.status(201).json(records);
-        } else {
-          res.status(204).json(records);
-        }
-      });
+      if (records) {
+        res.status(201).json(records);
+      } else {
+        res.status(204).json(records);
+      }
+    });
   });
 
   app.use('/api', apiRoutes);

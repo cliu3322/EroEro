@@ -53,6 +53,7 @@ class FormLocation extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         var data = this.props.form.getFieldsValue();
+        console.log('data',data)
         data.id = this.props.id;
         data.markers = this.state.markers;
         this.props.updateAddress(data)
@@ -111,7 +112,6 @@ class FormLocation extends Component {
             {getFieldDecorator('city', {
               rules: [{
                 required: true,
-
                 message: 'Please input your city',
               }],
             })(
