@@ -8,6 +8,7 @@ const initState = {
 export default (state = initState, action) => {
   switch (action.type) {
     case actions.INIT_CITIES:
+      console.log(action.type)
       return {
         ...state,
         cities: action.payload,

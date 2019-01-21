@@ -4,8 +4,7 @@ import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
 import { Cascader,  Row, Col, Input  } from 'antd';
 import actions from '../../redux/recordAdd/actions';
-
-import SuperFetch from '../../helpers/superFetch';
+import citiesActions from '../../redux/cities/actions';
 
 
 import 'leaflet';
@@ -18,6 +17,7 @@ import { OpenStreetMapProvider } from 'leaflet-geosearch';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const { updateAddress } = actions;
+const { initCities } = citiesActions;
 
 const Search = Input.Search;
 const FormItem = Form.Item;
@@ -32,20 +32,14 @@ class FormLocation extends Component {
       mapCenter:[51.505, -0.09],
       city:[],
     };
-    //this.mountMap = this.mountMap.bind(this);
+
   }
 
   componentDidMount() {
 
-    const getCities =  async () => {
-         const response =  await SuperFetch.get('getCXGCities').then(res => {return res});
-         console.log(response)
-         this.setState({
-           cityOptions: response.allcities,
-         },() => {});
-         return response;
-      };
-    getCities();
+    if (this.props.cities.length==0) {
+      this.props.initCities();
+    }
   }
 
   handleSubmit = (e) => {
@@ -68,7 +62,7 @@ class FormLocation extends Component {
       city: value,
     },() => {
       //console.log(this.state.city[2] + ' ' +this.state.city[1]);
-      provider.search({ query: this.state.city[2] + ' ' +this.state.city[1]})
+      provider.search({ query: this.state.city[1]})
         .then(res => {
           if(res.length>0) {
             this.setState({
@@ -116,7 +110,7 @@ class FormLocation extends Component {
               }],
             })(
               <Cascader
-              options={this.state.cityOptions}
+              options={this.props.cities}
               onChange={this.onChange}
               placeholder="Please select"
               showSearch={ this.filter }
@@ -144,11 +138,6 @@ class FormLocation extends Component {
             </FormItem>
           </Col>
         </Row>
-        <Row>
-          <Col span={24}>
-          <h4>   {this.state.city[2]} {this.state.city[1]}</h4>
-          </Col>
-        </Row>
 
 
         <FormItem>
@@ -160,7 +149,7 @@ class FormLocation extends Component {
         <FormItem>
           <Map style={{ height: '400px', width: '100%' }}
             center={this.state.mapCenter}
-            zoom={13}
+            zoom={11}
             >
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -192,7 +181,7 @@ function mapStateToProps(state) {
 
 const WrappedFormLocation = Form.create()(FormLocation);
 
-export default connect(mapStateToProps,{ updateAddress } )(WrappedFormLocation);
+export default connect(mapStateToProps,{ updateAddress, initCities } )(WrappedFormLocation);
 
 //
 // const WrappedFormLocation = Form.create()(FormLocation);

@@ -12,6 +12,12 @@ function* initData() {
       onGetRequest
     );
     result.allcities.sort(function(a, b){return b.children.length - a.children.length});
+    result.allcities.map((country,i) => {
+      country.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
+      country.children.map((state,j) =>{
+        state.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
+      })
+    })
 
     if (result) {
       yield put({

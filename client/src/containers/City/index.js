@@ -9,7 +9,6 @@ import basicStyle from '../../settings/basicStyle';
 import CollapseWrapper from './collapse.style';
 import CollapseWrapper0 from './collapse0.style';
 import { Link } from 'react-router-dom';
-
 import citiesActions from '../../redux/cities/actions';
 
 const Panel = Collapses.Panel;
@@ -31,16 +30,13 @@ class CityOptions extends Component {
   }
 
   componentDidMount() {
-
     const { initCities } = this.props;
     initCities();
-
   }
 
   renderGeos(colStyle) {
     if(this.props.cityOptions){
     return this.props.cityOptions.map((country,i) => {
-      country.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
       return(
         <Col md={6} sm={12} xs={24} style={colStyle} key={i}>
           <Box
@@ -48,7 +44,6 @@ class CityOptions extends Component {
           >
             <ContentHolder>
             {country.children.map((state,j) =>{
-              state.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
               return (
               <Collapse key={j}>
                 <Panel header={state.label}>
@@ -93,7 +88,7 @@ class CityOptions extends Component {
 
 
 function mapStateToProps(state) {
-  //console.log(state);
+  console.log(state);
   return {
     cityOptions:state.Cities.cities,
   };
