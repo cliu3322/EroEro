@@ -23,7 +23,7 @@ class FormDescription extends Component {
       this.setState({ editorState });
     };
     const editorOption = {
-      style: { width: '90%', height: '70%' },
+      style: { width: '100%', height: '70%' },
       editorState: this.state.editorState,
       toolbarClassName: 'home-toolbar',
       wrapperClassName: 'home-wrapper',

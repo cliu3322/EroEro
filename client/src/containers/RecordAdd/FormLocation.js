@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Form from '../../components/uielements/form';
 import Button from '../../components/uielements/button';
-import { Cascader,  Row, Col, Input  } from 'antd';
+import {Form, Cascader, Row, Col, Input  } from 'antd';
 import actions from '../../redux/recordAdd/actions';
 import citiesActions from '../../redux/cities/actions';
-
 
 import 'leaflet';
 import 'leaflet.markercluster';
@@ -37,7 +35,7 @@ class FormLocation extends Component {
 
   componentDidMount() {
 
-    if (this.props.cities.length==0) {
+    if (this.props.cities.length===0) {
       this.props.initCities();
     }
   }
@@ -102,7 +100,7 @@ class FormLocation extends Component {
       <Form onSubmit={this.handleSubmit}>
         <Row>
           <Col span={8}>
-          <FormItem label='Choose your City'>
+          <FormItem label='Choose your City' >
             {getFieldDecorator('city', {
               rules: [{
                 required: true,

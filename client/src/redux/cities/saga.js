@@ -12,9 +12,9 @@ function* initData() {
       onGetRequest
     );
     result.allcities.sort(function(a, b){return b.children.length - a.children.length});
-    result.allcities.map((country,i) => {
+    result.allcities.forEach((country,i) => {
       country.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
-      country.children.map((state,j) =>{
+      country.children.forEach((state,j) =>{
         state.children.sort((a,b) =>{return a.label.localeCompare(b.label)})
       })
     })

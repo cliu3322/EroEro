@@ -1,74 +1,90 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import PageHeader from '../../components/utility/pageHeader';
-import Box from '../../components/utility/box';
+import { Steps, Row, Col, Divider } from 'antd';
 import LayoutWrapper from '../../components/utility/layoutWrapper.js';
-import ContentHolder from '../../components/utility/contentHolder';
-import Tabs, { TabPane } from '../../components/uielements/tabs';
+import Box from '../../components/utility/box';
+import FormBasic from './FormBasic';
+
 import FormUploadImage from './FormUploadImage';
 import FormDescription from './FormDescription';
 import FormReview from './FormReview';
-import FormBasic from './FormBasic';
 import FormLocation from './FormLocation';
 
 
 import IntlMessages from '../../components/utility/intlMessages'
 
 
+const Step = Steps.Step;
+
+const steps = [{
+  title: 'Basic',
+  content: (<FormBasic/>),
+}, {
+  title: 'Location',
+  content: (<FormLocation/>),
+}, {
+  title: 'Picture',
+  content: (<FormUploadImage/>),
+}, {
+  title: 'Description',
+  content: (<FormDescription/>),
+}, {
+  title: 'Review',
+  content:(<FormReview/>),
+}];
+
 class RecordAdd extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      tab_id: this.props.tab_id,
+      current: 0,
     };
-    //console.log(this.state.contactOptions)
+
   }
+
 
   click =  (e) => {
-    //console.log(value.target.value)
-    this.setState({
-      tab_id:e.toString()
-    },() => {});
+    const current = this.state.current + 1;
+    this.setState({ current });
   }
 
-
   render() {
-
+    const { current } = this.state;
     return (
       <LayoutWrapper>
         <PageHeader>{<IntlMessages id="addRecord.enterInfo" />}</PageHeader>
-        <Tabs activeKey={this.state.tab_id} onTabClick = {this.click}>
-          <TabPane tab="Basic Info" key="1" >
+
+            <Steps current={current}>
+              {steps.map(item => <Step key={item.title} title={item.title} />)}
+            </Steps>
+
+          <Divider />
+
             <Box>
-              <FormBasic handler = {this.click} />
+              {
+                current === 0
+                && (<FormBasic handler = {this.click}/>)
+              }
+              {
+                current === 1
+                && (<FormLocation handler = {this.click}/>)
+              }
+              {
+                current === 2
+                && (<FormUploadImage handler = {this.click}/>)
+              }
+              {
+                current === 3
+                && (<FormDescription handler = {this.click}/>)
+              }
+              {
+                current === 4
+                && (<FormReview handler = {this.click}/>)
+              }
             </Box>
-          </TabPane>
-          <TabPane tab="Location" key="2" >
-            <Box>
-              <FormLocation handler = {this.click} />
-            </Box>
-          </TabPane>
-          <TabPane tab="Pictures" key="3" >
-            <Box>
-              <FormUploadImage handler = {this.click}/>
-            </Box>
-          </TabPane>
-          <TabPane tab="Description(optional)" key="4" >
-            <Box>
-              <FormDescription handler = {this.click}/>
-            </Box>
-          </TabPane>
-          <TabPane tab="Review and Complete" key="5">
-              <Box title='Review your post'>
-                <ContentHolder>
-                  <Box>
-                    <FormReview />
-                  </Box>
-                </ContentHolder>
-              </Box>
-          </TabPane>
-        </Tabs>
+          
 
       </LayoutWrapper>
     );
@@ -79,9 +95,7 @@ class RecordAdd extends Component {
 function mapStateToProps(state) {
   //console.log(state.RecordAdd.tab_id.toString())
   return {
-    basicTab:state.RecordAdd._id?true:false,
-    //tab_id:state.RecordAdd.tab_id.toString()
-    tab_id:state.RecordAdd.tab_id.toString()
+
   };
 }
 
