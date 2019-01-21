@@ -43,6 +43,7 @@ class AuthHelper {
 
     try {
       const profile = jwtDecode(token);
+      //console.log('profile.expiredAt', profile.expiredAt);
       const expiredAt = profile.expiredAt || profile.exp * 1000;
 
       if (expiredAt > new Date().getTime()) {

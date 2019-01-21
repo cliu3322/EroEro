@@ -10,6 +10,7 @@ class AuthCheck extends Component {
   state = { loading: false };
   checkDemo = () => {
     this.setState({ loading: true });
+    console.log('profile.expiredAt',this.props.token);
     AuthHelper.checkDemoPage(this.props.token).then(result => {
       if (result.error) {
         notification('error', result.error);
@@ -31,9 +32,14 @@ class AuthCheck extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  console.log(state);
+  return {
+    token: state.Auth.idToken,
+  };
+}
+
 export default connect(
-  state => ({
-    token: state.Auth.token,
-  }),
-  {}
+  mapStateToProps,{}
 )(AuthCheck);
