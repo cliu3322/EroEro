@@ -183,7 +183,6 @@ class FormLocation extends Component {
 
 
 function mapStateToProps(state) {
-  console.log(state)
   return {
     cities: state.Cities.cities,
     cityOptions:state.RecordAdd.cityOptions,

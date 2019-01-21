@@ -67,7 +67,6 @@ class SignIn extends Component {
                   id="inputUserName"
                   size="large"
                   placeholder="Username"
-                  defaultValue="demo@gmail.com"
                 />
               </div>
 
@@ -77,7 +76,6 @@ class SignIn extends Component {
                   size="large"
                   type="password"
                   placeholder="Password"
-                  defaultValue="demodemo"
                 />
               </div>
 
