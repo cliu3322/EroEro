@@ -50,6 +50,7 @@
     "redux-devtools-log-monitor": "^1.2.0",
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
+    "reqwest": "^2.0.5",
     "rheostat": "^3.0.1",
     "smooth-scrollbar": "^8.2.5",
     "socket.io-client": "^2.2.0",

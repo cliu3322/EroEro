@@ -52,7 +52,7 @@ class FormUploadImage extends Component {
 
     // You can use any AJAX library you like
     reqwest({
-      url: '/api/image',
+      url: '//jsonplaceholder.typicode.com/posts/',
       method: 'post',
       processData: false,
       data: formData,
@@ -72,21 +72,15 @@ class FormUploadImage extends Component {
     });
   }
 
+  beforeUpload = (e) =>{
+    console.log(e);
+    return false;
+
+  }
 
 
   render() {
-    const { previewVisible, previewImage } = this.state;
-
-    const { uploading, fileList } = this.state;
-    const props = {
-      beforeUpload: (file) => {
-        this.setState(state => ({
-          fileList: [...state.fileList, file],
-        }));
-        return false;
-      },
-      fileList,
-    };
+    const { previewVisible, previewImage, fileList } = this.state;
     const uploadButton = (
       <div>
         <Icon type="plus" />
@@ -95,10 +89,18 @@ class FormUploadImage extends Component {
     );
     return (
       <div className="clearfix">
-        <Upload {...props}>
-          <Button>
-            <Icon type="upload" /> Select File
-          </Button>
+        <Upload
+          action="/api/image"
+          listType="picture-card"
+          fileList={fileList}
+          onPreview={this.handlePreview}
+          //onChange={this.handleChange}
+          multiple = {true}
+          accept="image/*,audio/*"
+          data={{id:this.props.id}}
+          beforeUpload={this.beforeUpload}
+        >
+          {fileList.length >= 10 ? null : uploadButton}
         </Upload>
         <Modal visible={previewVisible} footer={null} onCancel={this.handleCancel}>
           <img alt="example" style={{ width: '100%' }} src={previewImage} />

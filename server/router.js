@@ -111,7 +111,7 @@ export default function (app) {
     }
   });
 
-  apiRoutes.post('/image',upload.single('file'), (req, res) => {
+  apiRoutes.post('/image',upload.single('files[]'), (req, res) => {
 
     console.log('id',req.body.id);
     console.log('file',req.file);
