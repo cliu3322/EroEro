@@ -19,7 +19,7 @@ export default function (app) {
 
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      //console.log(req.body.id)
+      console.log('req.body')
       cb(null, './uploads/')
     },
     filename: function (req, file, cb) {
@@ -111,19 +111,18 @@ export default function (app) {
     }
   });
 
-  apiRoutes.post('/image',upload.single('files[]'), (req, res) => {
-
-    console.log('id',req.body.id);
-    console.log('file',req.file);
+  apiRoutes.post('/image',upload.array('files[]'), (req, res) => {
 
     const record = new Record({
       _id: req.body.id,
     });
 
+    let fileNameResult = req.files.map(a => a.filename);
+
     Record.findOneAndUpdate(
       { _id: req.body.id },
       {
-         $push: { images: req.file.filename },
+         $push: { images: fileNameResult },
       }
     ).then(result => {
       if (result) {

@@ -5,6 +5,7 @@ import { Upload, Icon, Modal, message } from 'antd';
 import Button from '../../components/uielements/button';
 import actions from '../../redux/recordAdd/actions';
 import reqwest from 'reqwest';
+import './FormUploadImage.css';
 
 
 const { addressImageSuccess } = actions;
@@ -20,24 +21,7 @@ class FormUploadImage extends Component {
 
   handleCancel = () => this.setState({ previewVisible: false })
 
-  handlePreview = (file) => {
-    this.setState({
-      previewImage: file.url || file.thumbUrl,
-      previewVisible: true,
-      beforeUpload:false
-    });
-  }
 
-  handleChange = (e) =>{
-
-    var { fileList } = e;
-    //console.log(e)
-    this.setState({ fileList });
-    fileList = fileList.map((file) => {
-      return file;
-    });
-
-  }
 
   click= () =>{
     const { fileList } = this.state;
@@ -45,6 +29,8 @@ class FormUploadImage extends Component {
     fileList.forEach((file) => {
       formData.append('files[]', file);
     });
+    console.log(this.props.id)
+    formData.append('id', this.props.id);
 
     this.setState({
       uploading: true,
@@ -78,14 +64,27 @@ class FormUploadImage extends Component {
     const { previewVisible, previewImage } = this.state;
 
     const { uploading, fileList } = this.state;
-    const props = {
+
+    const props1 = {
       beforeUpload: (file) => {
         this.setState(state => ({
           fileList: [...state.fileList, file],
         }));
         return false;
       },
-      fileList,
+      onRemove: (file) => {
+        console.log(file);
+      },
+      listType:"picture-card",
+      multiple: true,
+      onPreview:(file) => {
+        this.setState({
+          previewImage: file.url || file.thumbUrl,
+          previewVisible: true,
+          beforeUpload:false
+        });
+      },
+
     };
     const uploadButton = (
       <div>
@@ -95,10 +94,11 @@ class FormUploadImage extends Component {
     );
     return (
       <div className="clearfix">
-        <Upload {...props}>
-          <Button>
-            <Icon type="upload" /> Select File
-          </Button>
+        <Upload {...props1}>
+          <div>
+            <Icon type="plus" />
+            <div className="ant-upload-text">Upload</div>
+          </div>
         </Upload>
         <Modal visible={previewVisible} footer={null} onCancel={this.handleCancel}>
           <img alt="example" style={{ width: '100%' }} src={previewImage} />
