@@ -19,7 +19,15 @@ class FormUploadImage extends Component {
     uploading: false,
   };
 
-  handleCancel = () => this.setState({ previewVisible: false })
+  handleCancel = (file) => {
+    console.log('file',file);
+
+    const { fileList } = this.state;
+
+    console.log('fileList',fileList);
+
+    this.setState({ previewVisible: false })
+  }
 
 
 
@@ -48,6 +56,7 @@ class FormUploadImage extends Component {
           uploading: false,
         });
         message.success('upload successfully.');
+        this.props.handler();
       },
       error: () => {
         this.setState({
@@ -63,8 +72,6 @@ class FormUploadImage extends Component {
   render() {
     const { previewVisible, previewImage } = this.state;
 
-    const { uploading, fileList } = this.state;
-
     const props1 = {
       beforeUpload: (file) => {
         this.setState(state => ({
@@ -73,7 +80,12 @@ class FormUploadImage extends Component {
         return false;
       },
       onRemove: (file) => {
-        console.log(file);
+
+        const { fileList } = this.state;
+        fileList.splice( fileList.indexOf(file), 1 );
+
+        this.setState({ fileList: fileList })
+
       },
       listType:"picture-card",
       multiple: true,
@@ -86,12 +98,7 @@ class FormUploadImage extends Component {
       },
 
     };
-    const uploadButton = (
-      <div>
-        <Icon type="plus" />
-        <div className="ant-upload-text">Upload</div>
-      </div>
-    );
+
     return (
       <div className="clearfix">
         <Upload {...props1}>

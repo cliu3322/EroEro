@@ -46,7 +46,6 @@ class FormLocation extends Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         var data = this.props.form.getFieldsValue();
-        console.log('data',data)
         data.id = this.props.id;
         data.markers = this.state.markers;
         this.props.updateAddress(data)
@@ -83,7 +82,6 @@ class FormLocation extends Component {
     provider.search({ query: query})
     .then(res => {
       if(res.length>0) {
-        console.log(res)
         this.setState({
             markers:[[res[0].y,res[0].x]],
             mapCenter:[res[0].y,res[0].x],
