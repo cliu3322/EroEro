@@ -7,7 +7,7 @@ import Box from '../../components/utility/box';
 import FormBasic from './FormBasic';
 
 import FormUploadImage from './FormUploadImage';
-import FormDescription from './FormDescription';
+//import FormDescription from './FormDescription';
 import FormReview from './FormReview';
 import FormLocation from './FormLocation';
 
@@ -27,10 +27,7 @@ const steps = [{
   title: 'Picture',
   content: (<FormUploadImage/>),
 }, {
-  title: 'Description',
-  content: (<FormDescription/>),
-}, {
-  title: 'Review',
+  title: 'Review & Post',
   content:(<FormReview/>),
 }];
 
@@ -77,10 +74,6 @@ class RecordAdd extends Component {
               }
               {
                 current === 3
-                && (<FormDescription handler = {this.click}/>)
-              }
-              {
-                current === 4
                 && (<FormReview handler = {this.click}/>)
               }
             </Box>

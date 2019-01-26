@@ -120,7 +120,7 @@ class FormLocation extends Component {
           <h4>If it didn't find any record, try to replace apt/unit to #</h4>
           <Col span={8}>
 
-            <FormItem label='Your full address or zipcode and confirm with the map'>
+            <FormItem label='Your full address (include city and state) or zipcode and click search to confirm the location'>
               {getFieldDecorator('address', {
                 rules: [{
                   required: true,
