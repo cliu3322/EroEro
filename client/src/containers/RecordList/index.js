@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import actions from "../../redux/recordlist/actions";
-import {  List, Icon, Avatar, Row, Col, Tag, Modal, Breadcrumb } from 'antd';
+import {  List, Icon, Avatar, Row, Col, Tag, Modal, Breadcrumb, Carousel } from 'antd';
 
 const IconText = ({ type, text }) => (
   <span>
@@ -116,15 +116,13 @@ class Papers extends Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          {this.state.myrecord.images &&
-            this.state.myrecord.images.map((number) =>
-              <li key={number.toString()}>
-                {number}
-              </li>
-            )
-          }
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <Carousel autoplay>
+            {this.state.myrecord.images &&
+              this.state.myrecord.images.map((image) =>
+                <img width={150} alt="logo" src={"http://localhost:9000/images/"+image} />
+              )
+            }
+          </Carousel>
         </Modal>
       </div>
     );
