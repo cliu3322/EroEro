@@ -20,16 +20,19 @@ class Papers extends Component {
 
     this.state = {
       visible: false,
-      id:{}
+      id:'',
+      myrecord:{}
     };
     //console.log(this.state.contactOptions)
   }
 
 
   popup(id) {
+    console.log(this.props.recordlist.find(x => x._id === id))
     this.setState({
       visible: true,
-      id:{name:id}
+      id:id,
+      myrecord:this.props.recordlist.find(x => x._id === id)
     });
   }
 
@@ -113,7 +116,13 @@ class Papers extends Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          <p>{this.state.id.name}</p>
+          {this.state.myrecord.images &&
+            this.state.myrecord.images.map((number) =>
+              <li key={number.toString()}>
+                {number}
+              </li>
+            )
+          }
           <p>Some contents...</p>
           <p>Some contents...</p>
         </Modal>
