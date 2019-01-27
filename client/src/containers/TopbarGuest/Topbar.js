@@ -15,7 +15,7 @@ class Topbar extends Component {
   render() {
 
     const styling = {
-      background: 'white',
+      background: customizedTheme.palette.secondary,
       position: "fixed",
       width: "100%",
       height: 70,

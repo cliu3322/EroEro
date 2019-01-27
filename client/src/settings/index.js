@@ -8,10 +8,10 @@ const siteConfig = {
   footerText: ' ©2018 Created by Kaman',
 };
 const themeConfig = {
-  topbar: 'themedefault',
-  sidebar: 'themedefault',
-  layout: 'themedefault',
-  theme: 'themedefault',
+  topbar: 'theme2',
+  sidebar: 'theme2',
+  layout: 'theme2',
+  theme: 'theme2',
 };
 const language = 'english';
 

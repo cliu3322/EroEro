@@ -3,6 +3,7 @@ import { palette } from 'styled-theme';
 import { transition, borderRadius } from '../../settings/style-util';
 import WithDirection from '../../settings/withDirection';
 
+
 const FiveZeroZeroStyleWrapper = styled.div`
   width: 100%;
   height: 100vh;

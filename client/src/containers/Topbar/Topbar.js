@@ -4,8 +4,8 @@ import { Layout } from "antd";
 import appActions from "../../redux/app/actions";
 import TopbarUser from "./topbarUser";
 import TopbarWrapper from "./topbar.style";
-import themes from "../../settings/themes";
-import { themeConfig } from "../../settings";
+import themes from '../../settings/themes';
+import { themeConfig } from '../../settings';
 
 const { Header } = Layout;
 const { toggleCollapsed } = appActions;
@@ -16,13 +16,15 @@ class Topbar extends Component {
     const { toggleCollapsed } = this.props;
     const collapsed = this.props.collapsed && !this.props.openDrawer;
     const styling = {
-      background: customizedTheme.backgroundColor,
+      background: customizedTheme.palette.secondary,
       position: "fixed",
       width: "100%",
       height: 70
     };
+    console.log(customizedTheme.backgroundColor)
+
     return (
-      <TopbarWrapper>
+      <TopbarWrapper >
         <Header
           style={styling}
           className={
@@ -34,7 +36,6 @@ class Topbar extends Component {
               className={
                 collapsed ? "triggerBtn menuCollapsed" : "triggerBtn menuOpen"
               }
-              style={{ color: customizedTheme.textColor }}
               onClick={toggleCollapsed}
             />
           </div>
