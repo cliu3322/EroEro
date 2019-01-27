@@ -5,6 +5,11 @@ const options = [
     leftIcon: 'ion-upload',
   },
   {
+    key: 'MyPost',
+    label: 'sidebar.myPost',
+    leftIcon: 'ion-ios-list',
+  },
+  {
     key: 'ChatRoom',
     label: 'sidebar.chatRoom',
     leftIcon: 'ion-chatbubble',

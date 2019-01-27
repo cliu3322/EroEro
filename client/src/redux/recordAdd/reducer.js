@@ -2,7 +2,8 @@ import actions from "./actions";
 
 const initState = {
   tab_id:1,
-  basic:{}
+  basic:{},
+  status:'incomplete'
  };
 
 

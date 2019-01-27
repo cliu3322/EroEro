@@ -31,7 +31,10 @@ class FormBasic extends Component {
 
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        this.props.addBasic(this.props.form.getFieldsValue())
+        var data = this.props.form.getFieldsValue()
+        data.username = this.props.user
+
+        this.props.addBasic(data)
         this.props.handler('2');
       }
     });
@@ -71,7 +74,7 @@ class FormBasic extends Component {
       <Form onSubmit={this.handleSubmit}>
         <Divider orientation="left">Name</Divider>
         <Form.Item {...formItemLayout} label="Name">
-          {getFieldDecorator('username', {
+          {getFieldDecorator('name', {
             rules: [{
               required: true,
 
@@ -215,6 +218,7 @@ class FormBasic extends Component {
 
 function mapStateToProps(state) {
   return {
+    user:state.Auth.username
   };
 }
 

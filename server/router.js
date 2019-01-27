@@ -50,64 +50,103 @@ export default function (app) {
 
   apiRoutes.post('/record', (req, res) => {
 
-    if(!req.body.id) {
-      const record = new Record({
-        _id: new mongoose.Types.ObjectId(),
-        username: req.body.username,
-        contactmethod: req.body.contactmethod,
-        contactway: req.body.contactway,
-        phone: req.body.phone,
-        aphone: req.body.aphone,
-        email: req.body.email,
-        wechat: req.body.wechat,
-        line: req.body.line,
-        whatsapp: req.body.whatsapp,
-        kakao: req.body.kakao,
-        ethnicity: req.body.ethnicity,
-        service: req.body.service,
-      });
-
-      record.save().then(result => {
-        if (result) {
-          res.status(201).json({
-            _id:result._id
-          });
-        } else {
-          res.status(204).json({
-            message: "No file detail exist",
-          });
-        }
-      }).catch(err => {
-        console.log('err');
-        res.status(500).json({
-          error: err
+    switch(req.body.type) {
+      case 'RECORDADD_ADD_BASIC':
+        const record = new Record({
+          _id: new mongoose.Types.ObjectId(),
+          username: req.body.payload.username,
+          name: req.body.payload.name,
+          contactmethod: req.body.payload.contactmethod,
+          contactway: req.body.payload.contactway,
+          phone: req.body.payload.phone,
+          aphone: req.body.payload.aphone,
+          email: req.body.payload.email,
+          wechat: req.body.payload.wechat,
+          line: req.body.payload.line,
+          whatsapp: req.body.payload.whatsapp,
+          kakao: req.body.payload.kakao,
+          ethnicity: req.body.payload.ethnicity,
+          service: req.body.payload.service,
+          createdate:Date.now()
         });
-      });
+
+        record.save().then(result => {
+          if (result) {
+            res.status(201).json({
+              _id:result._id
+            });
+          } else {
+            res.status(204).json({
+              message: "no id output",
+            });
+          }
+        }).catch(err => {
+          console.log(err);
+          res.status(500).json({
+            error: err
+          });
+        });
+        break;
+      case 'UPDATE_ADDRESS':
+        Record.findOneAndUpdate(
+          { _id: req.body.payload.id },
+          {
+            city: req.body.payload.city,
+            address: req.body.payload.address,
+            markers: req.body.payload.markers,
+            locationId: req.body.payload.city[2]
+          }
+        ).then(result => {
+          if (result) {
+            res.status(201).json({
+              _id:result._id
+            });
+          } else {
+            res.status(204).json({
+              message: "No location id output",
+            });
+          }
+        }).catch(err => {
+          console.log('err');
+          res.status(500).json({
+            error: err
+          });
+        });
+        break;
+      case 'UPDATE_STATUS':
+        Record.findOneAndUpdate(
+          { _id: req.body.payload.id },
+          {
+            status: req.body.payload.status,
+            postdate:Date.now()
+          }
+        ).then(result => {
+          if (result) {
+            res.status(201).json({
+              _id:result._id
+            });
+          } else {
+            res.status(204).json({
+              message: "No location id output",
+            });
+          }
+        }).catch(err => {
+          console.log('err');
+          res.status(500).json({
+            error: err
+          });
+        });
+        break;
+      default:
+        // code block
+    }
+
+    console.log(req.body)
+    if(!req.body.id) {
+
     }
     else {
-      Record.findOneAndUpdate(
-        { _id: req.body.id },
-        {
-          city: req.body.city,
-          address: req.body.address,
-          locationId: req.body.city[2]
-        }
-      ).then(result => {
-        if (result) {
-          res.status(201).json({
-            _id:result._id
-          });
-        } else {
-          res.status(204).json({
-            message: "No file detail exist",
-          });
-        }
-      }).catch(err => {
-        console.log('err');
-        res.status(500).json({
-          error: err
-        });
-      });
+
     }
   });
 
@@ -146,6 +185,17 @@ export default function (app) {
   apiRoutes.get('/getrecordlist', function (req, res) {
 
     Record.find({locationId:req.query.id}).exec(function(err, records) {
+      if (records) {
+        res.status(201).json(records);
+      } else {
+        res.status(204).json(records);
+      }
+    });
+  });
+
+  apiRoutes.get('/getmypost', function (req, res) {
+
+    Record.find({username:req.query.username}).exec(function(err, records) {
       if (records) {
         res.status(201).json(records);
       } else {

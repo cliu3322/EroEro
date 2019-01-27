@@ -37,7 +37,7 @@ class FormUploadImage extends Component {
     fileList.forEach((file) => {
       formData.append('files[]', file);
     });
-    console.log(this.props.id)
+
     formData.append('id', this.props.id);
 
     this.setState({

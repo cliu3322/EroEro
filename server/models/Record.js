@@ -4,6 +4,7 @@ const Schema = mongoose.Schema
 const RecordSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
     username: { type: String, required: true },
+    name: { type: String, required: true },
     contactmethod: { type: Array, required: true },
     contactway: { type: Array, required: true },
     phone: { type: String, required: true },
@@ -20,6 +21,9 @@ const RecordSchema = new Schema({
     markers: { type: Array, required: false },
     images:{ type: Array, required: false },
     locationId: { type: mongoose.Schema.Types.ObjectId, required: false },
+    createdate:{ type: Date, required: true },
+    postdate:{ type: Date, required: false },
+    status: { type: String, required: false },
 }
 
 );

@@ -20,6 +20,10 @@ const routes = [
     component: asyncComponent(() => import('../RecordAdd/index.js')),
   },
   {
+    path: 'MyPost',
+    component: asyncComponent(() => import('../MyPost/index.js')),
+  },
+  {
     path: 'recordList',
     component: asyncComponent(() => import('../RecordList/index.js')),
   },
@@ -35,28 +39,7 @@ const routes = [
     path: 'authCheck',
     component: asyncComponent(() => import('../AuthCheck')),
   },
-  {
-    path: 'card',
-    component: asyncComponent(() => import('../Ecommerce/card')),
-  },
-  {
-    path: 'cart',
-    component: asyncComponent(() => import('../Ecommerce/cart')),
-  },
-  {
-    path: 'checkout',
-    component: asyncComponent(() => import('../Ecommerce/checkout')),
-  },
-  {
-    path: 'shop',
-    component: asyncComponent(() =>
-      import('../Ecommerce/algolia/instantSearch')
-    ),
-  },
-  {
-    path: 'op_collapse',
-    component: asyncComponent(() => import('../Uielements/Collapse')),
-  },
+
 ];
 
 class AppRouter extends Component {

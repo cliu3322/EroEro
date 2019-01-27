@@ -86,7 +86,6 @@ class RecordAdd extends Component {
 
 
 function mapStateToProps(state) {
-  //console.log(state.RecordAdd.tab_id.toString())
   return {
 
   };

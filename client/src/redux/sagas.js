@@ -4,6 +4,7 @@ import ecommerceSaga from './ecommerce/saga';
 import cardsSagas from './card/saga';
 import recordAddSagas from './recordAdd/saga';
 import recordListSagas from './recordlist/saga';
+import mypostSagas from './myPost/saga';
 import chatRoomSagas from './chatRoom/saga';
 import citiesSagas from './cities/saga';
 
@@ -15,6 +16,7 @@ export default function* rootSaga(getState) {
     recordAddSagas(),
     recordListSagas(),
     chatRoomSagas(),
-    citiesSagas()
+    citiesSagas(),
+    mypostSagas(),
   ]);
 }
