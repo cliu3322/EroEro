@@ -75,7 +75,12 @@ class Papers extends Component {
             <List.Item.Meta
               title={<Row>
                       <Col span={6}>{item.username}</Col>
-                      <Col span={6}><Tag onClick={evt => this.popup(item._id)}>Tag 1</Tag></Col>
+                      <Col span={6}>
+                      {item.service.map((service) =>
+                        <Tag onClick={evt => this.popup(item._id)}>{service}</Tag>
+                      )}
+
+                      </Col>
                     </Row>}
               description={
                 <Row>

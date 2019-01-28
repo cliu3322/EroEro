@@ -21,7 +21,6 @@ class Topbar extends Component {
       width: "100%",
       height: 70
     };
-    console.log(customizedTheme.backgroundColor)
 
     return (
       <TopbarWrapper >

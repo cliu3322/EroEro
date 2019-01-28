@@ -10,6 +10,10 @@ import { siteConfig } from '../../settings';
 import AppHolder from './commonStyle';
 import './global.css';
 import Background from "../../image/flower-light-scene-3-abstract-wedding-background-09_bt13rm_m__F0000.png";
+import themes from '../../settings/themes';
+import { themeConfig } from '../../settings';
+
+const customizedTheme = themes[themeConfig.theme];
 
 const { Content, Footer } = Layout;
 
@@ -49,7 +53,7 @@ export class App extends Component {
                 </Content>
                 <Footer
                   style={{
-                    background: '#ffffff',
+                    background: customizedTheme.palette.secondary,
                     textAlign: 'center',
                     borderTop: '1px solid #ededed'
                   }}
