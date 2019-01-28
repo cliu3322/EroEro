@@ -55,15 +55,12 @@ class Papers extends Component {
     return (
       <div>
         <Breadcrumb>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item><a href="/guest">Application Center</a></Breadcrumb.Item>
-          <Breadcrumb.Item><a href="/guest">Application List</a></Breadcrumb.Item>
-          <Breadcrumb.Item>An Application</Breadcrumb.Item>
+          <Breadcrumb.Item><a href="/guest">Home</a></Breadcrumb.Item>
         </Breadcrumb>
         <List
         bordered = {true}
         pagination={{
-           pageSize: 3,
+           pageSize: 10,
          }}
 
         dataSource={this.props.recordlist}
@@ -76,7 +73,6 @@ class Papers extends Component {
             extra={<img width={150} alt="logo" src={"http://localhost:9000/images/"+item.images[0]} onClick={evt => this.popup(item._id)}/>}
           >
             <List.Item.Meta
-              avatar={<Avatar src='https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png' />}
               title={<Row>
                       <Col span={6}>{item.username}</Col>
                       <Col span={6}><Tag onClick={evt => this.popup(item._id)}>Tag 1</Tag></Col>

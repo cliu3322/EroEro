@@ -7,6 +7,9 @@ import themes from "../../settings/themes";
 import { themeConfig } from "../../settings";
 import { Link } from 'react-router-dom';
 
+
+import Marquee from 'grand-marquee-react';
+
 const { Header } = Layout;
 const { toggleCollapsed } = appActions;
 const customizedTheme = themes[themeConfig.theme];
@@ -35,20 +38,25 @@ class Topbar extends Component {
           }
         >
           <Row>
-            <Col span={8}>
+            <Col span={4}>
               <img alt="logo" src="https://www.brandsupply.com/upload/project_files/5dc04a5b7790ec9424537d4dd40e89b3.png" style={styling1}/>
             </Col>
-            <Col span={12}>
+            <Col span={18}>
+
+              <Marquee
+               totalDisplays={2}
+               display1={'老铁赚了钱就得麻溜的赶紧花啊。'}
+               display2={'在别的地方花不如在我们这，十分带劲'}
+               changeTime={10000}
+               crossTime={16000}
+               htmlTag={'h2'}
+               color={'purple'}
+             />
             </Col>
-            <Col span={4}>
-              <Button type="primary">
+            <Col span={2}>
+              <Button type="default" ghost={true} size={'small'}>
                 <Link to="/signin">
                   <Icon type="upload" />POST AD
-                </Link>
-              </Button>
-              <Button type="primary">
-                <Link to="/signin">
-                  <Icon type="dollar" />DONATE
                 </Link>
               </Button>
             </Col>

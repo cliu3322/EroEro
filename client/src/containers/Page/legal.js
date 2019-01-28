@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import IntlMessages from '../../components/utility/intlMessages';
 import FiveZeroZeroStyleWrapper from './500.style';
-import Background from './nightclubbackgroundanime.jpg';
+
+import Background from "../../image/nightclubbackgroundanime.jpg";
 
 var style={
-backgroundImage: "url(" +Background + ")",
+  backgroundImage: "url(" +Background + ")",
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'repeat',}

@@ -16,6 +16,7 @@
     "classnames": "^2.2.5",
     "clone": "^2.1.1",
     "google-maps-react": "^2.0.2",
+    "grand-marquee-react": "^0.0.6",
     "history": "^4.6.3",
     "js-info-bubble": "^0.8.0",
     "js-rich-marker": "^1.1.2",

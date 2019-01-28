@@ -9,7 +9,7 @@ import { siteConfig } from '../../settings';
 
 import AppHolder from './commonStyle';
 import './global.css';
-
+import Background from "../../image/flower-light-scene-3-abstract-wedding-background-09_bt13rm_m__F0000.png";
 
 const { Content, Footer } = Layout;
 
@@ -40,8 +40,9 @@ export class App extends Component {
                   style={{
                     padding: '70px 0 0',
                     flexShrink: '0',
-                    background: '#f1f3f6',
-                    position: 'relative'
+                    backgroundImage: "url(" +Background + ")",
+                    backgroundSize: 'cover',
+                    overflow: 'hidden',
                   }}
                 >
                   <AppRouter url={url} />

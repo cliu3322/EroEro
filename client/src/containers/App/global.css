@@ -177,3 +177,8 @@ html[dir='rtl'] .ant-notification-notice-with-icon {
 html[dir='rtl'] .dz-hidden-input {
   display: none;
 }
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); animation-timing-function: ease-in;}
+    100% { transform: translate(-100%, 0); animation-timing-function: ease-out;}
+}

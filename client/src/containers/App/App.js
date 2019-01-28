@@ -14,6 +14,7 @@ import themes from '../../settings/themes';
 import { themeConfig } from '../../settings';
 import AppHolder from './commonStyle';
 import './global.css';
+import Background from "../../image/nightclubbackgroundanime.jpg";
 //import socketIOClient from 'socket.io-client'
 //import { Affix, Button } from 'antd';
 
@@ -65,8 +66,8 @@ export class App extends Component {
                   style={{
                     padding: '70px 0 0',
                     flexShrink: '0',
-                    background: '#f1f3f6',
-                    position: 'relative'
+                    position: 'relative',
+                    background: '#FFA07A',
                   }}
                 >
                   <AppRouter url={url} />
