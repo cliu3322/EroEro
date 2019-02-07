@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import actions from "../../redux/recordlist/actions";
-import {  List, Icon, Avatar, Row, Col, Tag, Modal, Breadcrumb, Carousel } from 'antd';
+import {  List, Icon, Row, Col, Tag, Modal, Breadcrumb, Carousel } from 'antd';
 
 const IconText = ({ type, text }) => (
   <span>

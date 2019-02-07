@@ -6,8 +6,6 @@ import WindowResizeListener from 'react-window-size-listener';
 import { ThemeProvider } from 'styled-components';
 import authAction from '../../redux/auth/actions';
 import appActions from '../../redux/app/actions';
-import Sidebar from '../Sidebar/Sidebar';
-import Topbar from '../Topbar/Topbar';
 import AppRouter from './AppRouter';
 import { siteConfig } from '../../settings';
 import themes from '../../settings/themes';
@@ -50,10 +48,7 @@ export class App extends Component {
                 }
               />
             </Debounce>
-            <Topbar url={url} />
             <Layout style={{ flexDirection: 'row', overflowX: 'hidden' }}>
-              <Sidebar url={url} />
-
               <Layout
                 className="isoContentMainLayout"
                 style={{
@@ -66,7 +61,7 @@ export class App extends Component {
                     padding: '70px 0 0',
                     flexShrink: '0',
                     position: 'relative',
-                    background: '#FFA07A',
+                    background: '#ffffff',
                   }}
                 >
                   <AppRouter url={url} />

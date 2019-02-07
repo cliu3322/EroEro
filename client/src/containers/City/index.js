@@ -11,6 +11,17 @@ import CollapseWrapper0 from './collapse0.style';
 import { Link } from 'react-router-dom';
 import citiesActions from '../../redux/cities/actions';
 
+
+import 'leaflet';
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+import { OpenStreetMapProvider } from 'leaflet-geosearch';
+
+
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
+
+
 const Panel = Collapses.Panel;
 
 const Collapse = props => (
@@ -69,18 +80,25 @@ class CityOptions extends Component {
   render() {
     const { rowStyle, colStyle, gutter } = basicStyle;
     return (
-      <CollapseWrapper0>
-        <video id="background-video" loop autoPlay>
-           <source src={this.state.videoURL} type="video/mp4" />
-           <source src={this.state.videoURL} type="video/ogg" />
-           Your browser does not support the video tag.
-       </video>
+
 
         <Row style={rowStyle} gutter={gutter} justify="start">
 
           {this.renderGeos(colStyle)}
+
+          <Col md={18} sm={12} xs={24}>
+            <Map style={{ height: '500px', width: '100%' }}
+              center={[37.0902, -110.7129]}
+              zoom={3}
+              >
+              <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+              />
+            </Map>
+          </Col>
         </Row>
-      </CollapseWrapper0>
+
     );
   }
 }

@@ -4,7 +4,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { connect } from 'react-redux';
 
 import App from './containers/App/App';
-import App1 from './containers/App1/App';
+import AppGuest from './containers/AppGuest/App';
 import LegalPage from './containers/Page/legal';
 import asyncComponent from './helpers/AsyncFunc';
 
@@ -71,7 +71,7 @@ const PublicRoutes = ({ history, isLoggedIn }) => {
         />
         <Route
           path={"/guest"}
-          component={App1}
+          component={AppGuest}
         />
         <Route
           exact

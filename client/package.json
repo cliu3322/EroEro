@@ -29,6 +29,7 @@
     "postcss-inline-rtl": "^0.9.8",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-flip-move": "^3.0.3",
     "react-instantsearch": "^5.3.2",
     "react-intl": "^2.3.0",
     "react-leaflet": "^2.1.4",
