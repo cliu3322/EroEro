@@ -87,7 +87,7 @@ class CityOptions extends Component {
           {this.renderGeos(colStyle)}
 
           <Col md={18} sm={12} xs={24}>
-            <Map style={{ height: '500px', width: '100%' }}
+            <Map style={{ height: '100vh' }}
               center={[37.0902, -110.7129]}
               zoom={3}
               >
@@ -106,7 +106,7 @@ class CityOptions extends Component {
 
 
 function mapStateToProps(state) {
-  console.log(state);
+  //console.log(state);
   return {
     cityOptions:state.Cities.cities,
   };

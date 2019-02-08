@@ -3,6 +3,7 @@ import multer from 'multer';
 import mongoose from 'mongoose';
 import Cities from './models/City';
 import Record from './models/Record';
+import CityxRecord from './models/CityxRecord';
 const path = require('path');
 
 
@@ -185,6 +186,17 @@ export default function (app) {
   apiRoutes.get('/getrecordlist', function (req, res) {
 
     Record.find({locationId:req.query.id}).exec(function(err, records) {
+      if (records) {
+        res.status(201).json(records);
+      } else {
+        res.status(204).json(records);
+      }
+    });
+  });
+
+  apiRoutes.get('/getcityxrecordlist', function (req, res) {
+    console.log(req.query.id)
+    CityxRecord.find({locationId:req.query.id}).exec(function(err, records) {
       if (records) {
         res.status(201).json(records);
       } else {

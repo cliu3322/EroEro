@@ -8,9 +8,13 @@ const onGetRequest = async (data) => {
   return await SuperFetch.get('getrecordlist?id='+data.locationId)
 };
 
+const onGetCityRequest = async (data) => {
+  return await SuperFetch.get('getcityxrecordlist?id='+data.locationId)
+};
+
 function* getPapers(payload) {
   try {
-    const getResult = yield call(onGetRequest,payload);
+    const getResult = yield call(onGetCityRequest,payload);
     //console.log('result1',getResult);
     yield put({
       type: actions.UPDATE_PAPERLIST,
