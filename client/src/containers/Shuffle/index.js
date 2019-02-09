@@ -67,7 +67,7 @@ class Shuffle extends Component {
     this.setState({
       recordlist:this.props.recordlist
     });
-    console.log(state.recordlist)
+
   }
 
 
@@ -139,7 +139,7 @@ class Shuffle extends Component {
 
   renderArticles() {
     console.log(this.state)
-    return this.state.recordlist.map((city, i) => {
+    return this.props.recordlist.map((city, i) => {
       return (
         <ListItem
           key={city._id}
