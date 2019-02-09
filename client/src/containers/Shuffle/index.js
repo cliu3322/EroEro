@@ -38,6 +38,8 @@ class ListItem extends Component {
 class Shuffle extends Component {
   constructor(props) {
     super(props);
+    const { initData } = this.props;
+    initData(this.props.match.params);
     this.state = {
       removedArticles: [],
       view: 'list',
@@ -45,16 +47,27 @@ class Shuffle extends Component {
       sortingMethod: 'chronological',
       enterLeaveAnimation: 'accordionVertical',
       articles,
+      recordlist:[]
     };
-    const {  initData } = this.props;
 
-    initData(this.props.match.params);
+
 
     this.toggleList = this.toggleList.bind(this);
     this.toggleGrid = this.toggleGrid.bind(this);
     this.toggleSort = this.toggleSort.bind(this);
     this.sortRotate = this.sortRotate.bind(this);
     this.sortShuffle = this.sortShuffle.bind(this);
+  }
+
+  componentWillMount(){
+
+  }
+
+  componentDidMount() {
+    this.setState({
+      recordlist:this.props.recordlist
+    });
+    console.log(state.recordlist)
   }
 
 
@@ -125,7 +138,8 @@ class Shuffle extends Component {
   }
 
   renderArticles() {
-    return this.props.recordlist.map((city, i) => {
+    console.log(this.state)
+    return this.state.recordlist.map((city, i) => {
       return (
         <ListItem
           key={city._id}
