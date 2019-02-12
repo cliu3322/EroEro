@@ -9,7 +9,11 @@ import FlipMove from 'react-flip-move';
 import Toggle from './Toggle.js';
 import IntlMessages from '../../components/utility/intlMessages';
 import { SingleCardWrapper, SortableCardWrapper } from './shuffle.style';
-import actions from "../../redux/recordlist/actions";
+import SuperFetch from '../../helpers/superFetch';
+
+//import SuperFetch from '../../helpers/superFetch';
+
+
 
 class ListItem extends Component {
   render() {
@@ -38,8 +42,6 @@ class ListItem extends Component {
 class Shuffle extends Component {
   constructor(props) {
     super(props);
-    const { initData } = this.props;
-    initData(this.props.match.params);
     this.state = {
       removedArticles: [],
       view: 'list',
@@ -59,18 +61,13 @@ class Shuffle extends Component {
     this.sortShuffle = this.sortShuffle.bind(this);
   }
 
-  componentWillMount(){
-
+  componentDidMount () {
+    const { id } = this.props.match.params
+    SuperFetch.get(`/getcityxrecordlist?id=${id}`)
+      .then((recordlist) => {
+        this.setState(() => ({ recordlist }))
+      })
   }
-
-  componentDidMount() {
-    this.setState({
-      recordlist:this.props.recordlist
-    });
-
-  }
-
-
 
   toggleList() {
     this.setState({
@@ -87,13 +84,14 @@ class Shuffle extends Component {
   }
 
   toggleSort() {
-    const sortAsc = (a, b) => a.timestamp - b.timestamp;
-    const sortDesc = (a, b) => b.timestamp - a.timestamp;
+    console.log(this.state.recordlist)
+    const sortAsc = (a, b) => a.lastUpdated - b.lastUpdated;
+    const sortDesc = (a, b) => b.lastUpdated - a.lastUpdated;
 
     this.setState({
       order: this.state.order === 'asc' ? 'desc' : 'asc',
       sortingMethod: 'chronological',
-      articles: this.state.articles.sort(
+      recordlist: this.state.recordlist.sort(
         this.state.order === 'asc' ? sortDesc : sortAsc
       ),
     });
@@ -102,7 +100,7 @@ class Shuffle extends Component {
   sortShuffle() {
     this.setState({
       sortingMethod: 'shuffle',
-      articles: shuffle(this.state.articles),
+      recordlist: shuffle(this.state.recordlist),
     });
   }
 
@@ -138,8 +136,7 @@ class Shuffle extends Component {
   }
 
   renderArticles() {
-    console.log(this.state)
-    return this.props.recordlist.map((city, i) => {
+    return this.state.recordlist.map((city, i) => {
       return (
         <ListItem
           key={city._id}
@@ -249,5 +246,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  actions
+  {}
 )(Shuffle);

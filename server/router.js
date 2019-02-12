@@ -186,6 +186,7 @@ export default function (app) {
   apiRoutes.get('/getrecordlist', function (req, res) {
 
     Record.find({locationId:req.query.id}).exec(function(err, records) {
+
       if (records) {
         res.status(201).json(records);
       } else {
@@ -195,8 +196,9 @@ export default function (app) {
   });
 
   apiRoutes.get('/getcityxrecordlist', function (req, res) {
-    console.log(req.query.id)
+    console.log(req.query)
     CityxRecord.find({locationId:req.query.id}).exec(function(err, records) {
+      console.log(records)
       if (records) {
         res.status(201).json(records);
       } else {

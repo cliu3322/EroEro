@@ -7,7 +7,6 @@ import Box from '../../components/utility/box';
 import ContentHolder from '../../components/utility/contentHolder';
 import basicStyle from '../../settings/basicStyle';
 import CollapseWrapper from './collapse.style';
-import CollapseWrapper0 from './collapse0.style';
 import { Link } from 'react-router-dom';
 import citiesActions from '../../redux/cities/actions';
 
@@ -16,10 +15,8 @@ import 'leaflet';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
-import { OpenStreetMapProvider } from 'leaflet-geosearch';
 
-
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
+import { Map, TileLayer } from 'react-leaflet';
 
 
 const Panel = Collapses.Panel;

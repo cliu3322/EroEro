@@ -4,11 +4,8 @@ import SuperFetch from '../../helpers/superFetch';
 
 
 
-const onGetRequest = async (data) => {
-  return await SuperFetch.get('getrecordlist?id='+data.locationId)
-};
-
 const onGetCityRequest = async (data) => {
+  console.log(data.locationId)
   return await SuperFetch.get('getcityxrecordlist?id='+data.locationId)
 };
 
