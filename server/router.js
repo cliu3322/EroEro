@@ -43,7 +43,6 @@ export default function (app) {
     Cities.aggregate(getCXGCitiesQuery).exec(function(err, cities) {
       //console.log(cities)
       if (cities) {
-        console.log('length',cities.length);
         res.status(201).json({allcities:cities});
       } else {}
     })

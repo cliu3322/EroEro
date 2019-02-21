@@ -141,7 +141,7 @@ const server = app.listen(port, () => {
 const sockets = {};
 
 
-const socketio = require('socket.io')(server, {
+const socketio = require('socket.io')(Config.socketport, {
   pingTimeout: 5000,
 });
 
@@ -160,5 +160,31 @@ socketio.on('connection', (socket) => {
   socket.on('disconnect', (userId) => {
 		console.log('disconnect', userId.senderId);
     delete sockets[userId.senderId];
+  });
+});
+
+const newssocketio = require('socket.io')(Config.newsSocketport);
+
+
+newssocketio.on('connection', (socket) => {
+	console.log('new user socket connect')
+  socket.on('init', (userId) => {
+
+
+  });
+	var a = 1;
+
+	setInterval(() => {
+		a = a +1
+		socket.emit('news','interviewing the interval '+a);
+	  console.log('interviewing the interval '+a);
+	}, 1000);
+
+	socket.on('news',() => {
+
+	});
+
+  socket.on('disconnect', (userId) => {
+
   });
 });

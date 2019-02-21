@@ -4,6 +4,8 @@ const expiredAfter = 60 * 60 * 1000;
 
 export default {
   port,
+  socketport:4000,
+  newsSocketport:4001,
   secretKey,
   expiredAfter,
   database: "mongodb://localhost:27017/UCIP"

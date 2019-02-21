@@ -62,6 +62,7 @@ class Shuffle extends Component {
   }
 
   componentDidMount () {
+    console.log(this.props.match.params)
     const { id } = this.props.match.params
     SuperFetch.get(`/getcityxrecordlist?id=${id}`)
       .then((recordlist) => {
